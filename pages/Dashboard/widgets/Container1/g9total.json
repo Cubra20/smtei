@@ -21,11 +21,14 @@
   "dynamicPropertyPathList": [
     {
       "key": "disableLink"
+    },
+    {
+      "key": "fontSize"
     }
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.875rem",
+  "fontSize": "3vh",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -39,7 +42,7 @@
   "mobileRightColumn": 3,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 5,
+  "originalBottomRow": 4,
   "originalTopRow": 0,
   "overflow": "NONE",
   "parentColumnSpace": 16.94482421875,

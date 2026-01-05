@@ -11,9 +11,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "System Default",
-  "fontSize": "0.875rem",
+  "fontSize": "1.5vh",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -27,8 +32,8 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 9,
-  "originalTopRow": 5,
+  "originalBottomRow": 8,
+  "originalTopRow": 4,
   "overflow": "NONE",
   "parentColumnSpace": 16.94482421875,
   "parentId": "ng4x0ikc9o",
