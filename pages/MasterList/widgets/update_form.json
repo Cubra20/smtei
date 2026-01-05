@@ -257,6 +257,9 @@
     },
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -390,9 +393,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"GRADE LEVEL\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "GRADE_LEVEL",
           "isCustomField": false,
@@ -404,7 +407,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "GRADE LEVEL",
           "position": 2,
-          "sourceData": 7
+          "sourceData": ""
         },
         "LRC_ATTENDANCE": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -412,9 +415,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"LRC ATTENDANCE\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "LRC_ATTENDANCE",
           "isCustomField": false,
@@ -426,7 +429,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "LRC ATTENDANCE",
           "position": 11,
-          "sourceData": 0
+          "sourceData": ""
         },
         "NAME": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -544,9 +547,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"STUDENT ID\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "STUDENT_ID",
           "isCustomField": false,
@@ -558,7 +561,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "STUDENT ID",
           "position": 0,
-          "sourceData": 110237180051
+          "sourceData": ""
         },
         "rowIndex": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -566,9 +569,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rowIndex))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "rowIndex",
           "isCustomField": false,
@@ -580,7 +583,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
           "position": 12,
-          "sourceData": 0
+          "sourceData": ""
         }
       },
       "dataType": "object",

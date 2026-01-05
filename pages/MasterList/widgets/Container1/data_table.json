@@ -1,5 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowAddNewRow": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 85,
@@ -161,13 +162,14 @@
   "hideCard": false,
   "horizontalAlignment": "LEFT",
   "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "infiniteScrollEnabled": true,
   "isLoading": false,
-  "isSortable": true,
+  "isSortable": false,
   "isVisible": "true",
   "isVisibleDownload": true,
-  "isVisibleFilters": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": true,
-  "isVisibleSearch": true,
+  "isVisibleSearch": false,
   "key": "zba5qel0au",
   "label": "Data",
   "labelTextSize": "0.875rem",
@@ -178,7 +180,7 @@
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "primaryColumnId": "id",
+  "primaryColumnId": "STUDENT_ID",
   "primaryColumns": {
     "ADDRESS": {
       "alias": "ADDRESS",
@@ -282,6 +284,10 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "FAMILY SAINT": {
+      "isCellEditable": false,
+      "isEditable": false
+    },
     "FAMILY_SAINT": {
       "alias": "FAMILY SAINT",
       "allowCellWrapping": false,
@@ -316,6 +322,10 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "GRADE LEVEL": {
+      "isCellEditable": false,
+      "isEditable": false
+    },
     "GRADE_LEVEL": {
       "alias": "GRADE LEVEL",
       "allowCellWrapping": false,
@@ -349,6 +359,10 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
+    },
+    "LRC ATTENDANCE": {
+      "isCellEditable": false,
+      "isEditable": false
     },
     "LRC_ATTENDANCE": {
       "alias": "LRC ATTENDANCE",
@@ -554,6 +568,10 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "STUDENT ID": {
+      "isCellEditable": false,
+      "isEditable": false
+    },
     "STUDENT_ID": {
       "alias": "STUDENT ID",
       "allowCellWrapping": false,
@@ -645,6 +663,10 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
+    },
+    "undefined": {
+      "isCellEditable": false,
+      "isEditable": false
     }
   },
   "renderMode": "CANVAS",

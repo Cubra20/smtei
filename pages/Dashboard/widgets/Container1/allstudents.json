@@ -40,7 +40,7 @@
   "text": "All Students",
   "textAlign": "CENTER",
   "textColor": "#71717a",
-  "topRow": 5,
+  "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
