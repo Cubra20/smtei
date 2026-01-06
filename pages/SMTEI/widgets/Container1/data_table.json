@@ -30,14 +30,15 @@
     "TYPE",
     "QUALIFICATION",
     "Accreditation_No_",
-    "Valid_until"
+    "Valid_until",
+    "attachment"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767671056553,
+  "columnUpdatedAt": 1767686890103,
   "columnWidthMap": {
     "NAME": 203
   },
@@ -110,6 +111,12 @@
     },
     {
       "key": "primaryColumns.Valid_until.cellBackground"
+    },
+    {
+      "key": "primaryColumns.attachment.computedValue"
+    },
+    {
+      "key": "primaryColumns.attachment.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -283,6 +290,40 @@
       "label": "Valid until",
       "notation": "standard",
       "originalId": "Valid until",
+      "sticky": "",
+      "textColor": "#231f20",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "attachment": {
+      "alias": "attachment",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"attachment\"])) : attachment })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "attachment",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "attachment",
+      "notation": "standard",
+      "originalId": "attachment",
       "sticky": "",
       "textColor": "#231f20",
       "textSize": "0.875rem",
