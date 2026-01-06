@@ -24,7 +24,6 @@
   "columnOrder": [
     "STUDENT_ID",
     "NAME",
-    "GRADE_LEVEL",
     "SECTION",
     "BIRTHDAY",
     "FAMILY_SAINT",
@@ -33,14 +32,15 @@
     "BARANGAY",
     "REGION",
     "rowIndex",
-    "ADDRESS"
+    "ADDRESS",
+    "GRADE_LEVEL1"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767689337431,
+  "columnUpdatedAt": 1767691215088,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -93,9 +93,6 @@
       "key": "primaryColumns.NAME.computedValue"
     },
     {
-      "key": "primaryColumns.GRADE_LEVEL.computedValue"
-    },
-    {
       "key": "primaryColumns.SECTION.computedValue"
     },
     {
@@ -121,6 +118,9 @@
     },
     {
       "key": "primaryColumns.ADDRESS.computedValue"
+    },
+    {
+      "key": "primaryColumns.GRADE_LEVEL1.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -335,20 +335,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "GRADE_LEVEL": {
-      "alias": "GRADE LEVEL",
+    "GRADE_LEVEL1": {
+      "alias": "GRADE_LEVEL",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"GRADE LEVEL\"])) : GRADE LEVEL })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"GRADE_LEVEL\"])) : GRADE_LEVEL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "GRADE_LEVEL",
+      "id": "GRADE_LEVEL1",
       "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -358,9 +358,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "GRADE LEVEL",
+      "label": "GRADE_LEVEL",
       "notation": "standard",
-      "originalId": "GRADE LEVEL",
+      "originalId": "GRADE_LEVEL",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

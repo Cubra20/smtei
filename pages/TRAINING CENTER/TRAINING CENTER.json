@@ -1,6 +1,7 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_363755f5-5666-4e96-a58d-2c5c5c60d54b",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "TRAINING_CENTER",
+    "name": "TRAINING CENTER",
     "slug": "training-center"
   }
 }

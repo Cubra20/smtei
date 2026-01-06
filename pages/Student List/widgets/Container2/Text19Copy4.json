@@ -30,6 +30,8 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
+  "originalBottomRow": 23,
+  "originalTopRow": 19,
   "overflow": "NONE",
   "parentColumnSpace": 20.64501953125,
   "parentId": "izlfveci41",

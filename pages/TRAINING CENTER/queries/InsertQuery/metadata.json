@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_8447a575-246e-4edf-a3c5-37cc659a3ef3",
-  "id": "TRAINING_CENTER_UpdateQuery",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_0596632e-3342-4801-b7ec-995bed05e395",
+  "id": "TRAINING CENTER_InsertQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,8 +8,8 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "UPDATE_ONE",
-          "data": "UPDATE_ONE",
+          "componentData": "INSERT_ONE",
+          "data": "INSERT_ONE",
           "viewType": "component"
         },
         "entityType": {
@@ -25,9 +25,12 @@
           "data": "ROWS",
           "viewType": "component"
         },
+        "range": {
+          "data": ""
+        },
         "rowObjects": {
-          "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
-          "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
+          "componentData": "{{insert_form.formData}}",
+          "data": "{{insert_form.formData}}",
           "viewType": "component"
         },
         "sheetName": {
@@ -55,7 +58,7 @@
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "UPDATE"
+          "value": "APPEND"
         },
         {
           "key": "sheetUrl",
@@ -91,7 +94,7 @@
         },
         {
           "key": "rowObject",
-          "value": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}"
+          "value": "{{insert_form.formData}}"
         },
         {
           "key": "rowObjects"
@@ -119,8 +122,8 @@
       "pluginId": "google-sheets-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "UpdateQuery",
-    "pageId": "TRAINING_CENTER",
+    "name": "InsertQuery",
+    "pageId": "TRAINING CENTER",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

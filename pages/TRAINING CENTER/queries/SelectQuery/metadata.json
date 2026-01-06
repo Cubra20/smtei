@@ -1,6 +1,6 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_ca16a186-6c8c-40a1-9193-0b583254778c",
-  "id": "TRAINING_CENTER_SelectQuery",
+  "id": "TRAINING CENTER_SelectQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -157,7 +157,7 @@
     },
     "dynamicBindingPathList": [],
     "name": "SelectQuery",
-    "pageId": "TRAINING_CENTER",
+    "pageId": "TRAINING CENTER",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": true
   }

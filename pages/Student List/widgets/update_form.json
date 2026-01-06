@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 152,
+  "bottomRow": 150,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -142,15 +142,6 @@
       "key": "schema.__root_schema__.children.NAME.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.GRADE_LEVEL.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.GRADE_LEVEL.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.GRADE_LEVEL.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.SECTION.defaultValue"
     },
     {
@@ -230,6 +221,15 @@
     },
     {
       "key": "schema.__root_schema__.children.ADDRESS.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.GRADE_LEVEL.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.GRADE_LEVEL.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.GRADE_LEVEL.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -267,8 +267,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating row!\\n${error}`,'error'))}}",
-  "originalBottomRow": 152,
-  "originalTopRow": 97,
+  "originalBottomRow": 150,
+  "originalTopRow": 95,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -401,12 +401,12 @@
         },
         "GRADE_LEVEL": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "GRADE LEVEL",
+          "accessor": "GRADE_LEVEL",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"GRADE LEVEL\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.GRADE_LEVEL))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "GRADE_LEVEL",
@@ -417,9 +417,9 @@
           "isVisible": true,
           "label": "GRADE LEVEL",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "GRADE LEVEL",
-          "position": 2,
-          "sourceData": "7"
+          "originalIdentifier": "GRADE_LEVEL",
+          "position": 11,
+          "sourceData": "G7"
         },
         "NAME": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -594,7 +594,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row Id: {{data_table.selectedRow.rowIndex}}",
-  "topRow": 97,
+  "topRow": 95,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "tn9ri7ylp2",

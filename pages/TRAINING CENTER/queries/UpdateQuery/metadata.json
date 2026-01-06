@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_7456f7d1-8428-4b78-ba75-e52f28513827",
-  "id": "TRAINING_CENTER_DeleteQuery",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_8447a575-246e-4edf-a3c5-37cc659a3ef3",
+  "id": "TRAINING CENTER_UpdateQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,24 +8,13 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "DELETE_ONE",
-          "data": "DELETE_ONE",
+          "componentData": "UPDATE_ONE",
+          "data": "UPDATE_ONE",
           "viewType": "component"
         },
         "entityType": {
           "componentData": "ROWS",
           "data": "ROWS",
-          "viewType": "component"
-        },
-        "pagination": {
-          "componentData": {
-            "limit": "{{data_table.pageSize}}",
-            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
-          },
-          "data": {
-            "limit": "{{data_table.pageSize}}",
-            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
-          },
           "viewType": "component"
         },
         "projection": {
@@ -36,12 +25,9 @@
           "data": "ROWS",
           "viewType": "component"
         },
-        "range": {
-          "data": ""
-        },
-        "rowIndex": {
-          "componentData": "{{data_table.triggeredRow.rowIndex}}",
-          "data": "{{data_table.triggeredRow.rowIndex}}",
+        "rowObjects": {
+          "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
+          "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
           "viewType": "component"
         },
         "sheetName": {
@@ -55,26 +41,21 @@
           "viewType": "component"
         },
         "smartSubstitution": {
-          "componentData": false,
-          "data": false,
+          "componentData": true,
+          "data": true,
           "viewType": "component"
         },
         "tableHeaderIndex": {
           "componentData": "1",
           "data": "1",
           "viewType": "component"
-        },
-        "where": {
-          "data": {
-            "condition": "AND"
-          }
         }
       },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "DELETE_ROW"
+          "value": "UPDATE"
         },
         {
           "key": "sheetUrl",
@@ -98,7 +79,7 @@
         },
         {
           "key": "rowLimit",
-          "value": "{{data_table.pageSize}}"
+          "value": ""
         },
         {
           "key": "sheetName",
@@ -106,17 +87,18 @@
         },
         {
           "key": "rowOffset",
-          "value": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
+          "value": ""
         },
         {
-          "key": "rowObject"
+          "key": "rowObject",
+          "value": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}"
         },
         {
           "key": "rowObjects"
         },
         {
           "key": "rowIndex",
-          "value": "{{data_table.triggeredRow.rowIndex}}"
+          "value": ""
         },
         {
           "key": "deleteFormat",
@@ -124,7 +106,7 @@
         },
         {
           "key": "smartSubstitution",
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -137,8 +119,8 @@
       "pluginId": "google-sheets-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "DeleteQuery",
-    "pageId": "TRAINING_CENTER",
+    "name": "UpdateQuery",
+    "pageId": "TRAINING CENTER",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
