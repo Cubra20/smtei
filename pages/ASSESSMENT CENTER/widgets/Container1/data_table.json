@@ -28,20 +28,22 @@
   "columnOrder": [
     "rowIndex",
     "TYPE",
+    "Q_CODE",
     "QUALIFICATION",
     "Accreditation_No_",
     "Valid_until",
     "ASSESSMENT_FEES",
-    "Q_CODE",
     "EditActions4",
-    "EditActions3"
+    "EditActions3",
+    null,
+    null
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767743534563,
+  "columnUpdatedAt": 1767743783653,
   "columnWidthMap": {
     "ASSESSMENT_FEES": 210,
     "Accreditation_No_": 227,
