@@ -1,20 +1,29 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "allowAddNewRow": false,
   "animateLoading": true,
+  "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 85,
+  "borderWidth": "1",
+  "bottomRow": 74,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "cachedTableData": {},
+  "canFreezeColumn": true,
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "boxShadow": "none",
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
     "iconButton": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "boxShadow": "none",
-      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
     "menuButton": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -34,54 +43,22 @@
     "REGION",
     "ADDRESS",
     "PICTURE",
-    "LRC_ATTENDANCE",
     "rowIndex",
     "customColumn1"
   ],
-  "columnSizeMap": {
-    "status": 75,
-    "step": 62,
-    "task": 245
-  },
-  "columnUpdatedAt": 1767593274017,
+  "columnUpdatedAt": 1767664291891,
+  "columnWidthMap": {},
+  "customIsLoading": false,
+  "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "0",
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
   "delimiter": ",",
-  "derivedColumns": {
-    "customColumn1": {
-      "borderRadius": "0px",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
-      "computedValue": "",
-      "enableFilter": true,
-      "enableSort": true,
-      "id": "customColumn1",
-      "index": 5,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Delete",
-      "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
-      "width": 150
-    }
-  },
-  "displayName": "Table",
   "dynamicBindingPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "derivedColumns.customColumn1.buttonLabel"
-    },
-    {
-      "key": "primaryColumns.customColumn1.buttonLabel"
     },
     {
       "key": "accentColor"
@@ -91,9 +68,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.STUDENT_ID.computedValue"
@@ -129,16 +103,19 @@
       "key": "primaryColumns.PICTURE.computedValue"
     },
     {
-      "key": "primaryColumns.LRC_ATTENDANCE.computedValue"
+      "key": "primaryColumns.rowIndex.computedValue"
     },
     {
-      "key": "primaryColumns.rowIndex.computedValue"
-    }
-  ],
-  "dynamicPropertyPathList": [
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
     {
       "key": "primaryColumns.customColumn1.borderRadius"
     },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    }
+  ],
+  "dynamicPropertyPathList": [
     {
       "key": "tableData"
     }
@@ -146,41 +123,31 @@
   "dynamicTriggerPathList": [
     {
       "key": "primaryColumns.customColumn1.onClick"
-    },
-    {
-      "key": "onPageChange"
-    },
-    {
-      "key": "onSearchTextChanged"
-    },
-    {
-      "key": "onSort"
     }
   ],
   "enableClientSideSearch": true,
-  "enableServerSideFiltering": false,
-  "hideCard": false,
+  "endOfData": false,
+  "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
-  "iconSVG": "/static/media/icon.db8a9cbd.svg",
-  "infiniteScrollEnabled": true,
+  "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
-  "isSortable": false,
-  "isVisible": "true",
+  "isSortable": true,
+  "isVisible": true,
   "isVisibleDownload": true,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
-  "isVisibleSearch": false,
-  "key": "zba5qel0au",
+  "isVisibleSearch": true,
+  "key": "qp84xoalqd",
   "label": "Data",
-  "labelTextSize": "0.875rem",
-  "leftColumn": 1,
-  "onPageChange": "{{SelectQuery.run()}}",
-  "onSearchTextChanged": "",
-  "onSort": "",
-  "parentColumnSpace": 16.3125,
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 107,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 79,
+  "needsErrorInfo": false,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "primaryColumnId": "STUDENT_ID",
   "primaryColumns": {
     "ADDRESS": {
       "alias": "ADDRESS",
@@ -188,7 +155,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ADDRESS\"])) : ADDRESS })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ADDRESS\"])) : ADDRESS })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -222,7 +189,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"BARANGAY\"])) : BARANGAY })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"BARANGAY\"])) : BARANGAY })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -256,7 +223,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"CITY\"])) : CITY })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"CITY\"])) : CITY })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -284,17 +251,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "FAMILY SAINT": {
-      "isCellEditable": false,
-      "isEditable": false
-    },
     "FAMILY_SAINT": {
       "alias": "FAMILY SAINT",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"FAMILY SAINT\"])) : FAMILY SAINT })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"FAMILY SAINT\"])) : FAMILY SAINT })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -322,17 +285,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "GRADE LEVEL": {
-      "isCellEditable": false,
-      "isEditable": false
-    },
     "GRADE_LEVEL": {
       "alias": "GRADE LEVEL",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"GRADE LEVEL\"])) : GRADE LEVEL })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"GRADE LEVEL\"])) : GRADE LEVEL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -360,51 +319,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "LRC ATTENDANCE": {
-      "isCellEditable": false,
-      "isEditable": false
-    },
-    "LRC_ATTENDANCE": {
-      "alias": "LRC ATTENDANCE",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"LRC ATTENDANCE\"])) : LRC ATTENDANCE })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "LRC_ATTENDANCE",
-      "index": 11,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "LRC ATTENDANCE",
-      "notation": "standard",
-      "originalId": "LRC ATTENDANCE",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "NAME": {
       "alias": "NAME",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"NAME\"])) : NAME })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"NAME\"])) : NAME })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -438,7 +359,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PICTURE\"])) : PICTURE })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PICTURE\"])) : PICTURE })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -472,7 +393,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PROVINCE\"])) : PROVINCE })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PROVINCE\"])) : PROVINCE })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -506,7 +427,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"REGION\"])) : REGION })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"REGION\"])) : REGION })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -540,7 +461,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"SECTION\"])) : SECTION })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"SECTION\"])) : SECTION })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -568,17 +489,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "STUDENT ID": {
-      "isCellEditable": false,
-      "isEditable": false
-    },
     "STUDENT_ID": {
       "alias": "STUDENT ID",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"STUDENT ID\"])) : STUDENT ID })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"STUDENT ID\"])) : STUDENT ID })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -607,27 +524,42 @@
       "width": 150
     },
     "customColumn1": {
-      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
+      "alias": "UPDATE",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "Update",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "button",
       "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
       "id": "customColumn1",
-      "index": 5,
+      "index": 10,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
       "isVisible": true,
-      "label": "Delete",
+      "label": "UPDATE",
       "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
+      "notation": "standard",
+      "onClick": "{{showModal(Modal1.name);}}",
+      "originalId": "customColumn1",
       "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
       "width": 150
     },
     "rowIndex": {
@@ -635,8 +567,8 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"rowIndex\"])) : rowIndex })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"rowIndex\"])) : rowIndex })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -644,7 +576,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "rowIndex",
-      "index": 12,
+      "index": 11,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -652,7 +584,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "rowIndex",
       "notation": "standard",
       "originalId": "rowIndex",
@@ -663,23 +595,19 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
-    },
-    "undefined": {
-      "isCellEditable": false,
-      "isEditable": false
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 63,
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
-  "tableData": "{{SelectQuery.data}}",
+  "tableData": "{{getStudents.data}}",
   "textSize": "0.875rem",
   "topRow": 6,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
-  "version": 3,
+  "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "icx7cf3936",
-  "widgetName": "data_table"
+  "widgetId": "d1q3ap8czp",
+  "widgetName": "Table1"
 }

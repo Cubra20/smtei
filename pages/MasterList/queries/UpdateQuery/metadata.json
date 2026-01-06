@@ -36,7 +36,7 @@
         },
         "rowObjects": {
           "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
-          "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
+          "data": "{\n\t\"update\": \"Masterlist\",\n\t\"update\": {\n\t\t\"a\": {\n\t\t\t\"_id\": \"{{data_table.selectedRow.rowIndex}}\"\n\t\t},\n\t\t\"u\": {\"$set\":{\n\t\t\t\"studentid\":\"{{STUID.text}}\",\n\t\t\t\"name\":\"{{NAME.text}}\",\n\t\t\t\"gradelevel\": \"{{GRADEL.text}}\"\n\t\t}\n\t\t\t\t }\n\t}\n}",
           "viewType": "component"
         },
         "sheetName": {
@@ -132,7 +132,11 @@
       "name": "Untitled datasource 1",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
     "name": "UpdateQuery",
     "pageId": "MasterList",
     "runBehaviour": "MANUAL",

@@ -38,6 +38,10 @@
     {
       "id": "MasterList",
       "isDefault": false
+    },
+    {
+      "id": "SMTEI",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

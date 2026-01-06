@@ -1,5 +1,4 @@
 export default {
- UpdateQuery (studentId, update) {
-	 data.
- }
+UpdateQuery.run(() => SelectQuery.run())
+
 }
