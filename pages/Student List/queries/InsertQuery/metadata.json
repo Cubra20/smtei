@@ -17,6 +17,12 @@
           "data": "ROWS",
           "viewType": "component"
         },
+        "pagination": {
+          "data": {
+            "limit": "20",
+            "offset": "0"
+          }
+        },
         "projection": {
           "data": []
         },
@@ -35,7 +41,7 @@
         },
         "sheetName": {
           "componentData": "template_table",
-          "data": "MasterList",
+          "data": "STUDENTS",
           "viewType": "component"
         },
         "sheetUrl": {
@@ -52,6 +58,11 @@
           "componentData": "1",
           "data": "1",
           "viewType": "component"
+        },
+        "where": {
+          "data": {
+            "condition": "AND"
+          }
         }
       },
       "paginationType": "NONE",

@@ -41,7 +41,7 @@
         },
         "sheetName": {
           "componentData": "template_table",
-          "data": "MasterList",
+          "data": "STUDENTS",
           "viewType": "component"
         },
         "sheetUrl": {

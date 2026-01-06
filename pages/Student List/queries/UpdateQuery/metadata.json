@@ -17,6 +17,12 @@
           "data": "ROWS",
           "viewType": "component"
         },
+        "pagination": {
+          "data": {
+            "limit": "20",
+            "offset": "0"
+          }
+        },
         "projection": {
           "data": []
         },
@@ -25,6 +31,9 @@
           "data": "ROWS",
           "viewType": "component"
         },
+        "range": {
+          "data": ""
+        },
         "rowObjects": {
           "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
           "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
@@ -32,7 +41,7 @@
         },
         "sheetName": {
           "componentData": "template_table",
-          "data": "MasterList",
+          "data": "STUDENTS",
           "viewType": "component"
         },
         "sheetUrl": {
@@ -49,6 +58,11 @@
           "componentData": "1",
           "data": "1",
           "viewType": "component"
+        },
+        "where": {
+          "data": {
+            "condition": "AND"
+          }
         }
       },
       "paginationType": "NONE",

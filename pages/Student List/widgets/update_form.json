@@ -205,24 +205,6 @@
       "key": "schema.__root_schema__.children.REGION.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.ADDRESS.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.ADDRESS.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.ADDRESS.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.PICTURE.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.PICTURE.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.PICTURE.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.rowIndex.defaultValue"
     },
     {
@@ -230,6 +212,24 @@
     },
     {
       "key": "schema.__root_schema__.children.rowIndex.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.BIRTHDAY.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.BIRTHDAY.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.BIRTHDAY.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ADDRESS.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ADDRESS.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ADDRESS.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -253,9 +253,6 @@
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
-    },
-    {
-      "key": "schema.__root_schema__.children.ADDRESS.onEnterKeyPress"
     }
   ],
   "fieldLimitExceeded": false,
@@ -270,8 +267,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating row!\\n${error}`,'error'))}}",
-  "originalBottomRow": 153,
-  "originalTopRow": 98,
+  "originalBottomRow": 152,
+  "originalTopRow": 97,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -310,9 +307,8 @@
           "isVisible": true,
           "label": "ADDRESS",
           "labelTextSize": "0.875rem",
-          "onEnterKeyPress": "",
           "originalIdentifier": "ADDRESS",
-          "position": 9,
+          "position": 11,
           "sourceData": ""
         },
         "BARANGAY": {
@@ -335,6 +331,28 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "BARANGAY",
           "position": 7,
+          "sourceData": ""
+        },
+        "BIRTHDAY": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "BIRTHDAY",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BIRTHDAY))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "BIRTHDAY",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "BIRTHDAY",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "BIRTHDAY",
+          "position": 11,
           "sourceData": ""
         },
         "CITY": {
@@ -424,28 +442,6 @@
           "originalIdentifier": "NAME",
           "position": 1,
           "sourceData": "ABRENICA, ALVERT ZETH BAYOGBOG"
-        },
-        "PICTURE": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "PICTURE",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PICTURE))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "PICTURE",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "PICTURE",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "PICTURE",
-          "position": 10,
-          "sourceData": "Uploads/7/a//ABRENICA, ALVERT ZETH BAYOGBOG.PICTURE.030514.jpg"
         },
         "PROVINCE": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
