@@ -1,6 +1,7 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_aa67fa4e-22e8-40c9-831e-a1d93309a7b0",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "MasterList2",
-    "slug": "masterlist2"
+    "name": "Student List",
+    "slug": "student-list"
   }
 }

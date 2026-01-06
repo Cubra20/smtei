@@ -1,6 +1,6 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_4a57943b-5351-4e9b-bf93-853148e8a929",
-  "id": "MasterList2_InsertQuery",
+  "id": "Student List_InsertQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -123,7 +123,7 @@
     },
     "dynamicBindingPathList": [],
     "name": "InsertQuery",
-    "pageId": "MasterList2",
+    "pageId": "Student List",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

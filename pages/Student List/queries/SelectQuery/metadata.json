@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_432ba14a-0769-43cf-81dc-74717d4e0231",
-  "id": "MasterList2_DeleteQuery",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_785bfe82-fac2-4f43-9faf-025e3190323c",
+  "id": "Student List_SelectQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,8 +8,8 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "DELETE_ONE",
-          "data": "DELETE_ONE",
+          "componentData": "FETCH_MANY",
+          "data": "FETCH_MANY",
           "viewType": "component"
         },
         "entityType": {
@@ -39,11 +39,6 @@
         "range": {
           "data": ""
         },
-        "rowIndex": {
-          "componentData": "{{data_table.triggeredRow.rowIndex}}",
-          "data": "{{data_table.triggeredRow.rowIndex}}",
-          "viewType": "component"
-        },
         "sheetName": {
           "componentData": "template_table",
           "data": "MasterList",
@@ -59,22 +54,40 @@
           "data": false,
           "viewType": "component"
         },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
+        },
         "tableHeaderIndex": {
           "componentData": "1",
           "data": "1",
           "viewType": "component"
         },
         "where": {
-          "data": {
+          "componentData": {
+            "children": [
+              {}
+            ],
             "condition": "AND"
-          }
+          },
+          "data": {
+            "children": [
+              {}
+            ],
+            "condition": "AND"
+          },
+          "viewType": "component"
         }
       },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "DELETE_ROW"
+          "value": "GET"
         },
         {
           "key": "sheetUrl",
@@ -116,7 +129,7 @@
         },
         {
           "key": "rowIndex",
-          "value": "{{data_table.triggeredRow.rowIndex}}"
+          "value": ""
         },
         {
           "key": "deleteFormat",
@@ -125,6 +138,12 @@
         {
           "key": "smartSubstitution",
           "value": false
+        },
+        {
+          "key": "where",
+          "value": [
+            {}
+          ]
         }
       ],
       "timeoutInMillisecond": 10000
@@ -137,9 +156,9 @@
       "pluginId": "google-sheets-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "DeleteQuery",
-    "pageId": "MasterList2",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "name": "SelectQuery",
+    "pageId": "Student List",
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }

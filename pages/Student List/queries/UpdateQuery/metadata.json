@@ -1,6 +1,6 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_a4e1be12-3e18-4f67-b21c-679109ab4c21",
-  "id": "MasterList2_UpdateQuery",
+  "id": "Student List_UpdateQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -120,7 +120,7 @@
     },
     "dynamicBindingPathList": [],
     "name": "UpdateQuery",
-    "pageId": "MasterList2",
+    "pageId": "Student List",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
