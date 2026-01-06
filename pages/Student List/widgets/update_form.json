@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 102,
+  "bottomRow": 153,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -266,10 +266,12 @@
   "isVisible": "{{data_table.selectedRow!==undefined}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 40,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating row!\\n${error}`,'error'))}}",
+  "originalBottomRow": 151,
+  "originalTopRow": 96,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -281,7 +283,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
-  "rightColumn": 64,
+  "rightColumn": 11,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -596,7 +598,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row Id: {{data_table.selectedRow.rowIndex}}",
-  "topRow": 16,
+  "topRow": 98,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "tn9ri7ylp2",
