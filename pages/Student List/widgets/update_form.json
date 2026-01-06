@@ -381,9 +381,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"GRADE LEVEL\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "GRADE_LEVEL",
           "isCustomField": false,
@@ -395,7 +395,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "GRADE LEVEL",
           "position": 2,
-          "sourceData": ""
+          "sourceData": 7
         },
         "LRC_ATTENDANCE": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -403,9 +403,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"LRC ATTENDANCE\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "LRC_ATTENDANCE",
           "isCustomField": false,
@@ -417,7 +417,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "LRC ATTENDANCE",
           "position": 11,
-          "sourceData": ""
+          "sourceData": 0
         },
         "NAME": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -535,9 +535,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"STUDENT ID\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "STUDENT_ID",
           "isCustomField": false,
@@ -549,7 +549,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "STUDENT ID",
           "position": 0,
-          "sourceData": ""
+          "sourceData": 110237180051
         }
       },
       "dataType": "object",

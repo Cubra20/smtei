@@ -1,7 +1,7 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "FLUID"
+    "type": "TABLET"
   },
   "applicationDetail": {
     "navigationSetting": {
@@ -38,10 +38,14 @@
     {
       "id": "Student List",
       "isDefault": false
+    },
+    {
+      "id": "SMTEI",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "TABLET"
   },
   "unpublishedApplicationDetail": {
     "navigationSetting": {
