@@ -42,7 +42,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767668862096,
+  "columnUpdatedAt": 1767669159281,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -178,7 +178,7 @@
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "primaryColumnId": "id",
+  "primaryColumnId": "STUDENT_ID",
   "primaryColumns": {
     "ADDRESS": {
       "alias": "ADDRESS",
@@ -634,7 +634,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "rowIndex",
       "notation": "standard",
       "originalId": "rowIndex",
