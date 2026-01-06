@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 86,
+  "bottomRow": 102,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -220,15 +220,6 @@
       "key": "schema.__root_schema__.children.PICTURE.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.LRC_ATTENDANCE.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.LRC_ATTENDANCE.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.LRC_ATTENDANCE.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.PICTURE.borderRadius"
     },
     {
@@ -262,6 +253,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.ADDRESS.onEnterKeyPress"
     }
   ],
   "fieldLimitExceeded": false,
@@ -291,9 +285,9 @@
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
-      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "boxShadow": "none",
-      "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
         "ADDRESS": {
@@ -314,6 +308,7 @@
           "isVisible": true,
           "label": "ADDRESS",
           "labelTextSize": "0.875rem",
+          "onEnterKeyPress": "",
           "originalIdentifier": "ADDRESS",
           "position": 9,
           "sourceData": ""
@@ -390,9 +385,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"GRADE LEVEL\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "GRADE_LEVEL",
           "isCustomField": false,
@@ -404,29 +399,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "GRADE LEVEL",
           "position": 2,
-          "sourceData": 7
-        },
-        "LRC_ATTENDANCE": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "LRC ATTENDANCE",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"LRC ATTENDANCE\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "LRC_ATTENDANCE",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "LRC ATTENDANCE",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "LRC ATTENDANCE",
-          "position": 11,
-          "sourceData": 0
+          "sourceData": "7"
         },
         "NAME": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -544,9 +517,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"STUDENT ID\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "STUDENT_ID",
           "isCustomField": false,
@@ -558,7 +531,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "STUDENT ID",
           "position": 0,
-          "sourceData": 110237180051
+          "sourceData": "110237180051"
         },
         "rowIndex": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -566,9 +539,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rowIndex))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "rowIndex",
           "isCustomField": false,
@@ -580,7 +553,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
           "position": 12,
-          "sourceData": 0
+          "sourceData": "0"
         }
       },
       "dataType": "object",
@@ -596,10 +569,19 @@
       "originalIdentifier": "__root_schema__",
       "position": -1,
       "sourceData": {
-        "col1": "This 12",
-        "col2": "is 2",
-        "col3": "new 3",
-        "col4": "entry 5"
+        "ADDRESS": "",
+        "BARANGAY": "",
+        "CITY": "",
+        "FAMILY SAINT": "St. Stephen",
+        "GRADE LEVEL": 7,
+        "LRC ATTENDANCE": 0,
+        "NAME": "ABRENICA, ALVERT ZETH BAYOGBOG",
+        "PICTURE": "Uploads/7/a//ABRENICA, ALVERT ZETH BAYOGBOG.PICTURE.030514.jpg",
+        "PROVINCE": "G7",
+        "REGION": "",
+        "SECTION": "A",
+        "STUDENT ID": 110237180051,
+        "rowIndex": 0
       }
     }
   },
@@ -614,7 +596,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row Id: {{data_table.selectedRow.rowIndex}}",
-  "topRow": 0,
+  "topRow": 16,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "tn9ri7ylp2",

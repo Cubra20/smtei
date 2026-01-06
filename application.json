@@ -32,6 +32,14 @@
   "icon": "book",
   "pages": [
     {
+      "id": "2 Application Upload",
+      "isDefault": false
+    },
+    {
+      "id": "1 Track Applications",
+      "isDefault": false
+    },
+    {
       "id": "Dashboard",
       "isDefault": true
     },
@@ -45,6 +53,10 @@
     },
     {
       "id": "Page1",
+      "isDefault": false
+    },
+    {
+      "id": "Page2",
       "isDefault": false
     }
   ],

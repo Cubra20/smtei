@@ -42,12 +42,12 @@
     "CITY",
     "BARANGAY",
     "REGION",
-    "ADDRESS",
     "PICTURE",
     "rowIndex",
+    "ADDRESS",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1767678368329,
+  "columnUpdatedAt": 1767679122630,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -145,6 +145,9 @@
     },
     {
       "key": "onAddNewRowSave"
+    },
+    {
+      "key": "primaryColumns.ADDRESS.onSubmit"
     }
   ],
   "enableClientSideSearch": true,
@@ -201,6 +204,7 @@
       "isVisible": true,
       "label": "ADDRESS",
       "notation": "standard",
+      "onSubmit": "{{appsmith.geolocation.getCurrentPosition(appsmith.geolocation.getCurrentPosition(location => {\n  console.log(location);\n}));}}",
       "originalId": "ADDRESS",
       "sticky": "",
       "textSize": "0.875rem",
@@ -427,6 +431,7 @@
       "isVisible": true,
       "label": "PICTURE",
       "notation": "standard",
+      "onClick": "{{}}",
       "originalId": "PICTURE",
       "sticky": "",
       "textSize": "0.875rem",
