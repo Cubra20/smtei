@@ -12,6 +12,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -20,7 +21,7 @@
   "iconName": "add",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": true,
   "labelTextSize": "0.875rem",
   "leftColumn": 55,
   "onClick": "{{showModal('Insert_Modal')}}",

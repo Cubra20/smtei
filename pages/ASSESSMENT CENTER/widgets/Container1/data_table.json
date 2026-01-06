@@ -1,6 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "allowAddNewRow": true,
+  "allowAddNewRow": false,
   "animateLoading": true,
   "borderColor": "#3f3f46",
   "borderRadius": "1.2rem",
@@ -31,7 +31,8 @@
     "QUALIFICATION",
     "Accreditation_No_",
     "Valid_until",
-    "attachment",
+    "ASSESSMENT_FEES",
+    "EditActions2",
     "EditActions1"
   ],
   "columnSizeMap": {
@@ -39,11 +40,12 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767690279251,
+  "columnUpdatedAt": 1767700884301,
   "columnWidthMap": {
     "NAME": 203
   },
   "compactMode": "DEFAULT",
+  "customIsLoading": false,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -114,12 +116,6 @@
       "key": "primaryColumns.Valid_until.cellBackground"
     },
     {
-      "key": "primaryColumns.attachment.computedValue"
-    },
-    {
-      "key": "primaryColumns.attachment.cellBackground"
-    },
-    {
       "key": "primaryColumns.EditActions1.cellBackground"
     },
     {
@@ -127,6 +123,18 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.ASSESSMENT_FEES.computedValue"
+    },
+    {
+      "key": "primaryColumns.ASSESSMENT_FEES.cellBackground"
+    },
+    {
+      "key": "primaryColumns.EditActions2.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions2.isDiscardDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -144,6 +152,12 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions2.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions2.isDiscardDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -158,6 +172,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -165,11 +182,11 @@
   "hideCard": false,
   "horizontalAlignment": "LEFT",
   "iconSVG": "/static/media/icon.db8a9cbd.svg",
-  "inlineEditingSaveOption": "CUSTOM",
+  "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": true,
   "isVisible": "true",
-  "isVisibleDownload": false,
+  "isVisibleDownload": true,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
@@ -179,11 +196,47 @@
   "leftColumn": 1,
   "onAddNewRowSave": "{{Insert_ASSESSMENT_CENTER1.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_ASSESSMENT_CENTER1.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_ASSESSMENT_CENTER1.run();\n            Total_record_ASSESSMENT_CENTER1.run()\n          }}",
+  "onRowSelected": "",
   "onSort": "{{\n            Find_ASSESSMENT_CENTER1.run();\n            Total_record_ASSESSMENT_CENTER1.run()\n          }}",
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
+  "primaryColumnId": "rowIndex",
   "primaryColumns": {
+    "ASSESSMENT_FEES": {
+      "alias": "ASSESSMENT_FEES",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ASSESSMENT_FEES\"])) : ASSESSMENT_FEES })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "ASSESSMENT_FEES",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ASSESSMENT_FEES",
+      "notation": "standard",
+      "originalId": "ASSESSMENT_FEES",
+      "sticky": "",
+      "textColor": "#231f20",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "Accreditation_No_": {
       "alias": "Accreditation No.",
       "allowCellWrapping": false,
@@ -199,12 +252,12 @@
       "horizontalAlignment": "LEFT",
       "id": "Accreditation_No_",
       "index": 2,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Accreditation No.",
@@ -246,7 +299,7 @@
       "isEditable": false,
       "isSaveDisabled": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( !data_table.updatedRowIndices.includes(currentIndex)))}}",
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Save / Discard",
       "notation": "standard",
       "onSave": "{{Update_ASSESSMENT_CENTER1.run(() => {\n            showAlert(\"Successfully saved!\");\n            Find_ASSESSMENT_CENTER1.run()\n          }, () => {\n            showAlert(\"Unable to save!\");\n          })}}",
@@ -260,6 +313,44 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "EditActions2": {
+      "alias": "EditActions2",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "editActions",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "discardActionLabel": "Discard",
+      "discardButtonColor": "#F22B2B",
+      "discardButtonVariant": "TERTIARY",
+      "discardIconAlign": "left",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "EditActions2",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardDisabled": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( !data_table.updatedRowIndices.includes(currentIndex)))}}",
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveDisabled": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( !data_table.updatedRowIndices.includes(currentIndex)))}}",
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "Save / Discard",
+      "notation": "standard",
+      "originalId": "EditActions2",
+      "saveActionLabel": "Save",
+      "saveButtonColor": "#03B365",
+      "saveIconAlign": "left",
+      "sticky": "right",
+      "thousandSeparator": true,
+      "validation": {},
       "width": 150
     },
     "QUALIFICATION": {
@@ -277,12 +368,12 @@
       "horizontalAlignment": "LEFT",
       "id": "QUALIFICATION",
       "index": 1,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "QUALIFICATION",
@@ -311,14 +402,14 @@
       "horizontalAlignment": "LEFT",
       "id": "TYPE",
       "index": 0,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "TYPE",
       "notation": "standard",
       "originalId": "TYPE",
@@ -345,51 +436,17 @@
       "horizontalAlignment": "LEFT",
       "id": "Valid_until",
       "index": 3,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Valid until",
       "notation": "standard",
       "originalId": "Valid until",
-      "sticky": "",
-      "textColor": "#231f20",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "attachment": {
-      "alias": "attachment",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"attachment\"])) : attachment })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "attachment",
-      "index": 4,
-      "isCellEditable": true,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": true,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "attachment",
-      "notation": "standard",
-      "originalId": "attachment",
       "sticky": "",
       "textColor": "#231f20",
       "textSize": "0.875rem",

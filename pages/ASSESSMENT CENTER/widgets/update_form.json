@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "1.5rem",
   "borderWidth": "2",
-  "bottomRow": 65,
+  "bottomRow": 63,
   "boxShadow": "rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;",
   "childStylesheet": {
     "ARRAY": {
@@ -154,25 +154,16 @@
       "key": "schema.__root_schema__.children.Valid_until.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.attachment.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.attachment.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.TYPE.labelStyle"
     },
     {
-      "key": "schema.__root_schema__.children.attachment.cellBorderRadius"
+      "key": "schema.__root_schema__.children.ASSESSMENT_FEES.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.attachment.children.__array_item__.borderRadius"
+      "key": "schema.__root_schema__.children.ASSESSMENT_FEES.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.attachment.children.__array_item__.cellBorderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.attachment.accentColor"
+      "key": "schema.__root_schema__.children.ASSESSMENT_FEES.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -253,6 +244,28 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "ASSESSMENT_FEES": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "ASSESSMENT_FEES",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ASSESSMENT_FEES))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ASSESSMENT_FEES",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "ASSESSMENT FEES",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ASSESSMENT_FEES",
+          "position": 5,
+          "sourceData": "₱1,141.00"
+        },
         "Accreditation_No_": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "Accreditation No.",
@@ -347,51 +360,6 @@
           "sourceData": "",
           "timePrecision": "None"
         },
-        "attachment": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "attachment",
-          "backgroundColor": "#FAFAFA",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "cellBoxShadow": "none",
-          "children": {
-            "__array_item__": {
-              "accessor": "__array_item__",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "boxShadow": "none",
-              "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-              "cellBoxShadow": "none",
-              "children": {},
-              "dataType": "object",
-              "fieldType": "Object",
-              "identifier": "__array_item__",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isVisible": true,
-              "label": "Array Item",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "__array_item__",
-              "position": -1,
-              "sourceData": {}
-            }
-          },
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.attachment))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Array",
-          "identifier": "attachment",
-          "isCollapsible": true,
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": true,
-          "label": "Attachment",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "attachment",
-          "position": 5,
-          "sourceData": ""
-        },
         "rowIndex": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "rowIndex",
@@ -412,7 +380,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
           "position": 4,
-          "sourceData": 0
+          "sourceData": 1
         }
       },
       "dataType": "object",
