@@ -32,6 +32,7 @@
     "Accreditation_No_",
     "Valid_until",
     "ASSESSMENT_FEES",
+    "Q_CODE",
     "EditActions2",
     "EditActions1"
   ],
@@ -40,7 +41,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767702087377,
+  "columnUpdatedAt": 1767734559088,
   "columnWidthMap": {
     "NAME": 203
   },
@@ -135,6 +136,12 @@
     },
     {
       "key": "primaryColumns.EditActions2.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.Q_CODE.computedValue"
+    },
+    {
+      "key": "primaryColumns.Q_CODE.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -143,9 +150,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "tableData"
     },
     {
       "key": "primaryColumns.EditActions1.isSaveDisabled"
@@ -380,6 +384,40 @@
       "label": "QUALIFICATION",
       "notation": "standard",
       "originalId": "QUALIFICATION",
+      "sticky": "",
+      "textColor": "#231f20",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Q_CODE": {
+      "alias": "Q_CODE",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Q_CODE\"])) : Q_CODE })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "Q_CODE",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Q_CODE",
+      "notation": "standard",
+      "originalId": "Q_CODE",
       "sticky": "",
       "textColor": "#231f20",
       "textSize": "0.875rem",
