@@ -1,29 +1,19 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
-  "bottomRow": 74,
+  "bottomRow": 85,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "cachedTableData": {},
-  "canFreezeColumn": true,
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "boxShadow": "none",
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "editActions": {
-      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
-    },
     "iconButton": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "boxShadow": "none",
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     },
     "menuButton": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -43,22 +33,54 @@
     "REGION",
     "ADDRESS",
     "PICTURE",
+    "LRC_ATTENDANCE",
     "rowIndex",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1767664291891,
-  "columnWidthMap": {},
-  "customIsLoading": false,
-  "customIsLoadingValue": "",
+  "columnSizeMap": {
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "columnUpdatedAt": 1767668862096,
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": 0,
-  "defaultSelectedRowIndices": [
-    0
-  ],
+  "defaultSelectedRowIndex": "0",
   "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "width": 150
+    }
+  },
+  "displayName": "Table",
   "dynamicBindingPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "derivedColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonLabel"
     },
     {
       "key": "accentColor"
@@ -68,6 +90,9 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.STUDENT_ID.computedValue"
@@ -103,19 +128,16 @@
       "key": "primaryColumns.PICTURE.computedValue"
     },
     {
+      "key": "primaryColumns.LRC_ATTENDANCE.computedValue"
+    },
+    {
       "key": "primaryColumns.rowIndex.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
     {
       "key": "tableData"
     }
@@ -123,31 +145,40 @@
   "dynamicTriggerPathList": [
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onSort"
     }
   ],
   "enableClientSideSearch": true,
-  "endOfData": false,
-  "flexVerticalAlignment": "start",
+  "enableServerSideFiltering": false,
+  "hideCard": false,
   "horizontalAlignment": "LEFT",
-  "inlineEditingSaveOption": "ROW_LEVEL",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
   "isLoading": false,
   "isSortable": true,
-  "isVisible": true,
+  "isVisible": "true",
   "isVisibleDownload": true,
-  "isVisibleFilters": false,
+  "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
-  "key": "qp84xoalqd",
+  "key": "zba5qel0au",
   "label": "Data",
-  "leftColumn": 0,
-  "minWidth": 450,
-  "mobileBottomRow": 107,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 34,
-  "mobileTopRow": 79,
-  "needsErrorInfo": false,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "onPageChange": "{{SelectQuery.run()}}",
+  "onSearchTextChanged": "",
+  "onSort": "",
+  "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
+  "primaryColumnId": "id",
   "primaryColumns": {
     "ADDRESS": {
       "alias": "ADDRESS",
@@ -155,7 +186,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ADDRESS\"])) : ADDRESS })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ADDRESS\"])) : ADDRESS })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -189,7 +220,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"BARANGAY\"])) : BARANGAY })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"BARANGAY\"])) : BARANGAY })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -223,7 +254,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"CITY\"])) : CITY })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"CITY\"])) : CITY })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -257,7 +288,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"FAMILY SAINT\"])) : FAMILY SAINT })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"FAMILY SAINT\"])) : FAMILY SAINT })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -290,8 +321,8 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"GRADE LEVEL\"])) : GRADE LEVEL })()}}",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"GRADE LEVEL\"])) : GRADE LEVEL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -319,13 +350,47 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "LRC_ATTENDANCE": {
+      "alias": "LRC ATTENDANCE",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"LRC ATTENDANCE\"])) : LRC ATTENDANCE })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "LRC_ATTENDANCE",
+      "index": 11,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "LRC ATTENDANCE",
+      "notation": "standard",
+      "originalId": "LRC ATTENDANCE",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "NAME": {
       "alias": "NAME",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"NAME\"])) : NAME })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"NAME\"])) : NAME })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -359,7 +424,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PICTURE\"])) : PICTURE })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PICTURE\"])) : PICTURE })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -393,7 +458,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PROVINCE\"])) : PROVINCE })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PROVINCE\"])) : PROVINCE })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -427,7 +492,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"REGION\"])) : REGION })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"REGION\"])) : REGION })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -461,7 +526,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"SECTION\"])) : SECTION })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"SECTION\"])) : SECTION })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -494,8 +559,8 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"STUDENT ID\"])) : STUDENT ID })()}}",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"STUDENT ID\"])) : STUDENT ID })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -524,42 +589,27 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "UPDATE",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "Update",
+      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "button",
       "computedValue": "",
-      "currencyCode": "USD",
-      "customAlias": "",
-      "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
       "id": "customColumn1",
-      "index": 10,
-      "isCellEditable": false,
+      "index": 5,
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
       "isVisible": true,
-      "label": "UPDATE",
+      "label": "Delete",
       "labelColor": "#FFFFFF",
-      "notation": "standard",
-      "onClick": "{{showModal(Modal1.name);}}",
-      "originalId": "customColumn1",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
       "sticky": "right",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
       "width": 150
     },
     "rowIndex": {
@@ -567,8 +617,8 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"rowIndex\"])) : rowIndex })()}}",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"rowIndex\"])) : rowIndex })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -576,7 +626,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "rowIndex",
-      "index": 11,
+      "index": 12,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -584,7 +634,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "rowIndex",
       "notation": "standard",
       "originalId": "rowIndex",
@@ -598,16 +648,16 @@
     }
   },
   "renderMode": "CANVAS",
-  "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "searchKey": "",
-  "tableData": "{{getStudents.data}}",
+  "serverSidePaginationEnabled": true,
+  "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
   "topRow": 6,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
-  "version": 2,
+  "version": 3,
   "verticalAlignment": "CENTER",
-  "widgetId": "d1q3ap8czp",
-  "widgetName": "Table1"
+  "widgetId": "icx7cf3936",
+  "widgetName": "data_table"
 }

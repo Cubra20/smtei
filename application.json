@@ -36,11 +36,7 @@
       "isDefault": true
     },
     {
-      "id": "MasterList",
-      "isDefault": false
-    },
-    {
-      "id": "SMTEI",
+      "id": "MasterList2",
       "isDefault": false
     }
   ],
