@@ -363,7 +363,7 @@
           "identifier": "EMAIL",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "EMAIL",
