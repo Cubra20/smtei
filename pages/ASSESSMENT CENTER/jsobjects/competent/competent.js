@@ -10,7 +10,7 @@ export default {
     ).length,
 		applicant:Allapplicants.filter(row =>
       row.QUALIFICATION === data_table.QUALIFICATION &&
-      row.STATUS === "Applicant"
+      row.STATUS === "Applicantion"
     ).length,
 		schedule:Allapplicants.filter(row =>
       row.QUALIFICATION === data_table.QUALIFICATION &&
