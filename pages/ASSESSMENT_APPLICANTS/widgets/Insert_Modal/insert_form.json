@@ -208,13 +208,13 @@
       "key": "schema.__root_schema__.children.ASSESSMENT_DATE.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.defaultValue"
+      "key": "schema.__root_schema__.children.APPLICATION_DATE.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.borderRadius"
+      "key": "schema.__root_schema__.children.APPLICATION_DATE.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.accentColor"
+      "key": "schema.__root_schema__.children.APPLICATION_DATE.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -269,6 +269,28 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "APPLICATION_DATE": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "APPLICATION_DATE",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.APPLICATION_DATE))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "APPLICATION_DATE",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "APPLICATION DATE",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "APPLICATION_DATE",
+          "position": 10,
+          "sourceData": ""
+        },
         "ASSESSMENT_DATE": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "ASSESSMENT DATE",
@@ -423,28 +445,6 @@
           "position": 4,
           "sourceData": "BPP NC II"
         },
-        "REQUIREMENTS_LINK": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "REQUIREMENTS_LINK",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.REQUIREMENTS_LINK))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "REQUIREMENTS_LINK",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "REQUIREMENTS LINK",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "REQUIREMENTS_LINK",
-          "position": 10,
-          "sourceData": ""
-        },
         "STATUS": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "STATUS",
@@ -495,9 +495,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rowIndex))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "rowIndex",
           "isCustomField": false,
@@ -509,7 +509,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
           "position": 0,
-          "sourceData": 0
+          "sourceData": "0"
         }
       },
       "dataType": "object",

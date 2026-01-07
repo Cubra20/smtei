@@ -205,6 +205,15 @@
       "key": "schema.__root_schema__.children.ASSESSMENT_DATE.accentColor"
     },
     {
+      "key": "schema.__root_schema__.children.APPLICATION_DATE.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.APPLICATION_DATE.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.APPLICATION_DATE.accentColor"
+    },
+    {
       "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.defaultValue"
     },
     {
@@ -269,6 +278,28 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "APPLICATION_DATE": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "APPLICATION_DATE",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.APPLICATION_DATE))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "APPLICATION_DATE",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "APPLICATION DATE",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "APPLICATION_DATE",
+          "position": 9,
+          "sourceData": ""
+        },
         "ASSESSMENT_DATE": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "ASSESSMENT DATE",
@@ -442,7 +473,7 @@
           "label": "REQUIREMENTS LINK",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "REQUIREMENTS_LINK",
-          "position": 9,
+          "position": 10,
           "sourceData": ""
         },
         "STATUS": {

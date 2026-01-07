@@ -36,7 +36,7 @@
         },
         "rowObjects": {
           "componentData": "{{insert_form.formData}}",
-          "data": "{{insert_form.formData}}",
+          "data": "{{Insert_form.formData}}",
           "viewType": "component"
         },
         "sheetName": {
@@ -132,7 +132,11 @@
       "name": "Untitled datasource 1",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
     "name": "InsertQuery",
     "pageId": "ASSESSMENT_APPLICANTS",
     "runBehaviour": "MANUAL",

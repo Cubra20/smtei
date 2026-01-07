@@ -31,16 +31,16 @@
     "STATUS",
     "PROCESS_DATE",
     "ASSESSMENT_DATE",
+    "APPLICATION_DATE",
     "REQUIREMENTS_LINK",
-    "rowIndex",
-    "customColumn1"
+    "rowIndex"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767774550191,
+  "columnUpdatedAt": 1767790765128,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -78,9 +78,6 @@
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonLabel"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -88,9 +85,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.NAME.computedValue"
@@ -120,24 +114,21 @@
       "key": "primaryColumns.ASSESSMENT_DATE.computedValue"
     },
     {
-      "key": "primaryColumns.REQUIREMENTS_LINK.computedValue"
+      "key": "primaryColumns.rowIndex.computedValue"
     },
     {
-      "key": "primaryColumns.rowIndex.computedValue"
+      "key": "primaryColumns.APPLICATION_DATE.computedValue"
+    },
+    {
+      "key": "primaryColumns.REQUIREMENTS_LINK.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
     {
       "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
     {
       "key": "onPageChange"
     },
@@ -172,6 +163,40 @@
   "parentRowSpace": 10,
   "primaryColumnId": "id",
   "primaryColumns": {
+    "APPLICATION_DATE": {
+      "alias": "APPLICATION_DATE",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = applicants_list.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"APPLICATION_DATE\"])) : APPLICATION_DATE })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "APPLICATION_DATE",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "APPLICATION_DATE",
+      "notation": "standard",
+      "originalId": "APPLICATION_DATE",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "ASSESSMENT_DATE": {
       "alias": "ASSESSMENT DATE",
       "allowCellWrapping": false,
@@ -415,7 +440,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
+      "columnType": "url",
       "computedValue": "{{(() => { const tableData = applicants_list.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"REQUIREMENTS_LINK\"])) : REQUIREMENTS_LINK })()}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -424,7 +449,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "REQUIREMENTS_LINK",
-      "index": 9,
+      "index": 11,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -510,30 +535,6 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "customColumn1": {
-      "borderRadius": "{{applicants_list.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{applicants_list.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
-      "computedValue": "",
-      "enableFilter": true,
-      "enableSort": true,
-      "id": "customColumn1",
-      "index": 5,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Delete",
-      "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
-      "sticky": "right",
       "width": 150
     },
     "rowIndex": {
