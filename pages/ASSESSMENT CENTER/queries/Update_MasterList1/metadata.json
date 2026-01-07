@@ -29,7 +29,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{data_table.updatedRow}}"
+          "data": "{{ac_table.updatedRow}}"
         },
         "sheetName": {
           "data": "MasterList"

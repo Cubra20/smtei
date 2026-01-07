@@ -44,7 +44,7 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onFilesSelected": "{{ \n  UploadToDrive.run(() => {\n    UpdateAttachment.run(() => {\n      FilePicker1.reset();\n      data_table.triggeredRow && data_table.clearSelection();\n    });\n  })\n}}\n",
+  "onFilesSelected": "{{ \n  UploadToDrive.run(() => {\n    UpdateAttachment.run(() => {\n      FilePicker1.reset();\n      ac_table.triggeredRow && ac_table.clearSelection();\n    });\n  })\n}}\n",
   "parentColumnSpace": 22.85107421875,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,

@@ -32,7 +32,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo(data_table.selectedRow.SAG, {}, 'NEW_WINDOW');}}",
+  "onClick": "{{navigateTo(ac_table.selectedRow.SAG, {}, 'NEW_WINDOW');}}",
   "parentColumnSpace": 22.11572265625,
   "parentId": "4yxspzfvpt",
   "parentRowSpace": 10,

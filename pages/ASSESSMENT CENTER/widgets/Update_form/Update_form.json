@@ -64,7 +64,7 @@
   "leftColumn": 40,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 520,
+  "minHeight": 470,
   "mobileBottomRow": 76,
   "mobileLeftColumn": 40,
   "mobileRightColumn": 64,
@@ -80,6 +80,6 @@
   "type": "MODAL_WIDGET",
   "version": 2,
   "widgetId": "9b1bvef0ka",
-  "widgetName": "Update",
+  "widgetName": "Update_form",
   "width": 456
 }

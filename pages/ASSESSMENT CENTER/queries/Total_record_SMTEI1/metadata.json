@@ -53,8 +53,8 @@
             "children": [
               {
                 "condition": "CONTAINS",
-                "key": "{{data_table.searchText ? \"undefined\" : \"\"}}",
-                "value": "{{data_table.searchText}}"
+                "key": "{{ac_table.searchText ? \"undefined\" : \"\"}}",
+                "value": "{{ac_table.searchText}}"
               }
             ],
             "condition": "AND"

@@ -31,7 +31,7 @@
   "mobileRightColumn": 51,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Update.name);}}",
+  "onClick": "{{showModal(Update_form.name);}}",
   "parentColumnSpace": 22.85107421875,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,

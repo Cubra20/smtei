@@ -54,6 +54,10 @@
     {
       "id": "TRAINING CENTER",
       "isDefault": false
+    },
+    {
+      "id": "ASSESSMENT_APPLICANTS",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

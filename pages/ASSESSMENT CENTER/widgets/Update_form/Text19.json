@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 32,
   "shouldTruncate": false,
-  "text": "{{data_table.selectedRow.QUALIFICATION}}",
+  "text": "{{ac_table.selectedRow.QUALIFICATION}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

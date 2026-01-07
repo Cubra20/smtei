@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 35,
   "shouldTruncate": false,
-  "text": "{{data_table.selectedRow.ACCREDITATION_NO}}",
+  "text": "{{ac_table.selectedRow.ACCREDITATION_NO}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 5,
