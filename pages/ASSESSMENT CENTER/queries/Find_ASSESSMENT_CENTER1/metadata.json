@@ -20,13 +20,19 @@
           }
         },
         "projection": {
-          "data": []
+          "data": [
+            "Q_CODE",
+            "QUALIFICATION",
+            "Accreditation No.",
+            "Valid until",
+            "ASSESSMENT_FEES"
+          ]
         },
         "queryFormat": {
-          "data": "ROWS"
+          "data": "RANGE"
         },
         "range": {
-          "data": ""
+          "data": "A2:F"
         },
         "sheetName": {
           "data": "ASSESSMENT_CENTER"

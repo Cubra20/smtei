@@ -34,16 +34,14 @@
     "Valid_until",
     "ASSESSMENT_FEES",
     "EditActions4",
-    "EditActions3",
-    null,
-    null
+    "EditActions3"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767743783653,
+  "columnUpdatedAt": 1767744235876,
   "columnWidthMap": {
     "ASSESSMENT_FEES": 210,
     "Accreditation_No_": 227,
@@ -206,7 +204,7 @@
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "primaryColumnId": "rowIndex",
+  "primaryColumnId": "QUALIFICATION",
   "primaryColumns": {
     "ASSESSMENT_FEES": {
       "alias": "ASSESSMENT_FEES",
@@ -214,7 +212,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{}}",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ASSESSMENT_FEES\"])) : ASSESSMENT_FEES })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ASSESSMENT_FEES\"])) : currentRow[\"ASSESSMENT_FEES\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -223,12 +221,12 @@
       "horizontalAlignment": "CENTER",
       "id": "ASSESSMENT_FEES",
       "index": 4,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "ASSESSMENT_FEES",
@@ -242,19 +240,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Accreditation No": {
-      "": {
-        "isCellEditable": true,
-        "isEditable": true
-      }
-    },
     "Accreditation_No_": {
       "alias": "Accreditation No.",
       "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{}}",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Accreditation No.\"])) : Accreditation No. })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Accreditation No.\"])) : currentRow[\"Accreditation No.\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -263,12 +255,12 @@
       "horizontalAlignment": "CENTER",
       "id": "Accreditation_No_",
       "index": 2,
-      "isCellEditable": false,
+      "isCellEditable": true,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": false,
+      "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Accreditation No.",
@@ -373,12 +365,12 @@
       "horizontalAlignment": "CENTER",
       "id": "QUALIFICATION",
       "index": 1,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "QUALIFICATION",
@@ -407,12 +399,12 @@
       "horizontalAlignment": "CENTER",
       "id": "Q_CODE",
       "index": 1,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Q_CODE",
@@ -459,10 +451,6 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
-    },
-    "Valid until": {
-      "isCellEditable": true,
-      "isEditable": true
     },
     "Valid_until": {
       "alias": "Valid until",
@@ -533,10 +521,6 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
-    },
-    "undefined": {
-      "isCellEditable": true,
-      "isEditable": true
     }
   },
   "renderMode": "CANVAS",
