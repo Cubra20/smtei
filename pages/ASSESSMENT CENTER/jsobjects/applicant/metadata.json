@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_b0137975-f396-4f7d-b63e-9c8153d404f6",
+  "id": "ASSESSMENT CENTER_applicant",
+  "unpublishedCollection": {
+    "name": "applicant",
+    "pageId": "ASSESSMENT CENTER",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

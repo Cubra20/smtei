@@ -27,14 +27,15 @@
   },
   "columnOrder": [
     "Q_CODE",
-    "Accreditation_No_",
     "Valid_until",
     "ASSESSMENT_FEE",
     "QUALIFICATION",
     "APPLICATION_FORM",
+    "SAG",
     "rowIndex",
     "TYPE",
     "EditActions4",
+    "ACCREDITATION_NO",
     "EditActions3"
   ],
   "columnSizeMap": {
@@ -42,7 +43,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767764565367,
+  "columnUpdatedAt": 1767773510177,
   "columnWidthMap": {
     "APPLICATION_FORM": 233,
     "ASSESSMENT_FEE": 214,
@@ -113,12 +114,6 @@
       "key": "primaryColumns.QUALIFICATION.cellBackground"
     },
     {
-      "key": "primaryColumns.Accreditation_No_.computedValue"
-    },
-    {
-      "key": "primaryColumns.Accreditation_No_.cellBackground"
-    },
-    {
       "key": "primaryColumns.Valid_until.computedValue"
     },
     {
@@ -147,6 +142,18 @@
     },
     {
       "key": "primaryColumns.APPLICATION_FORM.cellBackground"
+    },
+    {
+      "key": "primaryColumns.SAG.computedValue"
+    },
+    {
+      "key": "primaryColumns.SAG.cellBackground"
+    },
+    {
+      "key": "primaryColumns.ACCREDITATION_NO.computedValue"
+    },
+    {
+      "key": "primaryColumns.ACCREDITATION_NO.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -181,9 +188,6 @@
     },
     {
       "key": "onRowSelected"
-    },
-    {
-      "key": "primaryColumns.Accreditation_No_.onSubmit"
     }
   ],
   "enableClientSideSearch": true,
@@ -213,6 +217,40 @@
   "parentRowSpace": 10,
   "primaryColumnId": "QUALIFICATION",
   "primaryColumns": {
+    "ACCREDITATION_NO": {
+      "alias": "ACCREDITATION_NO",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ACCREDITATION_NO\"])) : ACCREDITATION_NO })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "ACCREDITATION_NO",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ACCREDITATION_NO",
+      "notation": "standard",
+      "originalId": "ACCREDITATION_NO",
+      "sticky": "",
+      "textColor": "#231f20",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "APPLICATION_FORM": {
       "alias": "APPLICATION_FORM",
       "allowCellWrapping": false,
@@ -273,41 +311,6 @@
       "label": "ASSESSMENT_FEE",
       "notation": "standard",
       "originalId": "ASSESSMENT_FEE",
-      "sticky": "",
-      "textColor": "#231f20",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "Accreditation_No_": {
-      "alias": "Accreditation No.",
-      "allowCellWrapping": true,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Accreditation No.\"])) : currentRow[\"Accreditation No.\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "Accreditation_No_",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Accreditation No.",
-      "notation": "standard",
-      "onSubmit": "{{Update_SMTEI1.run().then(() => {\n  showAlert('\"Update succefully\"', 'success');\n});}}",
-      "originalId": "Accreditation No.",
       "sticky": "",
       "textColor": "#231f20",
       "textSize": "0.875rem",
@@ -452,6 +455,40 @@
       "label": "Q_CODE",
       "notation": "standard",
       "originalId": "Q_CODE",
+      "sticky": "",
+      "textColor": "#231f20",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "SAG": {
+      "alias": "SAG",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{}}",
+      "columnType": "url",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"SAG\"])) : SAG })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "SAG",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "SAG",
+      "notation": "standard",
+      "originalId": "SAG",
       "sticky": "",
       "textColor": "#231f20",
       "textSize": "0.875rem",

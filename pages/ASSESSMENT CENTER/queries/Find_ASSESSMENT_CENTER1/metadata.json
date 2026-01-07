@@ -23,15 +23,15 @@
           "data": [
             "Q_CODE",
             "QUALIFICATION",
-            "Accreditation No.",
-            "Valid until"
+            "Valid until",
+            "ACCREDITATION_NO"
           ]
         },
         "queryFormat": {
           "data": "RANGE"
         },
         "range": {
-          "data": "A2:G"
+          "data": "A2:H"
         },
         "sheetName": {
           "data": "ASSESSMENT_CENTER"
