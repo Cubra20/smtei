@@ -32,7 +32,7 @@
           "data": "{{data_table.updatedRow}}"
         },
         "sheetName": {
-          "data": "SMTEI"
+          "data": "ASSESSMENT_CENTER"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1QnAnhJfJBHzFdZfpPOSdnvVjuO57Y7RIV-L0E5um3K4/edit"
