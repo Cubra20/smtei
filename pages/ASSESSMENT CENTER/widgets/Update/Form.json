@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 45,
+  "bottomRow": 53,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -178,6 +178,15 @@
     },
     {
       "key": "schema.__root_schema__.children.ASSESSMENT_FEE.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.APPLICATION_FORM.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.APPLICATION_FORM.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.APPLICATION_FORM.defaultValue"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -206,7 +215,7 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "onSubmit": "{{UpdateQueryCopy.run().then(() => {\n  showAlert('\"Update Successful\"', 'success');\n});\nFind_ASSESSMENT_CENTER1.run();\ncloseModal(Update.name);}}",
-  "originalBottomRow": 45,
+  "originalBottomRow": 54,
   "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
   "parentId": "ac6xs8ivip",
@@ -229,6 +238,28 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "APPLICATION_FORM": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+          "accessor": "APPLICATION_FORM",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.))(Form.sourceData, Form.formData, Form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "APPLICATION_FORM",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "APPLICATION FORM",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "APPLICATION_FORM",
+          "position": 6,
+          "sourceData": ""
+        },
         "ASSESSMENT_FEE": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
           "accessor": "ASSESSMENT_FEE",
@@ -387,7 +418,7 @@
           "label": "Row Index",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
-          "position": 6,
+          "position": 7,
           "sourceData": "0"
         }
       },

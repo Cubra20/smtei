@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 9,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,17 +11,20 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
-  "fontStyle": "",
+  "fontSize": "3.75rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
   "key": "mzmausco7l",
-  "leftColumn": 12,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -30,23 +33,23 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 13,
-  "originalTopRow": 9,
+  "originalBottomRow": 9,
+  "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 13.254638671875,
-  "parentId": "tyzj8iajo0",
+  "parentId": "gno6xx8nl7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 64,
   "shouldTruncate": false,
-  "text": "For Schedule",
+  "text": "{{ competent.countFromOtherTable(data_table.selectedRow, getAllapplicants.data) \n}}\n\n\n",
   "textAlign": "CENTER",
   "textColor": "#231F20",
-  "topRow": 9,
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2hlw0qzx6z",
-  "widgetName": "Text18Copy"
+  "widgetId": "nv117p7mcp",
+  "widgetName": "Text18Copy2"
 }

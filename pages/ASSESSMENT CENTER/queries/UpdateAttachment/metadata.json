@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_f0028e10-da70-4bfa-8ab6-8cec0ee04894",
-  "id": "ASSESSMENT CENTER_Find_ASSESSMENT_CENTER1",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_d8847c7e-b102-49ff-b5d4-7b7d795adfd1",
+  "id": "ASSESSMENT CENTER_UpdateAttachment",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,30 +8,28 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "FETCH_MANY"
+          "data": "UPDATE_ONE"
         },
         "entityType": {
           "data": "ROWS"
         },
         "pagination": {
           "data": {
-            "limit": "{{data_table.pageSize}}",
-            "offset": "{{data_table.pageOffset}}"
+            "limit": "20",
+            "offset": "0"
           }
         },
         "projection": {
-          "data": [
-            "Q_CODE",
-            "QUALIFICATION",
-            "Accreditation No.",
-            "Valid until"
-          ]
+          "data": []
         },
         "queryFormat": {
-          "data": "RANGE"
+          "data": "ROWS"
         },
         "range": {
-          "data": "A2:G"
+          "data": ""
+        },
+        "rowObjects": {
+          "data": "{{\n{\n\tAPPLICATION_FORM:UploadToDrive.data.id\n}\n}}"
         },
         "sheetName": {
           "data": "ASSESSMENT_CENTER"
@@ -45,8 +43,8 @@
         "sortBy": {
           "data": [
             {
-              "column": "{{data_table.sortOrder.column}}",
-              "order": "data_table.sortOrder.order !== \"desc\""
+              "column": "",
+              "order": "Ascending"
             }
           ]
         },
@@ -57,9 +55,7 @@
           "data": {
             "children": [
               {
-                "condition": "CONTAINS",
-                "key": "{{data_table.searchText ? \"undefined\" : \"\"}}",
-                "value": "{{data_table.searchText}}"
+                "condition": "LT"
               }
             ],
             "condition": "AND"
@@ -78,18 +74,12 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.where.data"
-      },
-      {
-        "key": "formData.sortBy.data"
-      },
-      {
-        "key": "formData.pagination.data"
+        "key": "formData.rowObjects.data"
       }
     ],
-    "name": "Find_ASSESSMENT_CENTER1",
+    "name": "UpdateAttachment",
     "pageId": "ASSESSMENT CENTER",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

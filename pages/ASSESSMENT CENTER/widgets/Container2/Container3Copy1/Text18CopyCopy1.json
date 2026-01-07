@@ -34,19 +34,19 @@
   "originalTopRow": 9,
   "overflow": "NONE",
   "parentColumnSpace": 13.254638671875,
-  "parentId": "tyzj8iajo0",
+  "parentId": "gno6xx8nl7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 51,
   "shouldTruncate": false,
-  "text": "For Schedule",
+  "text": "For Assessment",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "topRow": 9,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2hlw0qzx6z",
-  "widgetName": "Text18Copy"
+  "widgetId": "7yugw4ni8v",
+  "widgetName": "Text18CopyCopy1"
 }
