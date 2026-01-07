@@ -177,6 +177,9 @@
     },
     {
       "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.Accreditation_No_.onSubmit"
     }
   ],
   "enableClientSideSearch": true,
@@ -265,6 +268,7 @@
       "isVisible": true,
       "label": "Accreditation No.",
       "notation": "standard",
+      "onSubmit": "{{Update_SMTEI1.run().then(() => {\n  showAlert('\"Update succefully\"', 'success');\n});}}",
       "originalId": "Accreditation No.",
       "sticky": "",
       "textColor": "#231f20",
