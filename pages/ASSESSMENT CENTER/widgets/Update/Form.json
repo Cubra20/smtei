@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 39,
+  "bottomRow": 45,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -153,15 +153,6 @@
       "key": "schema.__root_schema__.children.Valid_until.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.ASSESSMENT_FEES.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.ASSESSMENT_FEES.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.ASSESSMENT_FEES.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.rowIndex.defaultValue"
     },
     {
@@ -178,6 +169,15 @@
     },
     {
       "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASSESSMENT_FEE.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASSESSMENT_FEE.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASSESSMENT_FEE.borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -203,7 +203,7 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "onSubmit": "{{UpdateQueryCopy.run().then(() => {\n  showAlert('\"Update Successful\"', 'success');\n});\nFind_ASSESSMENT_CENTER1.run()}}",
-  "originalBottomRow": 31,
+  "originalBottomRow": 38,
   "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
   "parentId": "ac6xs8ivip",
@@ -226,27 +226,28 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
-        "ASSESSMENT_FEES": {
+        "ASSESSMENT_FEE": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "ASSESSMENT_FEES",
+          "accessor": "ASSESSMENT_FEE",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
+          "currencyCountryCode": "PHP",
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ASSESSMENT_FEES))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "ASSESSMENT_FEES",
+          "decimalsInCurrency": 2,
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ASSESSMENT_FEE))(Form.sourceData, Form.formData, Form.fieldState)}}",
+          "fieldType": "Currency Input",
+          "identifier": "ASSESSMENT_FEE",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
-          "label": "ASSESSMENT FEES",
+          "isVisible": true,
+          "label": "ASSESSMENT FEE",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "ASSESSMENT_FEES",
-          "position": 5,
-          "sourceData": "₱1,141.00"
+          "originalIdentifier": "ASSESSMENT_FEE",
+          "position": 6,
+          "sourceData": ""
         },
         "Accreditation_No_": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
@@ -420,7 +421,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "",
-  "topRow": 8,
+  "topRow": 7,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,

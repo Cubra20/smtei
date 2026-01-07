@@ -31,7 +31,7 @@
     "Q_CODE",
     "Accreditation_No_",
     "Valid_until",
-    "ASSESSMENT_FEES",
+    "ASSESSMENT_FEE",
     "QUALIFICATION",
     "EditActions4",
     "EditActions3"
@@ -41,7 +41,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767748400952,
+  "columnUpdatedAt": 1767750488225,
   "columnWidthMap": {
     "ASSESSMENT_FEES": 210,
     "Accreditation_No_": 227,
@@ -121,12 +121,6 @@
       "key": "primaryColumns.Valid_until.cellBackground"
     },
     {
-      "key": "primaryColumns.ASSESSMENT_FEES.computedValue"
-    },
-    {
-      "key": "primaryColumns.ASSESSMENT_FEES.cellBackground"
-    },
-    {
       "key": "primaryColumns.Q_CODE.computedValue"
     },
     {
@@ -139,10 +133,10 @@
       "key": "primaryColumns.EditActions3.isDiscardDisabled"
     },
     {
-      "key": "primaryColumns.EditActions4.isSaveDisabled"
+      "key": "primaryColumns.ASSESSMENT_FEE.computedValue"
     },
     {
-      "key": "primaryColumns.EditActions4.isDiscardDisabled"
+      "key": "primaryColumns.ASSESSMENT_FEE.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -209,21 +203,21 @@
   "parentRowSpace": 10,
   "primaryColumnId": "QUALIFICATION",
   "primaryColumns": {
-    "ASSESSMENT_FEES": {
-      "alias": "ASSESSMENT_FEES",
+    "ASSESSMENT_FEE": {
+      "alias": "ASSESSMENT_FEE",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{}}",
       "columnType": "currency",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ASSESSMENT_FEES\"])) : currentRow[\"ASSESSMENT_FEES\"] })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ASSESSMENT_FEE\"])) : ASSESSMENT_FEE })()}}",
       "currencyCode": "PHP",
       "decimals": 2,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "ASSESSMENT_FEES",
-      "index": 4,
+      "id": "ASSESSMENT_FEE",
+      "index": 5,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -232,9 +226,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "ASSESSMENT_FEES",
+      "label": "ASSESSMENT_FEE",
       "notation": "standard",
-      "originalId": "ASSESSMENT_FEES",
+      "originalId": "ASSESSMENT_FEE",
       "sticky": "",
       "textColor": "#231f20",
       "textSize": "0.875rem",
@@ -334,14 +328,14 @@
       "id": "EditActions4",
       "index": 8,
       "isCellEditable": true,
-      "isCellVisible": true,
+      "isCellVisible": false,
       "isDerived": true,
       "isDisabled": false,
-      "isDiscardDisabled": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( !data_table.updatedRowIndices.includes(currentIndex)))}}",
-      "isDiscardVisible": true,
+      "isDiscardDisabled": "true",
+      "isDiscardVisible": false,
       "isEditable": true,
-      "isSaveDisabled": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( !data_table.updatedRowIndices.includes(currentIndex)))}}",
-      "isSaveVisible": true,
+      "isSaveDisabled": "true",
+      "isSaveVisible": false,
       "isVisible": false,
       "label": "Save / Discard",
       "notation": "standard",
@@ -349,7 +343,7 @@
       "saveActionLabel": "Save",
       "saveButtonColor": "#03B365",
       "saveIconAlign": "left",
-      "sticky": "right",
+      "sticky": "",
       "thousandSeparator": true,
       "validation": {},
       "width": 150

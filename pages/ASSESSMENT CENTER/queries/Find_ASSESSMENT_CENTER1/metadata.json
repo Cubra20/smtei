@@ -24,8 +24,7 @@
             "Q_CODE",
             "QUALIFICATION",
             "Accreditation No.",
-            "Valid until",
-            "ASSESSMENT_FEES"
+            "Valid until"
           ]
         },
         "queryFormat": {
