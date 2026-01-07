@@ -185,6 +185,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASSESSMENT_FEE.onEnterKeyPress"
     }
   ],
   "fieldLimitExceeded": false,
@@ -230,7 +233,7 @@
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
           "accessor": "ASSESSMENT_FEE",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
+          "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
           "children": {},
           "currencyCountryCode": "PHP",
           "dataType": "string",
@@ -245,8 +248,9 @@
           "isVisible": true,
           "label": "ASSESSMENT FEE",
           "labelTextSize": "0.875rem",
+          "onEnterKeyPress": "{{UpdateQueryCopy.run()}}",
           "originalIdentifier": "ASSESSMENT_FEE",
-          "position": 6,
+          "position": 5,
           "sourceData": ""
         },
         "Accreditation_No_": {
