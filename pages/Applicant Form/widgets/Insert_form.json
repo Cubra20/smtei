@@ -205,6 +205,9 @@
     },
     {
       "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.EMAIL.defaultValue"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -357,7 +360,7 @@
           "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
           "children": {},
           "dataType": "string",
-          "defaultValue": "",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.user.))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
           "fieldType": "Email Input",
           "iconAlign": "left",
           "identifier": "EMAIL",
