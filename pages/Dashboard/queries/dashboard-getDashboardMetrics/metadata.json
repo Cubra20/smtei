@@ -25,7 +25,7 @@
     "fullyQualifiedName": "dashboard.getDashboardMetrics",
     "name": "getDashboardMetrics",
     "pageId": "Dashboard",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }
