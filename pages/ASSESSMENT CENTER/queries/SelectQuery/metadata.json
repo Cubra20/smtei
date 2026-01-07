@@ -33,15 +33,15 @@
         },
         "queryFormat": {
           "componentData": "ROWS",
-          "data": "ROWS",
+          "data": "RANGE",
           "viewType": "component"
         },
         "range": {
-          "data": ""
+          "data": "A2:F"
         },
         "sheetName": {
           "componentData": "template_table",
-          "data": "SMTEI",
+          "data": "ASSESSMENT_CENTER",
           "viewType": "component"
         },
         "sheetUrl": {
