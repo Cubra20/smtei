@@ -5,7 +5,7 @@
   "borderColor": "#3f3f46",
   "borderRadius": "1.2rem",
   "borderWidth": "2",
-  "bottomRow": 66,
+  "bottomRow": 65,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "cellBackground": "{{}}",
   "childStylesheet": {
@@ -43,12 +43,13 @@
   },
   "columnUpdatedAt": 1767750488225,
   "columnWidthMap": {
-    "ASSESSMENT_FEE": 222,
+    "ASSESSMENT_FEE": 298,
     "ASSESSMENT_FEES": 210,
-    "Accreditation_No_": 227,
+    "Accreditation_No_": 248,
     "NAME": 203,
-    "QUALIFICATION": 275,
-    "Valid_until": 207
+    "QUALIFICATION": 509.7666015625,
+    "Q_CODE": 231,
+    "Valid_until": 250
   },
   "compactMode": "DEFAULT",
   "customIsLoading": false,
