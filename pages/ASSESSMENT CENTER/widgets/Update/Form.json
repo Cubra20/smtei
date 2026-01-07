@@ -202,7 +202,7 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onSubmit": "{{UpdateQueryCopy.run()}}",
+  "onSubmit": "{{UpdateQueryCopy.run().then(() => {\n  showAlert('\"Update Successful\"', 'success');\n});}}",
   "originalBottomRow": 31,
   "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
