@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 19,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -14,6 +14,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -31,7 +32,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('Applicant Form', {}, 'NEW_WINDOW');}}",
+  "onClick": "{{showModal(Modal1.name);}}",
   "parentColumnSpace": 22.11572265625,
   "parentId": "4yxspzfvpt",
   "parentRowSpace": 10,
@@ -41,10 +42,10 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 61,
-  "text": "Submit Requirements",
-  "topRow": 29,
+  "text": "Requirements",
+  "topRow": 14,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "0bccolan29",
-  "widgetName": "Button4"
+  "widgetId": "m1l9sbkrd3",
+  "widgetName": "Button4CopyCopyCopy"
 }
