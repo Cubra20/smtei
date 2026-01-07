@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_374fe119-5ebb-4a06-984a-e49b969619cf",
-  "id": "ASSESSMENT_APPLICANTS_InsertQuery",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_00c70e81-1ec3-4469-b73f-827561eff9bf",
+  "id": "Applicant Form_UpdateQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,8 +8,8 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "INSERT_ONE",
-          "data": "INSERT_ONE",
+          "componentData": "UPDATE_ONE",
+          "data": "UPDATE_ONE",
           "viewType": "component"
         },
         "entityType": {
@@ -35,8 +35,8 @@
           "data": ""
         },
         "rowObjects": {
-          "componentData": "{{insert_form.formData}}",
-          "data": "{{Insert_form.formData}}",
+          "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
+          "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:applicants_list.selectedRow.rowIndex\n\t}\n}}",
           "viewType": "component"
         },
         "sheetName": {
@@ -69,7 +69,7 @@
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "APPEND"
+          "value": "UPDATE"
         },
         {
           "key": "sheetUrl",
@@ -105,7 +105,7 @@
         },
         {
           "key": "rowObject",
-          "value": "{{insert_form.formData}}"
+          "value": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}"
         },
         {
           "key": "rowObjects"
@@ -137,8 +137,8 @@
         "key": "formData.rowObjects.data"
       }
     ],
-    "name": "InsertQuery",
-    "pageId": "ASSESSMENT_APPLICANTS",
+    "name": "UpdateQuery",
+    "pageId": "Applicant Form",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

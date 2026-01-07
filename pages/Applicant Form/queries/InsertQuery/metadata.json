@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_802b1b1b-bd7b-4336-8ab3-7d1ba8b4ade4",
-  "id": "ASSESSMENT_APPLICANTS_SelectQuery",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_374fe119-5ebb-4a06-984a-e49b969619cf",
+  "id": "Applicant Form_InsertQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,8 +8,8 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "FETCH_MANY",
-          "data": "FETCH_MANY",
+          "componentData": "INSERT_ONE",
+          "data": "INSERT_ONE",
           "viewType": "component"
         },
         "entityType": {
@@ -18,26 +18,26 @@
           "viewType": "component"
         },
         "pagination": {
-          "componentData": {
-            "limit": "{{data_table.pageSize}}",
-            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
-          },
           "data": {
-            "limit": "{{data_table.pageSize}}",
-            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
-          },
-          "viewType": "component"
+            "limit": "20",
+            "offset": "0"
+          }
         },
         "projection": {
           "data": []
         },
         "queryFormat": {
           "componentData": "ROWS",
-          "data": "RANGE",
+          "data": "ROWS",
           "viewType": "component"
         },
         "range": {
-          "data": "A2:K"
+          "data": ""
+        },
+        "rowObjects": {
+          "componentData": "{{insert_form.formData}}",
+          "data": "{{Insert_form.formData}}",
+          "viewType": "component"
         },
         "sheetName": {
           "componentData": "template_table",
@@ -50,17 +50,9 @@
           "viewType": "component"
         },
         "smartSubstitution": {
-          "componentData": false,
-          "data": false,
+          "componentData": true,
+          "data": true,
           "viewType": "component"
-        },
-        "sortBy": {
-          "data": [
-            {
-              "column": "",
-              "order": "Ascending"
-            }
-          ]
         },
         "tableHeaderIndex": {
           "componentData": "1",
@@ -68,26 +60,16 @@
           "viewType": "component"
         },
         "where": {
-          "componentData": {
-            "children": [
-              {}
-            ],
-            "condition": "AND"
-          },
           "data": {
-            "children": [
-              {}
-            ],
             "condition": "AND"
-          },
-          "viewType": "component"
+          }
         }
       },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "GET"
+          "value": "APPEND"
         },
         {
           "key": "sheetUrl",
@@ -111,7 +93,7 @@
         },
         {
           "key": "rowLimit",
-          "value": "{{data_table.pageSize}}"
+          "value": ""
         },
         {
           "key": "sheetName",
@@ -119,10 +101,11 @@
         },
         {
           "key": "rowOffset",
-          "value": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
+          "value": ""
         },
         {
-          "key": "rowObject"
+          "key": "rowObject",
+          "value": "{{insert_form.formData}}"
         },
         {
           "key": "rowObjects"
@@ -137,13 +120,7 @@
         },
         {
           "key": "smartSubstitution",
-          "value": false
-        },
-        {
-          "key": "where",
-          "value": [
-            {}
-          ]
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -155,10 +132,14 @@
       "name": "Untitled datasource 1",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "SelectQuery",
-    "pageId": "ASSESSMENT_APPLICANTS",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": true
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
+    "name": "InsertQuery",
+    "pageId": "Applicant Form",
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

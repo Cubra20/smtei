@@ -1,11 +1,12 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_aed143ba-f025-4801-a6da-5ca4b0cf9c2b",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1680,
+          "bottomRow": 1690,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "ASSESSMENT_APPLICANTS",
-    "slug": "assessment-applicants"
+    "name": "Applicant Form",
+    "slug": "applicant-form"
   }
 }

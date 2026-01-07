@@ -5,8 +5,8 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 75,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 76,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "childStylesheet": {
     "ARRAY": {
       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -88,9 +88,6 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
     },
     {
       "key": "submitButtonStyles.buttonColor"
@@ -237,7 +234,7 @@
   "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run(), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
-  "originalBottomRow": 75,
+  "originalBottomRow": 76,
   "originalTopRow": 4,
   "parentColumnSpace": 23.53125,
   "parentId": "0",
@@ -246,12 +243,12 @@
   "resetButtonLabel": "Reset",
   "resetButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "boxShadow": "none",
+    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
   "responsiveBehavior": "fill",
-  "rightColumn": 56,
+  "rightColumn": 51,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -357,7 +354,7 @@
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
           "accessor": "EMAIL",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
-          "boxShadow": "none",
+          "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
           "children": {},
           "dataType": "string",
           "defaultValue": "",
@@ -370,7 +367,7 @@
           "isSpellCheck": false,
           "isVisible": true,
           "label": "EMAIL",
-          "labelTextSize": "0.875rem",
+          "labelTextSize": "1rem",
           "originalIdentifier": "EMAIL",
           "position": 1,
           "shouldAllowAutofill": true,
@@ -380,7 +377,7 @@
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
           "accessor": "NAME",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
-          "boxShadow": "none",
+          "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
           "children": {},
           "dataType": "string",
           "defaultValue": "",
@@ -393,7 +390,7 @@
           "isSpellCheck": false,
           "isVisible": true,
           "label": "NAME",
-          "labelTextSize": "0.875rem",
+          "labelTextSize": "1rem",
           "originalIdentifier": "NAME",
           "placeholderText": "SURNAME, FIRSTNAME INITIAL NAME",
           "position": 0,
@@ -425,7 +422,7 @@
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
           "accessor": "QUALIFICATION",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
-          "boxShadow": "none",
+          "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
           "children": {},
           "dataType": "string",
           "defaultValue": "{{",
@@ -437,7 +434,7 @@
           "isRequired": true,
           "isVisible": true,
           "label": "QUALIFICATION",
-          "labelTextSize": "0.875rem",
+          "labelTextSize": "1rem",
           "options": "{{Quaification_list.data.map( (obj) =>{ return  {'label': obj.Q_CODE, 'value': obj.QUALIFICATION } })}}",
           "originalIdentifier": "QUALIFICATION",
           "position": 3,
@@ -457,7 +454,7 @@
           "identifier": "REQUIREMENTS_LINK",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "REQUIREMENTS LINK",
@@ -566,11 +563,11 @@
   "submitButtonLabel": "Submit",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "boxShadow": "none",
+    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Application Form",
+  "title": "Submission Form",
   "topRow": 4,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,

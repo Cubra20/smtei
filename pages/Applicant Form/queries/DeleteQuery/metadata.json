@@ -1,6 +1,6 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_83b0fa26-54ed-4d59-8ec6-aa486b51eaa3",
-  "id": "ASSESSMENT_APPLICANTS_DeleteQuery",
+  "id": "Applicant Form_DeleteQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -142,7 +142,7 @@
       }
     ],
     "name": "DeleteQuery",
-    "pageId": "ASSESSMENT_APPLICANTS",
+    "pageId": "Applicant Form",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

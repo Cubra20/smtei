@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_00c70e81-1ec3-4469-b73f-827561eff9bf",
-  "id": "ASSESSMENT_APPLICANTS_UpdateQuery",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_802b1b1b-bd7b-4336-8ab3-7d1ba8b4ade4",
+  "id": "Applicant Form_SelectQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,8 +8,8 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "UPDATE_ONE",
-          "data": "UPDATE_ONE",
+          "componentData": "FETCH_MANY",
+          "data": "FETCH_MANY",
           "viewType": "component"
         },
         "entityType": {
@@ -18,26 +18,26 @@
           "viewType": "component"
         },
         "pagination": {
+          "componentData": {
+            "limit": "{{data_table.pageSize}}",
+            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
+          },
           "data": {
-            "limit": "20",
-            "offset": "0"
-          }
+            "limit": "{{data_table.pageSize}}",
+            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
+          },
+          "viewType": "component"
         },
         "projection": {
           "data": []
         },
         "queryFormat": {
           "componentData": "ROWS",
-          "data": "ROWS",
+          "data": "RANGE",
           "viewType": "component"
         },
         "range": {
-          "data": ""
-        },
-        "rowObjects": {
-          "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
-          "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:applicants_list.selectedRow.rowIndex\n\t}\n}}",
-          "viewType": "component"
+          "data": "A2:K"
         },
         "sheetName": {
           "componentData": "template_table",
@@ -50,9 +50,17 @@
           "viewType": "component"
         },
         "smartSubstitution": {
-          "componentData": true,
-          "data": true,
+          "componentData": false,
+          "data": false,
           "viewType": "component"
+        },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
         },
         "tableHeaderIndex": {
           "componentData": "1",
@@ -60,16 +68,26 @@
           "viewType": "component"
         },
         "where": {
-          "data": {
+          "componentData": {
+            "children": [
+              {}
+            ],
             "condition": "AND"
-          }
+          },
+          "data": {
+            "children": [
+              {}
+            ],
+            "condition": "AND"
+          },
+          "viewType": "component"
         }
       },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "UPDATE"
+          "value": "GET"
         },
         {
           "key": "sheetUrl",
@@ -93,7 +111,7 @@
         },
         {
           "key": "rowLimit",
-          "value": ""
+          "value": "{{data_table.pageSize}}"
         },
         {
           "key": "sheetName",
@@ -101,11 +119,10 @@
         },
         {
           "key": "rowOffset",
-          "value": ""
+          "value": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
         },
         {
-          "key": "rowObject",
-          "value": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}"
+          "key": "rowObject"
         },
         {
           "key": "rowObjects"
@@ -120,7 +137,13 @@
         },
         {
           "key": "smartSubstitution",
-          "value": true
+          "value": false
+        },
+        {
+          "key": "where",
+          "value": [
+            {}
+          ]
         }
       ],
       "timeoutInMillisecond": 10000
@@ -132,14 +155,10 @@
       "name": "Untitled datasource 1",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.rowObjects.data"
-      }
-    ],
-    "name": "UpdateQuery",
-    "pageId": "ASSESSMENT_APPLICANTS",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "dynamicBindingPathList": [],
+    "name": "SelectQuery",
+    "pageId": "Applicant Form",
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }
