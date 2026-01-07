@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 159,
+  "bottomRow": 75,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -192,9 +192,6 @@
       "key": "schema.__root_schema__.children.QUALIFICATION.options"
     },
     {
-      "key": "schema.__root_schema__.children.APPLICATION_DATE.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.APPLICATION_DATE.accentColor"
     },
     {
@@ -230,7 +227,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "49blh8yp56",
-  "leftColumn": 12,
+  "leftColumn": 13,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -240,8 +237,8 @@
   "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run(), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
-  "originalBottomRow": 151,
-  "originalTopRow": 88,
+  "originalBottomRow": 75,
+  "originalTopRow": 4,
   "parentColumnSpace": 23.53125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -254,7 +251,7 @@
     "buttonVariant": "SECONDARY"
   },
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 56,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -273,11 +270,11 @@
           "convertToISO": false,
           "dataType": "string",
           "dateFormat": "LL",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.APPLICATION_DATE))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "defaultValue": "2026-01-07T21:04:33.3333+08:00",
           "fieldType": "Datepicker",
           "identifier": "APPLICATION_DATE",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": true,
           "isVisible": true,
           "label": "SUBMITION DATE",
@@ -574,7 +571,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Form",
-  "topRow": 88,
+  "topRow": 4,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
