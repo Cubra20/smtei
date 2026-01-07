@@ -24,6 +24,7 @@
   "columnOrder": [
     "STUDENT_ID",
     "NAME",
+    "GRADE_LEVEL1",
     "SECTION",
     "BIRTHDAY",
     "FAMILY_SAINT",
@@ -32,15 +33,14 @@
     "BARANGAY",
     "REGION",
     "rowIndex",
-    "ADDRESS",
-    "GRADE_LEVEL1"
+    "ADDRESS"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767691215088,
+  "columnUpdatedAt": 1767745199902,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",

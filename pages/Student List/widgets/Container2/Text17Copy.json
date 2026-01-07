@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 25,
   "shouldTruncate": false,
-  "text": "{{data_table.selectedRow[\"GRADE LEVEL\"]}}",
+  "text": "{{data_table.selectedRow.GRADE_LEVEL}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 7,
