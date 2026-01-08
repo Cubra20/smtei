@@ -1,6 +1,6 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_66d3aaf2-edbc-4b00-a2ae-78fd5342868f",
-  "id": "Applicant Form_Quaification_list",
+  "id": "Submission Form_Quaification_list",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -73,7 +73,7 @@
     },
     "dynamicBindingPathList": [],
     "name": "Quaification_list",
-    "pageId": "Applicant Form",
+    "pageId": "Submission Form",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }

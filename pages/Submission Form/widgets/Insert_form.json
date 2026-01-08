@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "autoGenerateForm": true,
+  "autoGenerateForm": false,
   "backgroundColor": "#fff",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -177,9 +177,6 @@
       "key": "schema.__root_schema__.children.APPLICATION_DATE.borderRadius"
     },
     {
-      "key": "sourceData"
-    },
-    {
       "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.defaultValue"
     },
     {
@@ -208,6 +205,9 @@
     },
     {
       "key": "schema.__root_schema__.children.PROCESS_DATE.borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -237,7 +237,7 @@
   "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run(), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
-  "originalBottomRow": 72,
+  "originalBottomRow": 87,
   "originalTopRow": 1,
   "parentColumnSpace": 23.53125,
   "parentId": "0",

@@ -1,6 +1,6 @@
 {
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_374fe119-5ebb-4a06-984a-e49b969619cf",
-  "id": "Applicant Form_InsertQuery",
+  "id": "Submission Form_InsertQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -138,7 +138,7 @@
       }
     ],
     "name": "InsertQuery",
-    "pageId": "Applicant Form",
+    "pageId": "Submission Form",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
