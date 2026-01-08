@@ -5,7 +5,7 @@
   "borderColor": "",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 59,
+  "bottomRow": 75,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -127,16 +127,10 @@
       "key": "schema.__root_schema__.children.rowIndex.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.NAME.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.NAME.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.NAME.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.EMAIL.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.EMAIL.borderRadius"
@@ -145,25 +139,16 @@
       "key": "schema.__root_schema__.children.EMAIL.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.CLIENT.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.CLIENT.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.CLIENT.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.QUALIFICATION.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.QUALIFICATION.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.QUALIFICATION.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.COC.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.COC.borderRadius"
@@ -181,25 +166,16 @@
       "key": "schema.__root_schema__.children.ULI.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.BATCH_.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.BATCH_.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.BATCH_.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.STATUS.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.STATUS.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.STATUS.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.APPLICATION_DATE.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.APPLICATION_DATE.borderRadius"
@@ -233,6 +209,12 @@
     },
     {
       "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.QUALIFICATION.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -248,6 +230,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -293,21 +278,26 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.APPLICATION_DATE))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "dateFormat": "LL",
+          "defaultValue": "2026-01-08T16:06:58.5858+08:00",
+          "fieldType": "Datepicker",
           "identifier": "APPLICATION_DATE",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "APPLICATION DATE",
           "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "APPLICATION_DATE",
           "position": 9,
-          "sourceData": "Jan 7, 2026"
+          "shortcuts": false,
+          "sourceData": "Jan 7, 2026",
+          "timePrecision": "None"
         },
         "ASSESSMENT_DATE": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -324,7 +314,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "ASSESSMENT DATE",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ASSESSMENT DATE",
@@ -338,7 +328,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"BATCH \"]))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "BATCH",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "BATCH_",
@@ -350,6 +340,7 @@
           "label": "BATCH",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "BATCH ",
+          "placeholderText": "BATCH",
           "position": 7,
           "sourceData": ""
         },
@@ -360,19 +351,20 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CLIENT))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "defaultValue": "STUDENT",
+          "fieldType": "Select",
           "identifier": "CLIENT",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
+          "isFilterable": false,
+          "isRequired": true,
           "isVisible": true,
           "label": "CLIENT",
           "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"OUTSIDER\",\n    \"value\": \"OUTSIDER\"\n  },\n  {\n    \"label\": \"STUDENT\",\n    \"value\": \"STUDENT\"\n  }\n\t]",
           "originalIdentifier": "CLIENT",
           "position": 3,
+          "serverSideFiltering": false,
           "sourceData": "OUTSIDER"
         },
         "COC": {
@@ -382,19 +374,20 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.COC))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "defaultValue": "",
+          "fieldType": "Select",
           "identifier": "COC",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
+          "isFilterable": false,
+          "isRequired": true,
+          "isVisible": "{{((sourceData, formData, fieldState) => (insert_form.formData.QUALIFICATION === \"TEC NC II\"))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "label": "COC",
           "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Draft Mechanical\",\n    \"value\": \"Draft Mechanical Layout and Details\"\n  },\n  {\n    \"label\": \"Draft Electrical\",\n    \"value\": \"Draft Electrical Layout and Details\"\n  },\n  {\n    \"label\": \"Draft Plumbing and Sanitary\",\n    \"value\": \"Draft Plumbing and Sanitary Layout and Details\"\n  },\n\t  {\n    \"label\": \"Draft Structural\",\n    \"value\": \"Draft Structural Layout and Details\"\n  }\n]",
           "originalIdentifier": "COC",
           "position": 5,
+          "serverSideFiltering": false,
           "sourceData": ""
         },
         "EMAIL": {
@@ -404,7 +397,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.EMAIL))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Email Input",
           "iconAlign": "left",
           "identifier": "EMAIL",
@@ -416,6 +409,7 @@
           "label": "EMAIL",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "EMAIL",
+          "placeholderText": "EMAIL",
           "position": 2,
           "sourceData": "ahronkhylemediavillo@gmail.com"
         },
@@ -426,18 +420,19 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.NAME))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "NAME",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "NAME",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "NAME",
+          "placeholderText": "SURNAME, FIRST NAME MIDDLE INTIAL",
           "position": 1,
           "sourceData": "ABRENICA, ALVERT ZETH BAYOGBOG"
         },
@@ -456,7 +451,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "PROCESS DATE",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PROCESS DATE",
@@ -470,19 +465,20 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.QUALIFICATION))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "defaultValue": "/",
+          "fieldType": "Select",
           "identifier": "QUALIFICATION",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
+          "isFilterable": false,
+          "isRequired": true,
           "isVisible": true,
           "label": "QUALIFICATION",
           "labelTextSize": "0.875rem",
+          "options": "{{Quaification_list.data.map( (obj) =>{ return  {'label': obj.Q_CODE, 'value': obj.Q_CODE } })}}",
           "originalIdentifier": "QUALIFICATION",
           "position": 4,
+          "serverSideFiltering": false,
           "sourceData": "ATS NC I"
         },
         "REQUIREMENTS_LINK": {
@@ -500,7 +496,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "REQUIREMENTS LINK",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "REQUIREMENTS_LINK",
@@ -514,19 +510,20 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.STATUS))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "defaultValue": "",
+          "fieldType": "Select",
           "identifier": "STATUS",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
+          "isFilterable": false,
+          "isRequired": true,
           "isVisible": true,
           "label": "STATUS",
           "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"APPLICATION\",\n    \"value\": \"APPLICATION\"\n  },\n  {\n    \"label\": \"PAID\",\n    \"value\": \"PAID\"\n  }\n]",
           "originalIdentifier": "STATUS",
           "position": 8,
+          "serverSideFiltering": false,
           "sourceData": "For Assessment"
         },
         "ULI": {
@@ -544,7 +541,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "ULI",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ULI",
@@ -566,7 +563,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Row Index",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
@@ -605,7 +602,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Insert Row",
+  "title": "",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,

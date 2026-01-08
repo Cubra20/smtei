@@ -215,6 +215,24 @@
     },
     {
       "key": "schema.__root_schema__.children.APPLICATION_DATE.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -357,6 +375,28 @@
           "position": 3,
           "sourceData": "student"
         },
+        "COC": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "COC",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.COC))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "COC",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "COC",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "COC",
+          "position": 11,
+          "sourceData": ""
+        },
         "EMAIL": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "EMAIL",
@@ -444,6 +484,28 @@
           "originalIdentifier": "QUALIFICATION",
           "position": 4,
           "sourceData": "BPP NC II"
+        },
+        "REQUIREMENTS_LINK": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "REQUIREMENTS_LINK",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.REQUIREMENTS_LINK))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "REQUIREMENTS_LINK",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "REQUIREMENTS LINK",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "REQUIREMENTS_LINK",
+          "position": 12,
+          "sourceData": ""
         },
         "STATUS": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
