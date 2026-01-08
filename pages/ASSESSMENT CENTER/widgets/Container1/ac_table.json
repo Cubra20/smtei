@@ -27,8 +27,8 @@
   },
   "columnOrder": [
     "Q_CODE",
-    "Valid_until",
     "ASSESSMENT_FEE",
+    "Valid_until",
     "QUALIFICATION",
     "APPLICATION_FORM",
     "SAG",
@@ -43,7 +43,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767773510177,
+  "columnUpdatedAt": 1767832136042,
   "columnWidthMap": {
     "APPLICATION_FORM": 233,
     "ASSESSMENT_FEE": 214,

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 53,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -19,6 +19,8 @@
       "key": "onClick"
     }
   ],
+  "iconAlign": "left",
+  "iconName": "send-message",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -32,6 +34,8 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onClick": "{{navigateTo('Applicant Form', {}, 'NEW_WINDOW');}}",
+  "originalBottomRow": 57,
+  "originalTopRow": 52,
   "parentColumnSpace": 22.11572265625,
   "parentId": "4yxspzfvpt",
   "parentRowSpace": 10,
@@ -42,7 +46,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 61,
   "text": "Submit Requirements",
-  "topRow": 29,
+  "topRow": 48,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "0bccolan29",
