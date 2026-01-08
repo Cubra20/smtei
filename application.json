@@ -36,11 +36,7 @@
       "isDefault": true
     },
     {
-      "id": "Student List",
-      "isDefault": false
-    },
-    {
-      "id": "ASSESSMENT CENTER",
+      "id": "Assessment Center",
       "isDefault": false
     },
     {
