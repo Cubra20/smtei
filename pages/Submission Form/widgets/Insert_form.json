@@ -1,11 +1,11 @@
 {
   "animateLoading": true,
-  "autoGenerateForm": false,
+  "autoGenerateForm": true,
   "backgroundColor": "#fff",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 72,
+  "bottomRow": 80,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "childStylesheet": {
     "ARRAY": {
@@ -211,12 +211,27 @@
     },
     {
       "key": "schema.__root_schema__.children.CLIENT.isDisabled"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "schema.__root_schema__.children.CLIENT.isDisabled"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -240,7 +255,7 @@
   "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run();\n  showAlert('Submit Succefully', 'success');\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n});}}",
-  "originalBottomRow": 87,
+  "originalBottomRow": 72,
   "originalTopRow": 1,
   "parentColumnSpace": 23.53125,
   "parentId": "0",
@@ -285,7 +300,7 @@
           "maxDate": "2121-12-31T18:29:00.000Z",
           "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "APPLICATION_DATE",
-          "position": 7,
+          "position": 8,
           "shortcuts": false,
           "sourceData": "",
           "timePrecision": "None"
@@ -309,7 +324,7 @@
           "label": "ASSESSMENT DATE",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ASSESSMENT DATE",
-          "position": 10,
+          "position": 11,
           "sourceData": ""
         },
         "BATCH_": {
@@ -331,7 +346,7 @@
           "label": "BATCH",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "BATCH ",
-          "position": 5,
+          "position": 6,
           "sourceData": "BATCH 1 "
         },
         "CLIENT": {
@@ -355,6 +370,29 @@
           "originalIdentifier": "CLIENT",
           "position": 2,
           "sourceData": "student"
+        },
+        "COC": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "accessor": "COC",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.COC))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "COC",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": true,
+          "isVisible": "{{((sourceData, formData, fieldState) => (Insert_form.formData.QUALIFICATION === \"TEC NC II\"))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "label": "COC",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Draft Mechanical\",\n    \"value\": \"Draft Mechanical Layout and Details\"\n  },\n  {\n    \"label\": \"Draft Electrical\",\n    \"value\": \"Draft Electrical Layout and Details\"\n  },\n  {\n    \"label\": \"Draft Plumbing and Sanitary\",\n    \"value\": \"Draft Plumbing and Sanitary Layout and Details\"\n  },\n\t  {\n    \"label\": \"Draft Structural\",\n    \"value\": \"Draft Structural Layout and Details\"\n  }\n]",
+          "originalIdentifier": "COC",
+          "position": 4,
+          "serverSideFiltering": false,
+          "sourceData": ""
         },
         "EMAIL": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
@@ -421,7 +459,7 @@
           "label": "PROCESS DATE",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PROCESS DATE",
-          "position": 9,
+          "position": 10,
           "sourceData": ""
         },
         "QUALIFICATION": {
@@ -466,7 +504,8 @@
           "label": "REQUIREMENTS LINK",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "REQUIREMENTS_LINK",
-          "position": 11,
+          "placeholderText": "google drive link",
+          "position": 12,
           "sourceData": ""
         },
         "STATUS": {
@@ -488,7 +527,7 @@
           "label": "STATUS",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "STATUS",
-          "position": 6,
+          "position": 7,
           "sourceData": "Competent"
         },
         "ULI": {
@@ -510,7 +549,7 @@
           "label": "ULI",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ULI",
-          "position": 4,
+          "position": 5,
           "sourceData": ""
         },
         "rowIndex": {
@@ -532,7 +571,7 @@
           "label": "Row Index",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
-          "position": 8,
+          "position": 9,
           "sourceData": "0"
         }
       },

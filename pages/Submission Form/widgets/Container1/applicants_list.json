@@ -32,15 +32,16 @@
     "PROCESS_DATE",
     "ASSESSMENT_DATE",
     "APPLICATION_DATE",
-    "REQUIREMENTS_LINK",
-    "rowIndex"
+    "rowIndex",
+    "COC",
+    "REQUIREMENTS_LINK"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767790765128,
+  "columnUpdatedAt": 1767856290865,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -118,6 +119,9 @@
     },
     {
       "key": "primaryColumns.APPLICATION_DATE.computedValue"
+    },
+    {
+      "key": "primaryColumns.COC.computedValue"
     },
     {
       "key": "primaryColumns.REQUIREMENTS_LINK.computedValue"
@@ -299,6 +303,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "COC": {
+      "alias": "COC",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = applicants_list.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"COC\"])) : COC })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "COC",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "COC",
+      "notation": "standard",
+      "originalId": "COC",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "EMAIL": {
       "alias": "EMAIL",
       "allowCellWrapping": false,
@@ -440,7 +478,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "url",
+      "columnType": "text",
       "computedValue": "{{(() => { const tableData = applicants_list.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"REQUIREMENTS_LINK\"])) : REQUIREMENTS_LINK })()}}",
       "currencyCode": "USD",
       "decimals": 0,
