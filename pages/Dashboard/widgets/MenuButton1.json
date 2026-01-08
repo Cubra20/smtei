@@ -9,15 +9,25 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "menuItems.menuItem2.isVisible"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "menuItems.menuItem1.onClick"
     },
     {
       "key": "menuItems.menuItem3.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
     }
   ],
   "iconAlign": "left",
@@ -44,8 +54,9 @@
       "id": "menuItem2",
       "index": 1,
       "isDisabled": false,
-      "isVisible": true,
-      "label": "Second Menu Item",
+      "isVisible": "{{appsmith.user.adminSettingsVisible}}",
+      "label": "Applicants Data",
+      "onClick": "{{navigateTo('ASSESSMENT_APPLICANTS', {}, 'SAME_WINDOW');}}",
       "widgetId": ""
     },
     "menuItem3": {
