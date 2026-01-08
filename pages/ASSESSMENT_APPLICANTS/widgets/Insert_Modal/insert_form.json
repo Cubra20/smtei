@@ -467,7 +467,7 @@
           "identifier": "QUALIFICATION",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
+          "isFilterable": true,
           "isRequired": true,
           "isVisible": true,
           "label": "QUALIFICATION",
