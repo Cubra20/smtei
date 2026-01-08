@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 77,
+  "bottomRow": 72,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "childStylesheet": {
     "ARRAY": {
@@ -227,7 +227,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "49blh8yp56",
-  "leftColumn": 15,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -237,8 +237,8 @@
   "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run(), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
-  "originalBottomRow": 77,
-  "originalTopRow": 5,
+  "originalBottomRow": 72,
+  "originalTopRow": 1,
   "parentColumnSpace": 23.53125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -251,7 +251,7 @@
     "buttonVariant": "SECONDARY"
   },
   "responsiveBehavior": "fill",
-  "rightColumn": 47,
+  "rightColumn": 64,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -572,7 +572,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Submission Form",
-  "topRow": 5,
+  "topRow": 1,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
