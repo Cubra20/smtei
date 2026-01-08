@@ -33,7 +33,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('ASSESSMENT CENTER', {}, 'NEW_WINDOW');}}",
+  "onClick": "{{navigateTo('ASSESSMENT CENTER', {}, 'SAME_WINDOW');}}",
   "originalBottomRow": 18,
   "originalTopRow": 13,
   "parentColumnSpace": 3.5224609375,
