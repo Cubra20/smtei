@@ -517,7 +517,7 @@
           "isVisible": true,
           "label": "STATUS",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"APPLICATION\",\n    \"value\": \"APPLICATION\"\n  },\n  {\n    \"label\": \"PAID\",\n    \"value\": \"PAID\"\n  }\n]",
+          "options": "[\n  {\n    \"label\": \"APPLICATION\",\n    \"value\": \"Application\"\n  },\n  {\n    \"label\": \"PAID\",\n    \"value\": \"Paid\"\n  }\n]",
           "originalIdentifier": "STATUS",
           "position": 8,
           "serverSideFiltering": false,
