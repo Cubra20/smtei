@@ -1,7 +1,7 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "MOBILE"
+    "type": "FLUID"
   },
   "applicationDetail": {
     "navigationSetting": {
@@ -53,7 +53,7 @@
     }
   ],
   "unpublishedAppLayout": {
-    "type": "MOBILE"
+    "type": "FLUID"
   },
   "unpublishedApplicationDetail": {
     "navigationSetting": {
