@@ -41,7 +41,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 40,
+  "rightColumn": 56,
   "shouldTruncate": false,
   "text": "{{dashboard.getDashboardMetrics.data.assessment}}",
   "textAlign": "CENTER",
