@@ -58,7 +58,7 @@
           "data": [
             {
               "column": "",
-              "order": "Ascending"
+              "order": "Descending"
             }
           ]
         },
@@ -155,7 +155,14 @@
       "name": "Untitled datasource 1",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.pagination.data.offset"
+      },
+      {
+        "key": "formData.pagination.data.limit"
+      }
+    ],
     "name": "SelectQuery",
     "pageId": "ASSESSMENT_APPLICANTS",
     "runBehaviour": "AUTOMATIC",

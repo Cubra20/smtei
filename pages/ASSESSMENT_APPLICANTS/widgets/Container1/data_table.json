@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 85,
+  "bottomRow": 84,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -132,6 +132,9 @@
     },
     {
       "key": "primaryColumns.rowIndex.computedValue"
+    },
+    {
+      "key": "isSortable"
     }
   ],
   "dynamicPropertyPathList": [
@@ -140,6 +143,12 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "onSort"
+    },
+    {
+      "key": "isSortable"
     }
   ],
   "dynamicTriggerPathList": [
@@ -162,7 +171,7 @@
   "horizontalAlignment": "LEFT",
   "iconSVG": "/static/media/icon.db8a9cbd.svg",
   "isLoading": false,
-  "isSortable": true,
+  "isSortable": "{{true}}",
   "isVisible": "true",
   "isVisibleDownload": true,
   "isVisibleFilters": true,
