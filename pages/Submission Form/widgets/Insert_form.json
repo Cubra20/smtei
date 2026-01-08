@@ -438,7 +438,7 @@
           "isVisible": true,
           "label": "QUALIFICATION",
           "labelTextSize": "1rem",
-          "options": "{{Quaification_list.data.map( (obj) =>{ return  {'label': obj.Q_CODE, 'value': obj.QUALIFICATION } })}}",
+          "options": "{{Quaification_list.data.map( (obj) =>{ return  {'label': obj.Q_CODE, 'value': obj.Q_CODE } })}}",
           "originalIdentifier": "QUALIFICATION",
           "position": 3,
           "serverSideFiltering": false,

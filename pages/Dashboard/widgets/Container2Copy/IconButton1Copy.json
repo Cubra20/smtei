@@ -1,16 +1,21 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
-  "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "bottomRow": 5,
+  "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
+  "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
   "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "boxShadow"
     },
     {
-      "key": "borderRadius"
+      "key": "buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -23,7 +28,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "egwynwt74i",
-  "leftColumn": 29,
+  "leftColumn": 42,
   "minWidth": 50,
   "mobileBottomRow": 19,
   "mobileLeftColumn": 57,
@@ -31,13 +36,15 @@
   "mobileTopRow": 15,
   "needsErrorInfo": false,
   "onClick": "{{navigateTo('Assessment Center', {}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 18,
+  "originalTopRow": 13,
   "parentColumnSpace": 9.49609375,
   "parentId": "r595aqgzgo",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 33,
-  "topRow": 13,
+  "rightColumn": 63,
+  "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "65g2vekc5t",

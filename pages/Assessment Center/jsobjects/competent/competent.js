@@ -5,21 +5,22 @@ export default {
 
     return {
 		competent:Allapplicants.filter(row =>
-      row.QUALIFICATION === data_table.QUALIFICATION &&
+      row.QUALIFICATION === data_table.Q_CODE &&
       row.STATUS === "Competent"
     ).length,
 		applicant:Allapplicants.filter(row =>
-      row.QUALIFICATION === data_table.QUALIFICATION &&
+      row.QUALIFICATION === data_table.Q_CODE &&
       row.STATUS === "Applicantion"
     ).length,
 		schedule:Allapplicants.filter(row =>
-      row.QUALIFICATION === data_table.QUALIFICATION &&
+      row.QUALIFICATION === data_table.Q_CODE &&
       row.STATUS === "Paid"
     ).length,
 		assessment:Allapplicants.filter(row =>
-      row.QUALIFICATION === data_table.QUALIFICATION &&
+      row.QUALIFICATION === data_table.Q_CODE &&
       row.STATUS === "For schedule"
     ).length
+			
   }
 	}
  	} 

@@ -1,12 +1,17 @@
 export default {
-	myVar1: [],
-	myVar2: {},
-	myFun1 () {
-		//	write code here
-		//	this.myVar1 = [1,2,3]
-	},
-	async myFun2 () {
-		//	use async-await or promises
-		//	await storeValue('varName', 'hello world')
+
+filteStatus: (data= getStatus.data) => {
+	let Status = data;
+	{
+		Status = Status.filter(g => g.STATUS === "Applicantion");
 	}
+	
+	if(Select_quali.selectedOptionValue !== 'All')	{
+		Status = Status.filter(d => d.QUALIFICATION === Select_quali.selectedOptionValue);
+	}
+	return Status;
+	
+	
 }
+ 	} 
+

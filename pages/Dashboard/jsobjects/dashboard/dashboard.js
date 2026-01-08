@@ -3,7 +3,7 @@ getDashboardMetrics:async () => {
 	const Perlevel =await getPerlevel.run();
 	const Assessment =await getAssessment.run();
 	const Training =await getTraining.run();
-	
+	const status =await getStatus.data
 	
 	return{
 		sumtotal:Perlevel.length,
@@ -14,8 +14,10 @@ getDashboardMetrics:async () => {
 		grade11:Perlevel.filter(c => c.GRADE_LEVEL === "G11" ).length,
 		grade12:Perlevel.filter(c => c.GRADE_LEVEL === "G12" ).length,
 		training:Training.filter(a => a.TYPE === "TRAINING CENTER").length,
-		assessment:Assessment.filter(a => a.TYPE === "ASSESSMENT CENTER").length
+		assessment:Assessment.filter(a => a.TYPE === "ASSESSMENT CENTER").length,
+		st_assessment:status.filter(g => g.STATUS === "APPLICATION").array
 	} 
 }
+
 
 }

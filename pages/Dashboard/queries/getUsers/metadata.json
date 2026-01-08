@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_66d3aaf2-edbc-4b00-a2ae-78fd5342868f",
-  "id": "Submission Form_Quaification_list",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_e770f8e5-5a69-4ef3-88d9-6337807e47a0",
+  "id": "Dashboard_getUsers",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -20,19 +20,16 @@
           }
         },
         "projection": {
-          "data": [
-            "QUALIFICATION",
-            "Q_CODE"
-          ]
+          "data": []
         },
         "queryFormat": {
           "data": "RANGE"
         },
         "range": {
-          "data": "B2:C"
+          "data": "A2:C"
         },
         "sheetName": {
-          "data": "ASSESSMENT_CENTER"
+          "data": "Users"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1QnAnhJfJBHzFdZfpPOSdnvVjuO57Y7RIV-L0E5um3K4/edit"
@@ -73,9 +70,9 @@
       "pluginId": "google-sheets-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Quaification_list",
-    "pageId": "Submission Form",
-    "runBehaviour": "AUTOMATIC",
+    "name": "getUsers",
+    "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
