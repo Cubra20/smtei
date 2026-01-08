@@ -226,9 +226,6 @@
       "key": "schema.__root_schema__.children.col5.defaultValue"
     },
     {
-      "key": "onSubmit"
-    },
-    {
       "key": "borderRadius"
     },
     {
@@ -251,7 +248,7 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+  "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run().then(() => closeModal('Insert_Modal'));\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n  showAlert('Added Successfully', 'success');\n});}}",
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
   "parentRowSpace": 10,
