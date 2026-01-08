@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "vg54coo5t1",
-  "leftColumn": 0,
+  "leftColumn": 40,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -38,9 +38,9 @@
   "parentId": "ver9v4adhz",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 36,
+  "rightColumn": 62,
   "shouldTruncate": false,
-  "text": "{{currentItem.NAME}}",
+  "text": "{{currentItem[\"ASSESSMENT DATE\"]}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "textStyle": "HEADING",
@@ -48,6 +48,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "a4os0q9x28",
-  "widgetName": "Text4"
+  "widgetId": "god063somk",
+  "widgetName": "Text4Copy"
 }

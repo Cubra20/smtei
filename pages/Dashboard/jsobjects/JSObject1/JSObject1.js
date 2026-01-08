@@ -3,7 +3,7 @@ export default {
 filteStatus: (data= getStatus.data) => {
 	let Status = data;
 	{
-		Status = Status.filter(g => g.STATUS === "Applicantion");
+		Status = Status.filter(g => g.STATUS === "For Assessment");
 	}
 	
 	if(Select_quali.selectedOptionValue !== 'All')	{
