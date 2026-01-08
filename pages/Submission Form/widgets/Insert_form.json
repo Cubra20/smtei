@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 87,
+  "bottomRow": 72,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "childStylesheet": {
     "ARRAY": {
@@ -216,9 +216,6 @@
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
-      "key": "onSubmit"
-    },
-    {
       "key": "schema.__root_schema__.children.CLIENT.isDisabled"
     }
   ],
@@ -242,7 +239,7 @@
   "mobileRightColumn": 15,
   "mobileTopRow": 88,
   "needsErrorInfo": false,
-  "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run(), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+  "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run();\n  showAlert('Submit Succefully', 'success');\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n});}}",
   "originalBottomRow": 87,
   "originalTopRow": 1,
   "parentColumnSpace": 23.53125,
@@ -308,11 +305,11 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "ASSESSMENT DATE",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ASSESSMENT DATE",
-          "position": 11,
+          "position": 10,
           "sourceData": ""
         },
         "BATCH_": {
@@ -420,11 +417,11 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "PROCESS DATE",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PROCESS DATE",
-          "position": 11,
+          "position": 9,
           "sourceData": ""
         },
         "QUALIFICATION": {
@@ -479,7 +476,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "Applicantion",
+          "defaultValue": "Application",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "STATUS",
@@ -535,7 +532,7 @@
           "label": "Row Index",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
-          "position": 10,
+          "position": 8,
           "sourceData": "0"
         }
       },

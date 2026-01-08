@@ -1,20 +1,24 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51,
-  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "bottomRow": 69,
+  "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
+  "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
-    },
-    {
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -27,7 +31,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "wvfnfarwb6",
-  "leftColumn": 29,
+  "leftColumn": 45,
   "minWidth": 120,
   "mobileBottomRow": 5,
   "mobileLeftColumn": 42,
@@ -35,8 +39,8 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onClick": "{{showModal(Modal1.name);}}",
-  "originalBottomRow": 51,
-  "originalTopRow": 46,
+  "originalBottomRow": 69,
+  "originalTopRow": 64,
   "parentColumnSpace": 22.11572265625,
   "parentId": "4yxspzfvpt",
   "parentRowSpace": 10,
@@ -45,9 +49,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 37,
+  "rightColumn": 53,
   "text": "Requirements",
-  "topRow": 46,
+  "topRow": 64,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "m1l9sbkrd3",

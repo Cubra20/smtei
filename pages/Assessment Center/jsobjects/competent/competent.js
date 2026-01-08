@@ -10,15 +10,19 @@ export default {
     ).length,
 		applicant:Allapplicants.filter(row =>
       row.QUALIFICATION === data_table.Q_CODE &&
-      row.STATUS === "Applicantion"
+      row.STATUS === "Application"
     ).length,
-		schedule:Allapplicants.filter(row =>
+		waiting:Allapplicants.filter(row =>
       row.QUALIFICATION === data_table.Q_CODE &&
       row.STATUS === "Paid"
     ).length,
-		assessment:Allapplicants.filter(row =>
+		schedule:Allapplicants.filter(row =>
       row.QUALIFICATION === data_table.Q_CODE &&
       row.STATUS === "For schedule"
+    ).length,
+		assessment:Allapplicants.filter(row =>
+      row.QUALIFICATION === data_table.Q_CODE &&
+      row.STATUS === "For Assessment"
     ).length
 			
   }
