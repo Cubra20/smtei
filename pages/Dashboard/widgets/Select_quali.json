@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 34,
   "boxShadow": "none",
   "defaultOptionValue": "All",
   "dynamicBindingPathList": [
@@ -58,7 +58,7 @@
   "rightColumn": 50,
   "serverSideFiltering": false,
   "sourceData": "{{\n_.uniqBy(getStatus.data.map(d => ({label: d.QUALIFICATION,\n\t\t value: d.QUALIFICATION})),\n\t\t\t\t'value').concat({label:'All',value: 'All'})\n}}",
-  "topRow": 31,
+  "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "5kp6hmx1gx",
