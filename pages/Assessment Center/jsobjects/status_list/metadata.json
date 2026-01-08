@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_3af3a16b-bf79-4026-9323-4d89883e6026",
+  "id": "Assessment Center_status_list",
+  "unpublishedCollection": {
+    "name": "status_list",
+    "pageId": "Assessment Center",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

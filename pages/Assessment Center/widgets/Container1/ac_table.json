@@ -534,10 +534,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Valid until": {
-      "isCellEditable": true,
-      "isEditable": true
-    },
     "Valid_until": {
       "alias": "Valid until",
       "allowCellWrapping": false,
@@ -607,10 +603,6 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
-    },
-    "undefined": {
-      "isCellEditable": true,
-      "isEditable": true
     }
   },
   "renderMode": "CANVAS",
