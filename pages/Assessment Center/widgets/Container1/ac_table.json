@@ -544,7 +544,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{}}",
       "columnType": "date",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Valid until\"])) : Valid until })()}}",
+      "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Valid until\"])) : currentRow[\"Valid until\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
