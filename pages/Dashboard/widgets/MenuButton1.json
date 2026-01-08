@@ -28,7 +28,7 @@
   "isVisible": true,
   "key": "6177zzb258",
   "label": "",
-  "leftColumn": 56,
+  "leftColumn": 58,
   "menuColor": "{{appsmith.theme.colors.primaryColor}}",
   "menuItems": {
     "menuItem1": {
@@ -70,7 +70,7 @@
   "parentRowSpace": 10,
   "placement": "CENTER",
   "renderMode": "CANVAS",
-  "rightColumn": 62,
+  "rightColumn": 61,
   "topRow": 1,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
