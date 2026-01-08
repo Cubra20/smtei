@@ -9,13 +9,21 @@
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{appsmith.user.adminSettingsVisible}}",
   "key": "bnl0ixd942",
   "leftColumn": 9,
   "minWidth": 120,

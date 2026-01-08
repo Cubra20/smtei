@@ -32,7 +32,7 @@
   "iconName": "arrow-top-right",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{appsmith.user.adminSettingsVisible}}",
+  "isVisible": "{{true}}",
   "key": "egwynwt74i",
   "leftColumn": 40,
   "minWidth": 50,

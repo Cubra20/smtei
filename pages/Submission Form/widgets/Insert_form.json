@@ -208,12 +208,18 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.children.CLIENT.isDisabled"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.CLIENT.isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -343,7 +349,7 @@
           "iconAlign": "left",
           "identifier": "CLIENT",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": "{{((sourceData, formData, fieldState) => (appsmith.user.isAnonymous))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
           "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
