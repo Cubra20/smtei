@@ -36,14 +36,14 @@
     "TYPE",
     "EditActions4",
     "ACCREDITATION_NO",
-    "EditActions3"
+    "EditActions5"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767832136042,
+  "columnUpdatedAt": 1767924293764,
   "columnWidthMap": {
     "APPLICATION_FORM": 233,
     "ASSESSMENT_FEE": 214,
@@ -126,12 +126,6 @@
       "key": "primaryColumns.Q_CODE.cellBackground"
     },
     {
-      "key": "primaryColumns.EditActions3.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions3.isDiscardDisabled"
-    },
-    {
       "key": "primaryColumns.ASSESSMENT_FEE.computedValue"
     },
     {
@@ -154,6 +148,12 @@
     },
     {
       "key": "primaryColumns.ACCREDITATION_NO.cellBackground"
+    },
+    {
+      "key": "primaryColumns.EditActions5.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions5.isDiscardDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -164,12 +164,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "primaryColumns.EditActions3.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions3.isDiscardDisabled"
-    },
-    {
       "key": "primaryColumns.EditActions4.isSaveDisabled"
     },
     {
@@ -177,6 +171,12 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.EditActions5.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions5.isDiscardDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -218,7 +218,7 @@
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "primaryColumnId": "QUALIFICATION",
+  "primaryColumnId": "rowIndex",
   "primaryColumns": {
     "ACCREDITATION_NO": {
       "alias": "ACCREDITATION_NO",
@@ -235,12 +235,12 @@
       "horizontalAlignment": "CENTER",
       "id": "ACCREDITATION_NO",
       "index": 3,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "ACCREDITATION_NO",
@@ -303,16 +303,16 @@
       "horizontalAlignment": "CENTER",
       "id": "ASSESSMENT_FEE",
       "index": 5,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "ASSESSMENT_FEE",
-      "notation": "standard",
+      "notation": "compact",
       "originalId": "ASSESSMENT_FEE",
       "sticky": "",
       "textColor": "#231f20",
@@ -320,44 +320,6 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "EditActions3": {
-      "alias": "EditActions3",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "editActions",
-      "computedValue": "",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "discardActionLabel": "Discard",
-      "discardButtonColor": "#F22B2B",
-      "discardButtonVariant": "TERTIARY",
-      "discardIconAlign": "left",
-      "enableFilter": true,
-      "enableSort": true,
-      "id": "EditActions3",
-      "index": 7,
-      "isCellEditable": true,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardDisabled": "{{ac_table.processedTableData.map((currentRow, currentIndex) => ( !ac_table.updatedRowIndices.includes(currentIndex)))}}",
-      "isDiscardVisible": true,
-      "isEditable": true,
-      "isSaveDisabled": "{{ac_table.processedTableData.map((currentRow, currentIndex) => ( !ac_table.updatedRowIndices.includes(currentIndex)))}}",
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Save / Discard",
-      "notation": "standard",
-      "originalId": "EditActions3",
-      "saveActionLabel": "Save",
-      "saveButtonColor": "#03B365",
-      "saveIconAlign": "left",
-      "sticky": "right",
-      "thousandSeparator": true,
-      "validation": {},
       "width": 150
     },
     "EditActions4": {
@@ -398,6 +360,44 @@
       "validation": {},
       "width": 150
     },
+    "EditActions5": {
+      "alias": "EditActions5",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "editActions",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "discardActionLabel": "Discard",
+      "discardButtonColor": "#F22B2B",
+      "discardButtonVariant": "TERTIARY",
+      "discardIconAlign": "left",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "EditActions5",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardDisabled": "{{ac_table.processedTableData.map((currentRow, currentIndex) => ( !ac_table.updatedRowIndices.includes(currentIndex)))}}",
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveDisabled": "{{ac_table.processedTableData.map((currentRow, currentIndex) => ( !ac_table.updatedRowIndices.includes(currentIndex)))}}",
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Save / Discard",
+      "notation": "standard",
+      "originalId": "EditActions5",
+      "saveActionLabel": "Save",
+      "saveButtonColor": "#03B365",
+      "saveIconAlign": "left",
+      "sticky": "right",
+      "thousandSeparator": true,
+      "validation": {},
+      "width": 150
+    },
     "QUALIFICATION": {
       "alias": "QUALIFICATION",
       "allowCellWrapping": true,
@@ -413,12 +413,12 @@
       "horizontalAlignment": "CENTER",
       "id": "QUALIFICATION",
       "index": 1,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "QUALIFICATION",
@@ -447,12 +447,12 @@
       "horizontalAlignment": "CENTER",
       "id": "Q_CODE",
       "index": 1,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Q_CODE",

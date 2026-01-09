@@ -20,12 +20,7 @@
           }
         },
         "projection": {
-          "data": [
-            "Q_CODE",
-            "QUALIFICATION",
-            "Valid until",
-            "ACCREDITATION_NO"
-          ]
+          "data": []
         },
         "queryFormat": {
           "data": "RANGE"

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_ce936d70-6859-4c8a-8625-bb133f9e0abd",
-  "id": "Assessment Center_UpdateQuery",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_b7c39539-d698-4cc6-ac68-c71cd036a079",
+  "id": "Assessment Center_UpdateQueryAssessment",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -36,7 +36,7 @@
         },
         "rowObjects": {
           "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
-          "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
+          "data": "{{\n\t{\n\t\t...Form.formData, \n\t\trowIndex:ac_table.selectedRow.rowIndex\n\t}\n}}",
           "viewType": "component"
         },
         "sheetName": {
@@ -97,7 +97,7 @@
         },
         {
           "key": "sheetName",
-          "value": "SMTEI"
+          "value": "MasterList"
         },
         {
           "key": "rowOffset",
@@ -132,8 +132,12 @@
       "name": "Untitled datasource 1",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "UpdateQuery",
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
+    "name": "UpdateQueryAssessment",
     "pageId": "Assessment Center",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

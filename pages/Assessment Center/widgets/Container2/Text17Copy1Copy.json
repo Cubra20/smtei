@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 35,
   "shouldTruncate": false,
-  "text": "Fee: {{ac_table.selectedRow.ASSESSMENT_FEE}}",
+  "text": "Fee: {{(ac_table.selectedRow.ASSESSMENT_FEE)}}",
   "textAlign": "LEFT",
   "textColor": "#ffffff",
   "topRow": 5,

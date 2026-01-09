@@ -207,9 +207,6 @@
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
-    },
-    {
-      "key": "schema.__root_schema__.children.ASSESSMENT_FEE.onEnterKeyPress"
     }
   ],
   "fieldLimitExceeded": false,
@@ -227,7 +224,7 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onSubmit": "{{UpdateQueryCopy.run().then(() => {\n  showAlert('\"Update Successful\"', 'success');\n});\nFind_ASSESSMENT_CENTER1.run();\ncloseModal(Update_form.name);}}",
+  "onSubmit": "{{UpdateQueryAssessment.run().then(() => {\n  showAlert('\"Update Successful\"', 'success');\n});\nFind_ASSESSMENT_CENTER1.run();\ncloseModal(Update_form.name);}}",
   "originalBottomRow": 45,
   "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
@@ -299,13 +296,12 @@
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
           "accessor": "ASSESSMENT_FEE",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+          "boxShadow": "none",
           "children": {},
-          "currencyCountryCode": "PHP",
           "dataType": "string",
-          "decimalsInCurrency": 2,
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ASSESSMENT_FEE))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Currency Input",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (ac_table.selectedRow.ASSESSMENT_FEE))(Form.sourceData, Form.formData, Form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "ASSESSMENT_FEE",
           "isCustomField": false,
           "isDisabled": false,
@@ -314,7 +310,6 @@
           "isVisible": true,
           "label": "ASSESSMENT FEE",
           "labelTextSize": "0.875rem",
-          "onEnterKeyPress": "{{UpdateQueryCopy.run()}}",
           "originalIdentifier": "ASSESSMENT_FEE",
           "position": 5,
           "sourceData": ""

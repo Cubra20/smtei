@@ -17,7 +17,7 @@
         },
         "GOOGLE_DRIVE_SAVE_FILE": {
           "file": "{{FilePicker1.files[0]}}",
-          "filename": "{{ac_table.selectedRow.QUALIFICATION.pdf}}",
+          "filename": "{{name.pdf}}",
           "parentId": "1oL-IFIWUKgndnx7GrJciM9e32PBl3HB0",
           "sharedDrive": true
         },

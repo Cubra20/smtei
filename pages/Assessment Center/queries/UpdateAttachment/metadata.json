@@ -29,7 +29,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{\n{\n\tAPPLICATION_FORM:UploadToDrive.data.id\n}\n}}"
+          "data": "{{\n{\n\tAPPLICATION_FORM:UploadToDrive.data.\n}\n}}"
         },
         "sheetName": {
           "data": "ASSESSMENT_CENTER"
