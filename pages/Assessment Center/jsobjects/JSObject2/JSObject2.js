@@ -30,8 +30,8 @@ export default {
       row.STATUS === "Paid" &&
       row.QUALIFICATION === ac_table.selectedRow.Q_CODE &&
       row["BATCH "] === Select_Batch.selectedOptionValue
-    );
-
+    )
+		 .sort((a, b) => a.NAME.localeCompare(b.NAME));
     /* ======================
        HEADER
     ======================= */
@@ -73,29 +73,53 @@ doc.addImage(
     /* ======================
        BODY
     ======================= */
-    y += 10;
-    doc.text("Dear Dir. Marasigan,", 20, y);
+   y += 10;
 
-    y += 8;
-    doc.text("Let us serve the Lord with joy!", 20, y);
+const leftMargin = 20;
+const maxWidth = 170;
 
-    y += 10;
-    doc.text(
-      `We would like to request approval for the assessment in ${ac_table.selectedRow.QUALIFICATION}. The following are the candidates to be assessed.`,
-      20,
-      y,
-      { maxWidth: 170 }
-    );
+const normalText = "We would like to request approval for the assessment in ";
+const boldText = ac_table.selectedRow.QUALIFICATION;
+const endingText = ". The following are the candidates to be assessed.";
+
+// NORMAL
+doc.setFont("Times", "Normal");
+let x = leftMargin;
+let currentY = y;
+
+// NORMAL PART
+doc.text(normalText, x, currentY);
+
+// GET WIDTH
+x += doc.getTextDimensions(normalText).w;
+
+// BOLD PART
+doc.setFont("Times", "Bold");
+doc.text(boldText, x, currentY);
+
+// CONTINUE NORMAL
+x += doc.getTextDimensions(boldText).w;
+doc.setFont("Times", "Normal");
+
+// AUTO-WRAP ENDING
+const remainingText = endingText;
+const wrappedText = doc.splitTextToSize(remainingText, maxWidth - (x - leftMargin));
+doc.text(wrappedText, x, currentY);
+
+// ADJUST Y BASED ON WRAPPED LINES
+y = currentY + wrappedText.length * 1;
+
+
 
     /* ======================
        TABLE HEADER
     ======================= */
     y += 15;
-    doc.setFont("Times", "Bold");
-    doc.text("Name", 20, y);
+    doc.setFont("Arial", "Bold");
+    doc.text("Name", 40, y);
     doc.text("Name of Institution/Company", 120, y);
 
-    doc.setFont("Times", "Normal");
+    doc.setFont("Arial", "Normal");
 
     /* ======================
        TABLE DATA
