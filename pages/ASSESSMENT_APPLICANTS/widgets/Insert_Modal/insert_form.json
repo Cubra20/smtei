@@ -374,7 +374,7 @@
           "isVisible": true,
           "label": "CLIENT",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"OUTSIDER\",\n    \"value\": \"OUTSIDER\"\n  },\n  {\n    \"label\": \"STUDENT\",\n    \"value\": \"STUDENT\"\n  }\n\t]",
+          "options": "[\n  {\n    \"label\": \"OUTSIDER\",\n    \"value\": \"OUTSIDER\"\n  },\n  {\n    \"label\": \"STUDENT\",\n    \"value\": \"STUDENT\"\n  },\n\t  {\n    \"label\": \"SOM\",\n    \"value\": \"SOM\"\n  }\n\t]",
           "originalIdentifier": "CLIENT",
           "position": 3,
           "serverSideFiltering": false,
