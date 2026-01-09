@@ -233,7 +233,7 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run().then(() => closeModal('Insert_Modal'));\n  showAlert('Added Successfully', '');\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n});}}",
+  "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run().then(() => closeModal('Insert_Modal'));\n  showAlert('Added Successfully', 'success');\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n});}}",
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
   "parentRowSpace": 10,
