@@ -47,6 +47,9 @@
     "task": 245
   },
   "columnUpdatedAt": 1767939867538,
+  "columnWidthMap": {
+    "NAME": 232
+  },
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
