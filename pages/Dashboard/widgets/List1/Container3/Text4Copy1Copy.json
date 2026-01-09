@@ -38,7 +38,7 @@
   "parentId": "ver9v4adhz",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 36,
+  "rightColumn": 38,
   "shouldTruncate": false,
   "text": "{{currentItem.ULI}}",
   "textAlign": "LEFT",

@@ -57,7 +57,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 50,
   "serverSideFiltering": false,
-  "sourceData": "{{\n_.uniqBy(getStatus.data.map(d => ({label: d.QUALIFICATION,\n\t\t value: d.QUALIFICATION})),\n\t\t\t\t'value').concat({label:'All',value: 'All'})\n}}",
+  "sourceData": "{{\n_.uniqBy(getStatus.data.filter(d => d.STATUS === \"For Assessment\").map(d => ({label: d.QUALIFICATION,\n\t\t value: d.QUALIFICATION})),\n\t\t\t\t'value').concat({label:'All',value: 'All'})\n}}",
   "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,

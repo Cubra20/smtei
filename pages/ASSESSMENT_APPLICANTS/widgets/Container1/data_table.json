@@ -35,6 +35,7 @@
     "ASSESSMENT_DATE",
     "REQUIREMENTS_LINK",
     "rowIndex",
+    "CERTIFICATE",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -42,7 +43,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767858094472,
+  "columnUpdatedAt": 1767926836027,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -135,6 +136,9 @@
     },
     {
       "key": "isSortable"
+    },
+    {
+      "key": "primaryColumns.CERTIFICATE.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -283,6 +287,40 @@
       "label": "BATCH ",
       "notation": "standard",
       "originalId": "BATCH ",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "CERTIFICATE": {
+      "alias": "CERTIFICATE",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"CERTIFICATE\"])) : CERTIFICATE })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "CERTIFICATE",
+      "index": 12,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "CERTIFICATE",
+      "notation": "standard",
+      "originalId": "CERTIFICATE",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
