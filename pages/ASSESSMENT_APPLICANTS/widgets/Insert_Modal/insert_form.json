@@ -215,6 +215,15 @@
     },
     {
       "key": "schema.__root_schema__.children.COC.isVisible"
+    },
+    {
+      "key": "schema.__root_schema__.children.CERTIFICATE.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.CERTIFICATE.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CERTIFICATE.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -248,7 +257,7 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run().then(() => closeModal('Insert_Modal'));\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n  showAlert('Added Successfully', 'success');\n});}}",
+  "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run().then(() => closeModal('Insert_Modal'));\n  showAlert('Added Successfully', '');\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n});}}",
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
   "parentRowSpace": 10,
@@ -339,6 +348,28 @@
           "originalIdentifier": "BATCH ",
           "placeholderText": "BATCH",
           "position": 7,
+          "sourceData": ""
+        },
+        "CERTIFICATE": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "CERTIFICATE",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CERTIFICATE))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "CERTIFICATE",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "CERTIFICATE",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "CERTIFICATE",
+          "position": 13,
           "sourceData": ""
         },
         "CLIENT": {
