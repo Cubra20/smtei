@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 72,
+  "bottomRow": 73,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "childStylesheet": {
     "ARRAY": {
@@ -258,7 +258,7 @@
   "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run();\n  showAlert('Submit Succefully', 'success');\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n});}}",
-  "originalBottomRow": 72,
+  "originalBottomRow": 73,
   "originalTopRow": 1,
   "parentColumnSpace": 23.53125,
   "parentId": "0",
