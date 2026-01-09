@@ -33,11 +33,11 @@
         },
         "queryFormat": {
           "componentData": "ROWS",
-          "data": "ROWS",
+          "data": "RANGE",
           "viewType": "component"
         },
         "range": {
-          "data": ""
+          "data": "A2:M"
         },
         "sheetName": {
           "componentData": "template_table",

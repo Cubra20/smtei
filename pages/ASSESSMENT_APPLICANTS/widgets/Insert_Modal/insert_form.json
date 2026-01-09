@@ -197,6 +197,9 @@
     },
     {
       "key": "schema.__root_schema__.children.CERTIFICATE.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.BATCH_.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -215,11 +218,17 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "schema.__root_schema__.children.QUALIFICATION.onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.QUALIFICATION.onOptionChange"
     }
   ],
   "fieldLimitExceeded": false,
@@ -310,7 +319,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "BATCH",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (getBatchnumber.getBatchByQualification()))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "BATCH_",
@@ -479,6 +488,7 @@
           "isVisible": true,
           "label": "QUALIFICATION",
           "labelTextSize": "0.875rem",
+          "onOptionChange": "{{SelectQuery.data}}",
           "options": "{{Quaification_list.data.map( (obj) =>{ return  {'label': obj.Q_CODE, 'value': obj.Q_CODE } })}}",
           "originalIdentifier": "QUALIFICATION",
           "position": 4,
@@ -558,21 +568,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rowIndex))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "rowIndex",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Row Index",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
           "position": 0,
-          "sourceData": 0
+          "sourceData": ""
         }
       },
       "dataType": "object",
@@ -598,7 +608,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\")}}",
+  "sourceData": "{{data_table.selectedRow}}",
   "submitButtonLabel": "Submit",
   "submitButtonStyles": {
     "borderRadius": "1.5rem",

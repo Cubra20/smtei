@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_996af398-a13e-4876-932f-9df6dffb8160",
+  "id": "ASSESSMENT_APPLICANTS_getBatchnumber",
+  "unpublishedCollection": {
+    "name": "getBatchnumber",
+    "pageId": "ASSESSMENT_APPLICANTS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
