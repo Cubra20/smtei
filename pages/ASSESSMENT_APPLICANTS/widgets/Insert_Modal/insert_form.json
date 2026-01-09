@@ -1,12 +1,12 @@
 {
   "animateLoading": true,
   "autoGenerateForm": true,
-  "backgroundColor": "#fff",
+  "backgroundColor": "linear-gradient(180deg, #1d4ed8 0%, #FFFFFF 30.21%)",
   "borderColor": "",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "1.5rem",
   "borderWidth": "0",
   "bottomRow": 75,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)",
   "childStylesheet": {
     "ARRAY": {
       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -88,37 +88,88 @@
   "displayName": "JSON Form",
   "dynamicBindingPathList": [
     {
-      "key": "schema.__root_schema__.defaultValue"
-    },
-    {
       "key": "sourceData"
     },
     {
+      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.EMAIL.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.EMAIL.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CLIENT.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.CLIENT.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.NAME.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.NAME.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.STATUS.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.STATUS.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.QUALIFICATION.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.QUALIFICATION.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.QUALIFICATION.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ULI.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ULI.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ULI.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PROCESS_DATE.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PROCESS_DATE.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PROCESS_DATE.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.isVisible"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.COC.borderRadius"
+    },
+    {
       "key": "schema.__root_schema__.children.rowIndex.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.cellBorderRadius"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
-      "key": "submitButtonStyles.borderRadius"
-    },
-    {
-      "key": "resetButtonStyles.buttonColor"
-    },
-    {
-      "key": "resetButtonStyles.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.rowIndex.accentColor"
@@ -127,103 +178,25 @@
       "key": "schema.__root_schema__.children.rowIndex.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.NAME.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.NAME.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.EMAIL.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.EMAIL.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.CLIENT.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.CLIENT.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.QUALIFICATION.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.QUALIFICATION.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.COC.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.COC.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.ULI.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.ULI.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.ULI.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.BATCH_.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.BATCH_.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.STATUS.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.STATUS.accentColor"
+      "key": "schema.__root_schema__.children.APPLICATION_DATE.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.APPLICATION_DATE.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.APPLICATION_DATE.accentColor"
+      "key": "schema.__root_schema__.children.BATCH_.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.PROCESS_DATE.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.PROCESS_DATE.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.PROCESS_DATE.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.QUALIFICATION.options"
-    },
-    {
-      "key": "schema.__root_schema__.children.COC.isVisible"
+      "key": "schema.__root_schema__.children.BATCH_.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.CERTIFICATE.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.CERTIFICATE.borderRadius"
+      "key": "schema.__root_schema__.children.CERTIFICATE.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.CERTIFICATE.accentColor"
+      "key": "schema.__root_schema__.children.CERTIFICATE.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -235,10 +208,13 @@
       "key": "schema.__root_schema__.children.col5.defaultValue"
     },
     {
-      "key": "borderRadius"
+      "key": "schema.__root_schema__.children.COC.isVisible"
     },
     {
-      "key": "schema.__root_schema__.children.COC.isVisible"
+      "key": "backgroundColor"
+    },
+    {
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [

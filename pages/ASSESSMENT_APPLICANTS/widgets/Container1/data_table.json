@@ -78,10 +78,55 @@
       "key": "tableData"
     },
     {
-      "key": "derivedColumns.customColumn1.buttonLabel"
+      "key": "primaryColumns.ASSESSMENT_DATE.computedValue"
+    },
+    {
+      "key": "primaryColumns.REQUIREMENTS_LINK.computedValue"
     },
     {
       "key": "primaryColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.EMAIL.computedValue"
+    },
+    {
+      "key": "primaryColumns.CLIENT.computedValue"
+    },
+    {
+      "key": "primaryColumns.NAME.computedValue"
+    },
+    {
+      "key": "primaryColumns.STATUS.computedValue"
+    },
+    {
+      "key": "primaryColumns.QUALIFICATION.computedValue"
+    },
+    {
+      "key": "primaryColumns.ULI.computedValue"
+    },
+    {
+      "key": "primaryColumns.PROCESS_DATE.computedValue"
+    },
+    {
+      "key": "primaryColumns.COC.computedValue"
+    },
+    {
+      "key": "primaryColumns.rowIndex.computedValue"
+    },
+    {
+      "key": "primaryColumns.APPLICATION_DATE.computedValue"
+    },
+    {
+      "key": "primaryColumns.BATCH_.computedValue"
+    },
+    {
+      "key": "primaryColumns.CERTIFICATE.computedValue"
+    },
+    {
+      "key": "isSortable"
     },
     {
       "key": "accentColor"
@@ -91,54 +136,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.NAME.computedValue"
-    },
-    {
-      "key": "primaryColumns.EMAIL.computedValue"
-    },
-    {
-      "key": "primaryColumns.CLIENT.computedValue"
-    },
-    {
-      "key": "primaryColumns.QUALIFICATION.computedValue"
-    },
-    {
-      "key": "primaryColumns.COC.computedValue"
-    },
-    {
-      "key": "primaryColumns.ULI.computedValue"
-    },
-    {
-      "key": "primaryColumns.BATCH_.computedValue"
-    },
-    {
-      "key": "primaryColumns.STATUS.computedValue"
-    },
-    {
-      "key": "primaryColumns.APPLICATION_DATE.computedValue"
-    },
-    {
-      "key": "primaryColumns.PROCESS_DATE.computedValue"
-    },
-    {
-      "key": "primaryColumns.ASSESSMENT_DATE.computedValue"
-    },
-    {
-      "key": "primaryColumns.REQUIREMENTS_LINK.computedValue"
-    },
-    {
-      "key": "primaryColumns.rowIndex.computedValue"
-    },
-    {
-      "key": "isSortable"
-    },
-    {
-      "key": "primaryColumns.CERTIFICATE.computedValue"
     }
   ],
   "dynamicPropertyPathList": [

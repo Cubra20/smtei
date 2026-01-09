@@ -1,5 +1,5 @@
 {
-  "backgroundColor": "#FFFFFF",
+  "backgroundColor": "#1d4ed8",
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
