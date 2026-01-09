@@ -619,6 +619,7 @@
   "title": "",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
   "version": 1,
   "widgetId": "4amgm2y5ph",
   "widgetName": "insert_form"
