@@ -43,7 +43,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767928895025,
+  "columnUpdatedAt": 1767949600079,
   "columnWidthMap": {
     "APPLICATION_FORM": 233,
     "ASSESSMENT_FEE": 214,
@@ -386,7 +386,7 @@
       "isEditable": false,
       "isSaveDisabled": "{{ac_table.processedTableData.map((currentRow, currentIndex) => ( !ac_table.updatedRowIndices.includes(currentIndex)))}}",
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Save / Discard",
       "notation": "standard",
       "originalId": "EditActions5",
