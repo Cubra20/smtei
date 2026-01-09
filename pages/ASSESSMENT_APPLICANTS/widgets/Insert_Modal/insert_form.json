@@ -324,7 +324,7 @@
           "iconAlign": "left",
           "identifier": "BATCH_",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
