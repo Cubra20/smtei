@@ -46,7 +46,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767938402163,
+  "columnUpdatedAt": 1767939867538,
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
@@ -437,7 +437,7 @@
     },
     "NAME": {
       "alias": "NAME",
-      "allowCellWrapping": false,
+      "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
@@ -461,7 +461,7 @@
       "label": "NAME",
       "notation": "standard",
       "originalId": "NAME",
-      "sticky": "",
+      "sticky": "left",
       "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
