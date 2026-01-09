@@ -25,7 +25,7 @@
     "fullyQualifiedName": "JSObject2.generatePDF",
     "name": "generatePDF",
     "pageId": "Assessment Center",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }

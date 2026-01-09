@@ -82,7 +82,7 @@ doc.addImage(
     y += 10;
     doc.text(
       `We would like to request approval for the assessment in ${ac_table.selectedRow.QUALIFICATION}. The following are the candidates to be assessed.`,
-      30,
+      20,
       y,
       { maxWidth: 170 }
     );
