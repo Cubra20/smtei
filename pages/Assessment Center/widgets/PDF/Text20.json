@@ -11,9 +11,13 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
@@ -35,7 +39,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 29,
   "shouldTruncate": false,
-  "text": "Modal Title",
+  "text": "{{ac_table.selectedRow.Q_CODE}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

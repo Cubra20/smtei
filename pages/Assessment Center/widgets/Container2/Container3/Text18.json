@@ -50,7 +50,7 @@
   "shouldTruncate": false,
   "text": "{{ competent.countFromOtherTable(ac_table.selectedRow, getAllapplicants.data).waiting\n}}\n\n\n",
   "textAlign": "CENTER",
-  "textColor": "#231F20",
+  "textColor": "#231f20",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

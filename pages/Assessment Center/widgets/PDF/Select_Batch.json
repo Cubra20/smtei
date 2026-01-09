@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -45,7 +45,7 @@
   "parentColumnSpace": 17.53125,
   "parentId": "5mbr5pzrec",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "Select Batch",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 49,
