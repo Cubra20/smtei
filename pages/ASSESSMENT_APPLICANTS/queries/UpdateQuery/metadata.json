@@ -17,6 +17,12 @@
           "data": "ROWS",
           "viewType": "component"
         },
+        "pagination": {
+          "data": {
+            "limit": "20",
+            "offset": "0"
+          }
+        },
         "projection": {
           "data": []
         },
@@ -25,9 +31,12 @@
           "data": "ROWS",
           "viewType": "component"
         },
+        "range": {
+          "data": ""
+        },
         "rowObjects": {
           "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
-          "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
+          "data": "{{\n\t{\n\t\t...JSONForm1.formData, \n\t\trowIndex:ApplicantsTable.selectedRow.rowIndex\n\t}\n}}",
           "viewType": "component"
         },
         "sheetName": {
@@ -49,6 +58,11 @@
           "componentData": "1",
           "data": "1",
           "viewType": "component"
+        },
+        "where": {
+          "data": {
+            "condition": "AND"
+          }
         }
       },
       "paginationType": "NONE",
@@ -118,7 +132,11 @@
       "name": "Untitled datasource 1",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
     "name": "UpdateQuery",
     "pageId": "ASSESSMENT_APPLICANTS",
     "runBehaviour": "MANUAL",

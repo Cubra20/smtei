@@ -608,7 +608,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{data_table.selectedRow}}",
+  "sourceData": "{{ApplicantsTable.selectedRow}}",
   "submitButtonLabel": "Submit",
   "submitButtonStyles": {
     "borderRadius": "1.5rem",

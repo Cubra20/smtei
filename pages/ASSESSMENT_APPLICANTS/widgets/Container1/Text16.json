@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -31,7 +31,7 @@
   "text": "ASSESSMENT_APPLICANTS Data",
   "textAlign": "LEFT",
   "textColor": "#f4f4f5",
-  "topRow": 1,
+  "topRow": 0,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "urzv99hdc8",

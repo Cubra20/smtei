@@ -22,21 +22,21 @@
       "key": "onClick"
     }
   ],
-  "iconName": "add",
+  "iconName": "edit",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 56,
-  "onClick": "{{showModal('Insert_Modal')}}",
+  "leftColumn": 53,
+  "onClick": "{{showModal(Modal1.name);}}",
   "parentColumnSpace": 12.0703125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "rightColumn": 59,
+  "rightColumn": 56,
   "tooltip": "Add Candidates",
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "8b67sbqskr",
-  "widgetName": "add_btn"
+  "widgetId": "mr5xe9bpc8",
+  "widgetName": "add_btnCopy"
 }

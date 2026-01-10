@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_b65e87fd-f821-4356-88f6-32d3e810efb7",
+  "id": "ASSESSMENT_APPLICANTS_statusUtils",
+  "unpublishedCollection": {
+    "name": "statusUtils",
+    "pageId": "ASSESSMENT_APPLICANTS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

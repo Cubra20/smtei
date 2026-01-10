@@ -23,8 +23,8 @@
             "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
           },
           "data": {
-            "limit": "{{data_table.pageSize}}",
-            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
+            "limit": "{{ApplicantsTable.pageSize}}",
+            "offset": "{{(ApplicantsTable.pageNo - 1) * ApplicantsTable.pageSize}}"
           },
           "viewType": "component"
         },
