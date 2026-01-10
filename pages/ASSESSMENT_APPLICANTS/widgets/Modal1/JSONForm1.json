@@ -198,16 +198,10 @@
       "key": "schema.__root_schema__.children.APPLICATION_DATE.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.PROCESS_DATE.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.PROCESS_DATE.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.PROCESS_DATE.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.ASSESSMENT_DATE.accentColor"
@@ -246,10 +240,10 @@
       "key": "schema.__root_schema__.children.PROCESS_DATE.isVisible"
     },
     {
-      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.isVisible"
+      "key": "title"
     },
     {
-      "key": "title"
+      "key": "schema.__root_schema__.children.ASSESSMENT_DATE.isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -285,8 +279,8 @@
   "mobileTopRow": 27,
   "needsErrorInfo": false,
   "onSubmit": "{{ \n  UpdateQuery.run().then(() => {\n    if(\n      statusUtils.hasStatusChanged(\n        ApplicantsTable.selectedRow.STATUS,\n        JSONForm1.formData.STATUS\n      )\n    ) {\n      sendStatusEmail.run();\n    }\n  })\n}}\n",
-  "originalBottomRow": 43,
-  "originalTopRow": 9,
+  "originalBottomRow": 34,
+  "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
   "parentId": "zjua3whcg0",
   "parentRowSpace": 10,
@@ -336,21 +330,26 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "boxShadow": "none",
           "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"ASSESSMENT DATE\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "dateFormat": "LL",
+          "defaultValue": "2026-01-10T15:39:42.424+08:00",
+          "fieldType": "Datepicker",
           "identifier": "ASSESSMENT_DATE",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": "{{((sourceData, formData, fieldState) => (JSONForm1.formData.STATUS === \"For Assessment\"))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "label": "ASSESSMENT DATE",
           "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "ASSESSMENT DATE",
           "position": 11,
-          "sourceData": ""
+          "shortcuts": false,
+          "sourceData": "",
+          "timePrecision": "None"
         },
         "BATCH_": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -490,21 +489,26 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "boxShadow": "none",
           "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"PROCESS DATE\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "dateFormat": "LL",
+          "defaultValue": "2026-01-10T15:39:04.044+08:00",
+          "fieldType": "Datepicker",
           "identifier": "PROCESS_DATE",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": "{{((sourceData, formData, fieldState) => (JSONForm1.formData.STATUS === \"For Schedule\"))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "label": "PROCESS DATE",
           "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "PROCESS DATE",
           "position": 10,
-          "sourceData": "7/3/2025"
+          "shortcuts": false,
+          "sourceData": "7/3/2025",
+          "timePrecision": "None"
         },
         "QUALIFICATION": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
