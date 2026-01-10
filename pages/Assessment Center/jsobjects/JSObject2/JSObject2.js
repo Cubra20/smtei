@@ -65,7 +65,7 @@ doc.addImage(
     doc.setFont("Times", "Normal");
     doc.text("Adlas, Silang 4118, Cavite, Philippines", 115, 26, { align: "center" });
     doc.text("046-865-2546 / (02)529-8318", 115, 31, { align: "center" });
-    doc.text("smsadlas@thesistersofmaryschools.edu.ph", 115, 36, { align: "center" });
+    doc.text("smtei.adlas@thesistersofmaryschools.edu.ph", 115, 36, { align: "center" });
 
 		doc.setTextColor("#231f20");
     /* ======================
@@ -153,17 +153,47 @@ y += wrappedLines.length * 6;
     /* ======================
        TABLE DATA
     ======================= */
-    filteredData.forEach((row, index) => {
-      y += 7;
+  filteredData.forEach((row, index) => {
+  const noX = 20;
+  const nameX = 25;
+  const instX = 120;
 
-      if (y > 270) {
-        doc.addPage();
-        y = 20;
-      }
+  const instMaxWidth = 65;
+  const lineHeight = 6;
 
-      doc.text(`${index + 1}. ${row.NAME}`, 20, y);
-      doc.text(row.Institution || "Sisters of Mary School-Adlas, Inc.", 120, y);
-    });
+  const applicantName = row.NAME || "";
+  const institution = row.INSTITUTE || row.Company || "—";
+
+  // Wrap institution text
+  const wrappedInstitution = doc.splitTextToSize(institution, instMaxWidth);
+
+  // Calculate row height based on wrapped institution
+  const rowHeight = Math.max(wrappedInstitution.length, 1) * lineHeight;
+
+  // PAGE BREAK CHECK
+  if (y + rowHeight > 270) {
+    doc.addPage();
+    y = 30;
+
+    // Repeat table header on new page
+    doc.setFont("Times", "Bold");
+    doc.text("No.", noX, y);
+    doc.text("Name", nameX, y);
+    doc.text("Name of Institution / Company", instX, y);
+    doc.line(20, y + 2, 190, y + 2);
+    doc.setFont("Times", "Normal");
+
+    y += 8;
+  }
+
+  // ROW DATA
+  doc.text(String(index + 1), noX, y+6);
+  doc.text(applicantName, nameX, y+6);
+  doc.text(wrappedInstitution, instX, y+6);
+
+  // Move Y down
+  y += rowHeight;
+});
 
     /* ======================
        FOOTER
