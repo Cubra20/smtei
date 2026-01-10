@@ -24,7 +24,7 @@
   "isVisible": false,
   "key": "ocpxg1glw3",
   "label": "Select Files",
-  "leftColumn": 30,
+  "leftColumn": 38,
   "maxFileSize": "20",
   "maxNumFiles": 1,
   "minWidth": 120,

@@ -32,6 +32,19 @@ export default {
       row["BATCH "] === Select_Batch.selectedOptionValue
     )
 		 .sort((a, b) => a.NAME.localeCompare(b.NAME));
+		
+		// GROUP & COUNT COC PER APPLICANTS
+const cocCounts = filteredData.reduce((acc, row) => {
+  if (!row.COC) return acc;
+
+  acc[row.COC] = (acc[row.COC] || 0) + 1;
+  return acc;
+}, {});
+// FORMAT: COC TITLE – COUNT
+const cocSummaryText = Object.entries(cocCounts)
+  .map(([coc, count]) => `${coc} – ${count}`)
+  .join(", ");
+
     /* ======================
        HEADER
     ======================= */
@@ -73,53 +86,69 @@ doc.addImage(
     /* ======================
        BODY
     ======================= */
-   y += 10;
+y += 10;
 
 const leftMargin = 20;
 const maxWidth = 170;
 
-const normalText = "We would like to request approval for the assessment in ";
-const boldText = ac_table.selectedRow.QUALIFICATION;
-const endingText = ". The following are the candidates to be assessed.";
+// Sentence parts
+const part1 = "We would like to request approval for the assessment in ";
+const qualificationText = ac_table.selectedRow.Q_CODE;
+const part2 = cocSummaryText ? ` (${cocSummaryText}). ` : ". ";
+const part3 = "The following are the candidates to be assessed.";
 
-// NORMAL
-doc.setFont("Times", "Normal");
-let x = leftMargin;
-let currentY = y;
+// FULL TEXT (for wrapping)
+const fullText = part1 + qualificationText + part2 + part3;
 
-// NORMAL PART
-doc.text(normalText, x, currentY);
+// WRAP TEXT (LEFT ALIGNED)
+const wrappedLines = doc.splitTextToSize(fullText, maxWidth);
 
-// GET WIDTH
-x += doc.getTextDimensions(normalText).w;
+// DRAW LINE BY LINE (ALLOW BOLD QUALIFICATION)
+wrappedLines.forEach((line, i) => {
+  let x = leftMargin;
+  const lineY = y + i * 6;
 
-// BOLD PART
-doc.setFont("Times", "Bold");
-doc.text(boldText, x, currentY);
+  if (line.includes(qualificationText)) {
+    const before = line.split(qualificationText)[0];
+    const after = line.split(qualificationText)[1];
 
-// CONTINUE NORMAL
-x += doc.getTextDimensions(boldText).w;
-doc.setFont("Times", "Normal");
+    // NORMAL BEFORE
+    doc.setFont("Times", "Normal");
+    doc.text(before, x, lineY);
+    x += doc.getTextDimensions(before).w;
 
-// AUTO-WRAP ENDING
-const remainingText = endingText;
-const wrappedText = doc.splitTextToSize(remainingText, maxWidth - (x - leftMargin));
-doc.text(wrappedText, x, currentY);
+    // BOLD QUALIFICATION
+    doc.setFont("Times", "Bold");
+    doc.text(qualificationText, x, lineY);
+    x += doc.getTextDimensions(qualificationText).w;
+		
+    // NORMAL AFTER
+    doc.setFont("Times", "Normal");
+    doc.text(after, x, lineY);
+  } else {
+    doc.setFont("Times", "Normal");
+    doc.text(line, x, lineY);
+  }
+});
 
-// ADJUST Y BASED ON WRAPPED LINES
-y = currentY + wrappedText.length * 1;
-
-
+// MOVE Y AFTER WRAPPED PARAGRAPH
+y += wrappedLines.length * 6;
 
     /* ======================
        TABLE HEADER
     ======================= */
-    y += 15;
-    doc.setFont("Arial", "Bold");
-    doc.text("Name", 40, y);
-    doc.text("Name of Institution/Company", 120, y);
+		 y += 5;
+		const Name = "Name";
+		const Institution = "Name of Institution/Company";
+		
 
-    doc.setFont("Arial", "Normal");
+    doc.setFont("Times", "Bold");
+    doc.text(Name, 40, y);
+		
+		doc.setFont("Times","Bold")
+    doc.text(Institution, 120, y);
+
+    doc.setFont("Arial", "Bold");
 
     /* ======================
        TABLE DATA

@@ -50,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 49,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"BATCH 1\",\n    \"code\": \"1\"\n  },\n  {\n    \"name\": \"BATCH 2\",\n    \"code\": \"2\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"BATCH 1\",\n    \"code\": \"1\"\n  },\n  {\n    \"name\": \"BATCH 2\",\n    \"code\": \"2\"\n  },\n  {\n    \"name\": \"BATCH 3\",\n    \"code\": \"3\"\n  }\n]",
   "topRow": 1,
   "type": "SELECT_WIDGET",
   "version": 1,
