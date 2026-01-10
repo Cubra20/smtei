@@ -38,7 +38,7 @@
     ],
     "name": "sendStatusEmail",
     "pageId": "ASSESSMENT_APPLICANTS",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }
