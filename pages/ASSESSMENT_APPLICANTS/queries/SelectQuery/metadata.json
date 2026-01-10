@@ -51,7 +51,7 @@
         },
         "smartSubstitution": {
           "componentData": false,
-          "data": false,
+          "data": true,
           "viewType": "component"
         },
         "sortBy": {
