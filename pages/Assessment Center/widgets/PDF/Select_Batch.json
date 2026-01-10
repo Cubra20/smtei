@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -40,8 +43,8 @@
   "mobileRightColumn": 60,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "label",
+  "optionValue": "value",
   "parentColumnSpace": 17.53125,
   "parentId": "5mbr5pzrec",
   "parentRowSpace": 10,
@@ -50,7 +53,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"BATCH 1\",\n    \"code\": \"1\"\n  },\n  {\n    \"name\": \"BATCH 2\",\n    \"code\": \"2\"\n  },\n  {\n    \"name\": \"BATCH 3\",\n    \"code\": \"3\"\n  }\n]",
+  "sourceData": "{{\n_.uniqBy(getAllapplicants.data.filter(row => row.QUALIFICATION ===ac_table.selectedRow.Q_CODE && row.STATUS === \"Paid\").map(d => ({label: d[\"BATCH \"],\n\t\t value: d[\"BATCH \"]})),\n\t\t\t\t'value')\n}}",
   "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -38,7 +38,7 @@
     "ASSESSMENT_DATE",
     "REQUIREMENTS_LINK",
     "rowIndex",
-    "CERTIFICATE",
+    "INSTITUTE",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -46,7 +46,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1767939867538,
+  "columnUpdatedAt": 1768013105766,
   "columnWidthMap": {
     "NAME": 232
   },
@@ -130,9 +130,6 @@
       "key": "primaryColumns.BATCH_.computedValue"
     },
     {
-      "key": "primaryColumns.CERTIFICATE.computedValue"
-    },
-    {
       "key": "isSortable"
     },
     {
@@ -143,6 +140,9 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.INSTITUTE.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -302,40 +302,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "CERTIFICATE": {
-      "alias": "CERTIFICATE",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "url",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"CERTIFICATE\"])) : CERTIFICATE })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "CERTIFICATE",
-      "index": 12,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "CERTIFICATE",
-      "notation": "standard",
-      "originalId": "CERTIFICATE",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "CLIENT": {
       "alias": "CLIENT",
       "allowCellWrapping": false,
@@ -430,6 +396,40 @@
       "label": "EMAIL",
       "notation": "standard",
       "originalId": "EMAIL",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "INSTITUTE": {
+      "alias": "INSTITUTE",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"INSTITUTE\"])) : INSTITUTE })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "INSTITUTE",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "INSTITUTE",
+      "notation": "standard",
+      "originalId": "INSTITUTE",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

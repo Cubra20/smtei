@@ -26,7 +26,7 @@
           "data": "RANGE"
         },
         "range": {
-          "data": "A2:H"
+          "data": "A2:I"
         },
         "sheetName": {
           "data": "ASSESSMENT_APPLICANTS"
