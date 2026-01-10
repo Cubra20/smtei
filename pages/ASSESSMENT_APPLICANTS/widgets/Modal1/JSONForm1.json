@@ -253,9 +253,6 @@
     },
     {
       "key": "schema.__root_schema__.children.ASSESSMENT_DATE.isVisible"
-    },
-    {
-      "key": "onSubmit"
     }
   ],
   "dynamicTriggerPathList": [
@@ -278,7 +275,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 27,
   "needsErrorInfo": false,
-  "onSubmit": "{{ \n  UpdateQuery.run().then(() => {\n    if(\n      statusUtils.hasStatusChanged(\n        ApplicantsTable.selectedRow.STATUS,\n        JSONForm1.formData.STATUS\n      )\n    ) {\n      sendStatusEmail.run();\n    }\n  })\n}}\n",
+  "onSubmit": "{{UpdateQuery.run().then(() => {\n  showAlert('Updated Successfully', 'success');\n});\nstatusUtils.hasStatusChanged(ApplicantsTable.selectedRow.STATUS, JSONForm1.formData.STATUS);\nsendStatusEmail.run().then(() => {\n  showAlert('Send Update to ' + ApplicantsTable.selectedRow.NAME, 'success');\n}).catch(() => {\n  showAlert('Send Update not Successfull', 'error');\n});\ncloseModal(Modal1.name);}}",
   "originalBottomRow": 34,
   "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
