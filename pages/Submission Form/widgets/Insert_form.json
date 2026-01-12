@@ -219,9 +219,6 @@
       "key": "schema.__root_schema__.children.QUALIFICATION.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.INSTITUTE.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.INSTITUTE.borderRadius"
     },
     {
@@ -258,7 +255,7 @@
   "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onSubmit": "{{InsertQuery.run(() => {\n  SelectQuery.run();\n  showAlert('Submit Succefully', 'success');\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n});}}",
-  "originalBottomRow": 73,
+  "originalBottomRow": 72,
   "originalTopRow": 1,
   "parentColumnSpace": 23.53125,
   "parentId": "0",
@@ -427,7 +424,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.INSTITUTE))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "INSTITUTE",
@@ -439,6 +436,7 @@
           "label": "INSTITUTE",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "INSTITUTE",
+          "placeholderText": "Training Center/Company",
           "position": 12,
           "sourceData": "Sisters of Mary School-Adlas, Inc"
         },
