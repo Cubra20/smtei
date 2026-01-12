@@ -57,7 +57,7 @@
   "compactMode": "DEFAULT",
   "customIsLoading": false,
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "0",
+  "defaultSelectedRowIndex": "",
   "delimiter": ",",
   "derivedColumns": {
     "customColumn1": {
