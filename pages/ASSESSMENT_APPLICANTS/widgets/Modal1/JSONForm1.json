@@ -275,7 +275,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 27,
   "needsErrorInfo": false,
-  "onSubmit": "{{UpdateQuery.run().then(() => {\n  showAlert('Updated Successfully', 'success');\n});\nstatusUtils.hasStatusChanged(ApplicantsTable.selectedRow.STATUS, JSONForm1.formData.STATUS);\ncloseModal(Modal1.name);\nSelectQuery.run();\nshowModal(Modal2.name);}}",
+  "onSubmit": "{{UpdateQuery.run().then(() => {\n  showAlert('Updated Successfully', 'success');\n});\nstatusUtils.hasStatusChanged(ApplicantsTable.selectedRow.STATUS, JSONForm1.formData.STATUS);\ncloseModal(Modal1.name);\nSelectQuery.run();\nshowModal(Modal2.name);\nsendStatusEmail.run()}}",
   "originalBottomRow": 34,
   "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
