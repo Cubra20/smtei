@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "bottomRow": 75,
-  "docUrl": "{{JSObject3.generateOP_3PerPage()}}",
+  "docUrl": "{{JSObject3.generateOP_Landscape_3Vertical()}}",
   "dynamicBindingPathList": [
     {
       "key": "docUrl"
