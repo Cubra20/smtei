@@ -1,0 +1,42 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
+  "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "send-message",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 50,
+  "onClick": "{{sendStatusEmail.run().then(() => {\n  showAlert('send successfully', 'success');\n});}}",
+  "parentColumnSpace": 12.0703125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "rightColumn": 53,
+  "tooltip": "Add Candidates",
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "mnbya0j1dd",
+  "widgetName": "add_btnCopyCopy"
+}
