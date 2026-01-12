@@ -192,14 +192,14 @@
   "label": "Data",
   "labelTextSize": "0.875rem",
   "leftColumn": 1,
-  "multiRowSelection": true,
+  "multiRowSelection": false,
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "",
   "onSort": "",
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "primaryColumnId": "id",
+  "primaryColumnId": "rowIndex",
   "primaryColumns": {
     "APPLICATION_DATE": {
       "alias": "APPLICATION_DATE",
