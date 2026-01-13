@@ -36,9 +36,9 @@
     "APPLICATION_DATE",
     "PROCESS_DATE",
     "ASSESSMENT_DATE",
-    "REQUIREMENTS_LINK",
     "rowIndex",
     "INSTITUTE",
+    "REQUIREMENTS_LINK",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -46,7 +46,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1768013105766,
+  "columnUpdatedAt": 1768295146736,
   "columnWidthMap": {
     "NAME": 232
   },
@@ -86,9 +86,6 @@
     },
     {
       "key": "primaryColumns.ASSESSMENT_DATE.computedValue"
-    },
-    {
-      "key": "primaryColumns.REQUIREMENTS_LINK.computedValue"
     },
     {
       "key": "primaryColumns.customColumn1.buttonLabel"
@@ -143,6 +140,9 @@
     },
     {
       "key": "primaryColumns.INSTITUTE.computedValue"
+    },
+    {
+      "key": "primaryColumns.REQUIREMENTS_LINK.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -561,7 +561,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "REQUIREMENTS_LINK",
-      "index": 11,
+      "index": 12,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
