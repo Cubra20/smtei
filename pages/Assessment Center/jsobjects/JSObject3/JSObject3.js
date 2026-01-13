@@ -83,7 +83,7 @@ doc.text("Agency", x + OR_WIDTH / 2, y, { align: "center" });
       doc.setFont("helvetica", "normal");
       doc.text("No: CAC 26-", x + OR_WIDTH - 13, y - 8, { align: "right" });
       doc.text("Date: ____________", x + OR_WIDTH - 4, y - 2, { align: "right" });
-			doc.line(x + 70, y - 7, x + OR_WIDTH - 4, y -7);
+			doc.line(x + 74, y - 7.5, x + OR_WIDTH - 4, y -7.5);
 			
       y += 8;
       doc.setFont("helvetica", "bold");
