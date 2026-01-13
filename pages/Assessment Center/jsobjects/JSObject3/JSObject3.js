@@ -34,7 +34,7 @@ export default {
     }
 
     const peso = "( 35.00)";
-    const amountWords = "THIRTY-FIVE PESOS ONLY";
+    const amountWords = "______THIRTY-FIVE PESOS ONLY_____";
 
     data.forEach((r, i) => {
       const col = i % 3;
@@ -77,32 +77,33 @@ doc.setFontSize(7);
 doc.setFont("helvetica", "normal");
 doc.text("Agency", x + OR_WIDTH / 2, y, { align: "center" });
 
-
-      y += 10;
-      doc.setFont("helvetica", "bold");
-      doc.setFontSize(7);
-      doc.text("ORDER OF PAYMENT", x + OR_WIDTH / 2, y, { align: "center" });
-
+				y += 10;
       // Right header
-      doc.setFontSize(7);
+      doc.setFontSize(5);
       doc.setFont("helvetica", "normal");
       doc.text("No: CAC 26-", x + OR_WIDTH - 13, y - 8, { align: "right" });
       doc.text("Date: ____________", x + OR_WIDTH - 4, y - 2, { align: "right" });
 			doc.line(x + 70, y - 7, x + OR_WIDTH - 4, y -7);
+			
+      y += 8;
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(5);
+      doc.text("ORDER OF PAYMENT", x + OR_WIDTH / 2, y, { align: "center" });
+		
       y += 5;
 
       // ================= COLLECTING OFFICER =================
 			doc.setFont("helvetica", "bold");
       doc.text("The Collecting Officer", x + 4, y,);
 			doc.setFont("helvetica", "normal");
-      doc.text("Cash Unit", x + 4, y + 4);
+      doc.text("Cash Unit", x + 4, y + 2);
 
       y += 8;
 
       // ================= NAME =================
       doc.text("Please issue Official Receipt in favor of",x + OR_WIDTH / 2, y, { align: "center" });
 
-      y += 7;
+      y += 5;
       doc.setFont("helvetica", "bold");
 			doc.setTextColor("black");
       doc.setFontSize(10);
@@ -110,13 +111,13 @@ doc.text("Agency", x + OR_WIDTH / 2, y, { align: "center" });
 
       doc.line(x + 4, y + 2, x + OR_WIDTH - 4, y + 2);
 
-      y += 5.5;
-      doc.setFontSize(7);
+      y += 3.5;
+      doc.setFontSize(5);
 			doc.setTextColor(... BLUE);
       doc.setFont("helvetica", "normal");
       doc.text("(name)", x + OR_WIDTH / 2, y, { align: "center" });
 
-      y += 7;
+      y += 5;
       doc.setFontSize(10);
 			doc.setFont("helvetica", "bold");
 			doc.setTextColor("black");
@@ -124,13 +125,13 @@ doc.text("Agency", x + OR_WIDTH / 2, y, { align: "center" });
 
       doc.line(x + 4, y + 2, x + OR_WIDTH - 4, y + 2);
 
-      y += 5.5;
-      doc.setFontSize(7);
+      y += 3.5;
+      doc.setFontSize(5);
 			doc.setFont("helvetica", "normal");
 			doc.setTextColor(... BLUE);
       doc.text("(address/office)", x + OR_WIDTH / 2, y, { align: "center" });
 
-      y += 10;
+      y += 6;
 
       // ================= AMOUNT =================
       doc.setFontSize(7);
@@ -145,14 +146,14 @@ doc.text("Agency", x + OR_WIDTH / 2, y, { align: "center" });
 			doc.setFontSize(14);
       doc.text(peso, x + OR_WIDTH - 5, y+8, { align: "right" });
 
-      doc.line(x + 22, y + 2, x + OR_WIDTH - 5, y + 2);
+     
 			doc.line(x + 5, y + 8, x + OR_WIDTH - 22, y + 8);
 
       y += 12;
 
       // ================= PAYMENT FOR =================
       doc.setFont("helvetica", "normal");
-			doc.setFontSize(7);
+			doc.setFontSize(5);
 			doc.setTextColor(... BLUE);
       doc.text("For payment of", x + 4, y+3);
 
@@ -167,7 +168,7 @@ doc.text("Agency", x + OR_WIDTH / 2, y, { align: "center" });
 			doc.line(x + 4, y + 9, x + OR_WIDTH - 4, y + 9);
 
       y += 5.5;
-      doc.setFontSize(7);
+      doc.setFontSize(5);
 			doc.setTextColor(... BLUE);
       doc.setFont("helvetica", "normal");
       doc.text("(Qualification)", x + OR_WIDTH / 2, y+6, { align: "center" });
@@ -207,10 +208,10 @@ doc.text("Agency", x + OR_WIDTH / 2, y, { align: "center" });
       // ================= SIGNATURE =================
       doc.line(x + 18, y, x + OR_WIDTH - 18, y);
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(7);
+      doc.setFontSize(5);
       doc.text("MARIA EVELYN F. BOSUTROS", x + OR_WIDTH / 2, y + 3, { align: "center" });
 
-      doc.setFontSize(6);
+      doc.setFontSize(5);
       doc.setFont("helvetica", "normal");
       doc.text("FINANCIAL ANALYST", x + OR_WIDTH / 2, y + 6, { align: "center" });
     });
