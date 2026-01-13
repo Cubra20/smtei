@@ -42,15 +42,18 @@ export default {
 
       const x = MARGIN_X + col * (OR_WIDTH + GAP);
       let y = MARGIN_Y;
+			 // ================= BORDER =================
+			doc.setDrawColor("BLACK");
+			doc.setLineWidth(0.6);
+      doc.rect(x, y, OR_WIDTH, OR_HEIGHT);
 
+      y += 10;
+			
       doc.setTextColor(...BLUE);
       doc.setDrawColor(...BLUE);
       doc.setLineWidth(0.2);
 
-      // ================= BORDER =================
-      doc.rect(x, y, OR_WIDTH, OR_HEIGHT);
-
-      y += 10;
+     
 
       // ================= HEADER =================
      // ===== TESDA LOGO =====
