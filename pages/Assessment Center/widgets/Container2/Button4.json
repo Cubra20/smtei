@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 78,
+  "bottomRow": 71,
   "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
   "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
   "buttonVariant": "PRIMARY",
@@ -57,7 +57,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 63,
   "text": "Submit Requirements",
-  "topRow": 72,
+  "topRow": 65,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "0bccolan29",
