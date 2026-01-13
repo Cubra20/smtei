@@ -33,7 +33,7 @@ export default {
       return;
     }
 
-    const peso = "( 35.00)";
+    const peso = "( _35.00_)";
     const amountWords = "______THIRTY-FIVE PESOS ONLY_____";
 
     data.forEach((r, i) => {
@@ -147,7 +147,7 @@ doc.text("Agency", x + OR_WIDTH / 2, y, { align: "center" });
       doc.text(peso, x + OR_WIDTH - 5, y+8, { align: "right" });
 
      
-			doc.line(x + 5, y + 8, x + OR_WIDTH - 22, y + 8);
+			doc.line(x + 5, y + 9, x + OR_WIDTH - 27, y + 9);
 
       y += 12;
 
