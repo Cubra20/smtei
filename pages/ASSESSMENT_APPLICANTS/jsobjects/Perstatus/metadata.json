@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_b2c4b339-c3c0-4f55-9a6d-a349e9c6da51",
+  "id": "ASSESSMENT_APPLICANTS_Perstatus",
+  "unpublishedCollection": {
+    "name": "Perstatus",
+    "pageId": "ASSESSMENT_APPLICANTS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

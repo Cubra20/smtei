@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_8e930911-4648-49c2-b2f5-adce191484e0",
+  "id": "ASSESSMENT_APPLICANTS_Countperstatus",
+  "unpublishedCollection": {
+    "name": "Countperstatus",
+    "pageId": "ASSESSMENT_APPLICANTS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
