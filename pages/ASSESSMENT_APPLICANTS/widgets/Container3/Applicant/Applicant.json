@@ -11,7 +11,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 79,
   "bottomRowBeforeCollapse": 79,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "inset 0 0 20px rgba(255, 255, 255, 0.192),\n    inset 0 0 5px rgba( 0, 0, 255), 0 5px 5px rgba(0, 0, 0, 0.164);",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -80,9 +80,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "boxShadow"
-    },
-    {
       "key": "listData"
     },
     {
@@ -92,6 +89,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
+    },
+    {
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [],

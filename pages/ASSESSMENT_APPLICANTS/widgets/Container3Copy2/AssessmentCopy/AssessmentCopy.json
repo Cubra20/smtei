@@ -11,7 +11,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 79,
   "bottomRowBeforeCollapse": 79,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "inset 0 0 20px rgba(255, 255, 255, 0.192),\n    inset 0 0 5px rgba( 0, 0, 255), 0 5px 5px rgba(0, 0, 0, 0.164);",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -80,9 +80,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "boxShadow"
-    },
-    {
       "key": "listData"
     },
     {
@@ -92,6 +89,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
+    },
+    {
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -116,7 +116,7 @@
   "mobileTopRow": 9,
   "needsErrorInfo": false,
   "originalBottomRow": 79,
-  "originalTopRow": 5,
+  "originalTopRow": 4,
   "pageSize": 5,
   "parentColumnSpace": 20.25,
   "parentId": "1obb5bmm2q",
@@ -130,7 +130,7 @@
   "serverSidePagination": false,
   "templateHeight": 160,
   "topRow": 4,
-  "topRowBeforeCollapse": 5,
+  "topRowBeforeCollapse": 4,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "2z3lex6o8z",

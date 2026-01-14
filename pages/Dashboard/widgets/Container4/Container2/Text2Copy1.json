@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,7 +13,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
@@ -30,6 +30,8 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
+  "originalBottomRow": 14,
+  "originalTopRow": 10,
   "overflow": "NONE",
   "parentColumnSpace": 2.15283203125,
   "parentId": "nm7ba8u4bb",
@@ -38,13 +40,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 55,
   "shouldTruncate": false,
-  "text": "Qualification",
+  "text": "TRAINING CENTER",
   "textAlign": "LEFT",
   "textColor": "#71717a",
-  "topRow": 11,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "9cu0n1n3jw",
-  "widgetName": "Text2"
+  "widgetId": "usjjc7xucm",
+  "widgetName": "Text2Copy1"
 }

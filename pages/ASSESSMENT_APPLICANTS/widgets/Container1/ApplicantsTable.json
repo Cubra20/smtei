@@ -4,7 +4,7 @@
   "borderColor": "#dbeafe",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 85,
+  "bottomRow": 80,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cellBackground": "",
   "childStylesheet": {

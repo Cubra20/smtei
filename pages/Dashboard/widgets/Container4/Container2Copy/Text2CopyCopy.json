@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,7 +13,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
@@ -30,21 +30,23 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
   "overflow": "NONE",
   "parentColumnSpace": 2.15283203125,
-  "parentId": "nm7ba8u4bb",
+  "parentId": "r595aqgzgo",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 55,
   "shouldTruncate": false,
-  "text": "Qualification",
+  "text": "ASSESSMENT CENTER",
   "textAlign": "LEFT",
   "textColor": "#71717a",
-  "topRow": 11,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "9cu0n1n3jw",
-  "widgetName": "Text2"
+  "widgetId": "u4hqyeiwwi",
+  "widgetName": "Text2CopyCopy"
 }
