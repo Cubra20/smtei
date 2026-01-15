@@ -121,7 +121,7 @@
   "parentColumnSpace": 20.25,
   "parentId": "1obb5bmm2q",
   "parentRowSpace": 10,
-  "primaryKeys": "{{AssessmentCopy.listData.map((currentItem, currentIndex) => currentItem[\"NAME\"] )}}",
+  "primaryKeys": "{{Assessment.listData.map((currentItem, currentIndex) => currentItem[\"NAME\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
@@ -134,5 +134,5 @@
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "2z3lex6o8z",
-  "widgetName": "AssessmentCopy"
+  "widgetName": "Assessment"
 }

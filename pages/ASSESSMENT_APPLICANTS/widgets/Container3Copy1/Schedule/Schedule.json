@@ -120,7 +120,7 @@
   "parentColumnSpace": 20.25,
   "parentId": "apjo1m46el",
   "parentRowSpace": 10,
-  "primaryKeys": "{{ScheduleCopyCopy.listData.map((currentItem, currentIndex) => currentItem[\"NAME\"] )}}",
+  "primaryKeys": "{{Schedule.listData.map((currentItem, currentIndex) => currentItem[\"NAME\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
@@ -132,5 +132,5 @@
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "ektniojrsc",
-  "widgetName": "ScheduleCopyCopy"
+  "widgetName": "Schedule"
 }

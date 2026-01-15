@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "shouldTruncate": false,
-  "text": "New Applicants ({{Countperstatus.countStatus.data.Applicant}})",
+  "text": "New Applicants ({{\n  Select1.selectedOptionValue === \"All\"? Applicant.listData.length: Applicant.listData.filter(item =>item.QUALIFICATION === Select1.selectedOptionValue\n      ).length}})",
   "textAlign": "LEFT",
   "textColor": "#18181b",
   "topRow": 0,

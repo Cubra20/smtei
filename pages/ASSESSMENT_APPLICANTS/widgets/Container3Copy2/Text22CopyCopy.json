@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "shouldTruncate": false,
-  "text": "For Assessment ({{Countperstatus.countStatus.data.Assessment}})",
+  "text": "For Assessment ({{\n  Select1.selectedOptionValue === \"All\"? Assessment.listData.length: Assessment.listData.filter(item =>item.QUALIFICATION === Select1.selectedOptionValue\n      ).length}})",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

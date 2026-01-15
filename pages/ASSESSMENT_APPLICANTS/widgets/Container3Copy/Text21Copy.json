@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "shouldTruncate": false,
-  "text": "Paid/Waiting ({{Countperstatus.countStatus.data.Paid}})",
+  "text": "Paid/Waiting ({{\n  Select1.selectedOptionValue === \"All\"? PaidCopy.listData.length: PaidCopy.listData.filter(item =>item.QUALIFICATION === Select1.selectedOptionValue\n      ).length}})",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,
