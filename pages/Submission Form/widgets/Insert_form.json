@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 72,
+  "bottomRow": 80,
   "boxShadow": "rgba(0, 0, 255) 0px 5px 15px;",
   "childStylesheet": {
     "ARRAY": {
@@ -223,6 +223,15 @@
     },
     {
       "key": "schema.__root_schema__.children.INSTITUTE.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -433,7 +442,7 @@
           "identifier": "INSTITUTE",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "INSTITUTE",
@@ -510,6 +519,29 @@
           "position": 3,
           "serverSideFiltering": false,
           "sourceData": "BPP NC II"
+        },
+        "REQUIREMENTS_LINK": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "accessor": "REQUIREMENTS_LINK",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.REQUIREMENTS_LINK))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "REQUIREMENTS_LINK",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "REQUIREMENTS LINK",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "REQUIREMENTS_LINK",
+          "placeholderText": "Google Drive Link",
+          "position": 13,
+          "sourceData": ""
         },
         "STATUS": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",

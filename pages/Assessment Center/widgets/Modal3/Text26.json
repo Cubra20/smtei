@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 55,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "lequv3hevo",
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 8,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "originalBottomRow": 55,
+  "originalTopRow": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 6.9375,
+  "parentId": "9dd3peayig",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "shouldTruncate": false,
+  "text": "🔢 Please follow these steps carefully:\n\n1️⃣ 📄 Prepare Your Documents\nCollect all required documents and make sure they are complete.\n\n2️⃣ 📁 Create One Folder Only\nPlace ALL documents in a single folder.\n\n3️⃣ ✏️ Rename the Folder\nUse the format below when renaming your folder:\n\nSurname, First Name_Qualification\n📝 Example: Dela Cruz, Juan_Welding NC II\n\n4️⃣ ☁️ Upload to Google Drive\nUpload the folder to your Google Drive account.\n\n5️⃣ 🔗 Set Folder Access\nRight-click the folder → Get link → set access to:\nAnyone with the link → Viewer\n\n6️⃣ 📋 Copy the Folder Link\nMake sure the link is accessible before copying.\n\n7️⃣ 📝 Paste the Link in the Form\nPaste the copied Google Drive folder link into the designated field in the application form.",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 4,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "7xpcq36ibo",
+  "widgetName": "Text26"
+}
