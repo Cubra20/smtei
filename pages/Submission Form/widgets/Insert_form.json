@@ -1,12 +1,12 @@
 {
   "animateLoading": true,
   "autoGenerateForm": true,
-  "backgroundColor": "#fff",
+  "backgroundColor": "#ffffff",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 72,
-  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "boxShadow": "rgba(0, 0, 255) 0px 5px 15px;",
   "childStylesheet": {
     "ARRAY": {
       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -234,7 +234,7 @@
       "key": "schema.__root_schema__.children.COC.isVisible"
     },
     {
-      "key": "schema.__root_schema__.children.APPLICATION_DATE.defaultValue"
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [
@@ -291,7 +291,7 @@
           "convertToISO": false,
           "dataType": "string",
           "dateFormat": "LL",
-          "defaultValue": "",
+          "defaultValue": "2026-01-15T15:52:56.5656+08:00",
           "fieldType": "Datepicker",
           "identifier": "APPLICATION_DATE",
           "isCustomField": false,

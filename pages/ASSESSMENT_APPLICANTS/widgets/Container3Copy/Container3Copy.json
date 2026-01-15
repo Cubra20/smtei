@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 92,
-  "boxShadow": "inset 0 0 20px rgba(255, 255, 255, 0.192),\n    inset 0 0 5px rgba( 0, 0, 255), 0 5px 5px rgba(0, 0, 0, 0.164);",
+  "boxShadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px;",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

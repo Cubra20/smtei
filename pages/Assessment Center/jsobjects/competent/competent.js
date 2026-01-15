@@ -18,7 +18,7 @@ export default {
     ).length,
 		schedule:Allapplicants.filter(row =>
       row.QUALIFICATION === data_table.Q_CODE &&
-      row.STATUS === "For schedule"
+      row.STATUS === "For Schedule"
     ).length,
 		assessment:Allapplicants.filter(row =>
       row.QUALIFICATION === data_table.Q_CODE &&

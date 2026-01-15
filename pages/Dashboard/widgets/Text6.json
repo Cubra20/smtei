@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 36,
+  "bottomRow": 33,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 44,
   "needsErrorInfo": false,
-  "originalBottomRow": 36,
-  "originalTopRow": 32,
+  "originalBottomRow": 33,
+  "originalTopRow": 29,
   "overflow": "NONE",
   "parentColumnSpace": 20.25,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "Candidates Schedule for Assessment ({{Select_quali.selectedOptionValue === \"All\"? List1.listData.length: List1.listData.filter(item =>item.QUALIFICATION === Select1.selectedOptionValue\n      ).length}})",
   "textAlign": "CENTER",
   "textColor": "#231F20",
-  "topRow": 32,
+  "topRow": 29,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

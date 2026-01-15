@@ -8,8 +8,6 @@ export default {
 		Status = Status.filter(d => d.QUALIFICATION === Select1.selectedOptionValue);
 	}
 	return Status;
-	
-	
 },
 	Paid: (data= SelectQuery.data) => {
 	let Status = data;
@@ -20,8 +18,6 @@ export default {
 		Status = Status.filter(d => d.QUALIFICATION === Select1.selectedOptionValue);
 	}
 	return Status;
-	
-	
 },	
 schedule: (data= SelectQuery.data) => {
 	let Status = data;
@@ -32,8 +28,6 @@ schedule: (data= SelectQuery.data) => {
 		Status = Status.filter(d => d.QUALIFICATION === Select1.selectedOptionValue);
 	}
 	return Status;
-	
-	
 },
 	Assessment: (data= SelectQuery.data) => {
 	let Status = data;
@@ -44,7 +38,5 @@ schedule: (data= SelectQuery.data) => {
 		Status = Status.filter(d => d.QUALIFICATION === Select1.selectedOptionValue);
 	}
 	return Status;
-	
-	
 }
 }

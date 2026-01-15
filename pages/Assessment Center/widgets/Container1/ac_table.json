@@ -2,12 +2,12 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "allowAddNewRow": false,
   "animateLoading": true,
-  "borderColor": "#3f3f46",
+  "borderColor": "#dbeafe",
   "borderRadius": "1.2rem",
   "borderWidth": "2",
-  "bottomRow": 79,
+  "bottomRow": 110,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-  "cellBackground": "{{}}",
+  "cellBackground": "",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -54,8 +54,9 @@
     "Q_CODE": 208,
     "Valid_until": 185
   },
-  "compactMode": "DEFAULT",
+  "compactMode": "TALL",
   "customIsLoading": false,
+  "customIsLoadingValue": "",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "",
   "delimiter": ",",
@@ -105,49 +106,25 @@
       "key": "primaryColumns.TYPE.computedValue"
     },
     {
-      "key": "primaryColumns.TYPE.cellBackground"
-    },
-    {
       "key": "primaryColumns.QUALIFICATION.computedValue"
-    },
-    {
-      "key": "primaryColumns.QUALIFICATION.cellBackground"
     },
     {
       "key": "primaryColumns.Valid_until.computedValue"
     },
     {
-      "key": "primaryColumns.Valid_until.cellBackground"
-    },
-    {
       "key": "primaryColumns.Q_CODE.computedValue"
-    },
-    {
-      "key": "primaryColumns.Q_CODE.cellBackground"
     },
     {
       "key": "primaryColumns.ASSESSMENT_FEE.computedValue"
     },
     {
-      "key": "primaryColumns.ASSESSMENT_FEE.cellBackground"
-    },
-    {
       "key": "primaryColumns.APPLICATION_FORM.computedValue"
-    },
-    {
-      "key": "primaryColumns.APPLICATION_FORM.cellBackground"
     },
     {
       "key": "primaryColumns.SAG.computedValue"
     },
     {
-      "key": "primaryColumns.SAG.cellBackground"
-    },
-    {
       "key": "primaryColumns.ACCREDITATION_NO.computedValue"
-    },
-    {
-      "key": "primaryColumns.ACCREDITATION_NO.cellBackground"
     },
     {
       "key": "primaryColumns.EditActions5.isSaveDisabled"
@@ -157,9 +134,6 @@
     }
   ],
   "dynamicPropertyPathList": [
-    {
-      "key": "cellBackground"
-    },
     {
       "key": "borderRadius"
     },
@@ -177,6 +151,9 @@
     },
     {
       "key": "primaryColumns.EditActions5.isDiscardDisabled"
+    },
+    {
+      "key": "cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -215,6 +192,8 @@
   "onPageChange": "{{\n            Find_ASSESSMENT_CENTER1.run();\n            Total_record_ASSESSMENT_CENTER1.run()\n          }}",
   "onRowSelected": "",
   "onSort": "{{\n            Find_ASSESSMENT_CENTER1.run();\n            Total_record_ASSESSMENT_CENTER1.run()\n          }}",
+  "originalBottomRow": 110,
+  "originalTopRow": 6,
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -224,7 +203,7 @@
       "alias": "ACCREDITATION_NO",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ACCREDITATION_NO\"])) : ACCREDITATION_NO })()}}",
       "currencyCode": "USD",
@@ -258,7 +237,7 @@
       "alias": "APPLICATION_FORM",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
+      "cellBackground": "",
       "columnType": "url",
       "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"APPLICATION_FORM\"])) : APPLICATION_FORM })()}}",
       "currencyCode": "USD",
@@ -292,7 +271,7 @@
       "alias": "ASSESSMENT_FEE",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
+      "cellBackground": "",
       "columnType": "currency",
       "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ASSESSMENT_FEE\"])) : ASSESSMENT_FEE })()}}",
       "currencyCode": "PHP",
@@ -327,6 +306,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "",
       "columnType": "editActions",
       "computedValue": "",
       "currencyCode": "USD",
@@ -365,6 +345,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "",
       "columnType": "editActions",
       "computedValue": "",
       "currencyCode": "USD",
@@ -402,7 +383,7 @@
       "alias": "QUALIFICATION",
       "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"QUALIFICATION\"])) : QUALIFICATION })()}}",
       "currencyCode": "USD",
@@ -436,7 +417,7 @@
       "alias": "Q_CODE",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Q_CODE\"])) : Q_CODE })()}}",
       "currencyCode": "USD",
@@ -470,7 +451,7 @@
       "alias": "SAG",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
+      "cellBackground": "",
       "columnType": "url",
       "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"SAG\"])) : SAG })()}}",
       "currencyCode": "USD",
@@ -504,7 +485,7 @@
       "alias": "TYPE",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"TYPE\"])) : TYPE })()}}",
       "currencyCode": "USD",
@@ -538,7 +519,7 @@
       "alias": "Valid until",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{}}",
+      "cellBackground": "",
       "columnType": "date",
       "computedValue": "{{(() => { const tableData = ac_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Valid until\"])) : currentRow[\"Valid until\"] })()}}",
       "currencyCode": "USD",
@@ -616,6 +597,7 @@
   "topRow": 6,
   "totalRecordsCount": "{{Total_record_ASSESSMENT_CENTER1.data.length}}",
   "type": "TABLE_WIDGET_V2",
+  "variant": "VARIANT3",
   "version": 3,
   "verticalAlignment": "CENTER",
   "widgetId": "icx7cf3936",

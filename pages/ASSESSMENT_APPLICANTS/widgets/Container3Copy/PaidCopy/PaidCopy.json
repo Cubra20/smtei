@@ -100,7 +100,7 @@
   "hasMetaWidgets": true,
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": "{{Countperstatus.countStatus.data.Paid !== 0}}",
+  "isVisible": "{{Countperstatus.countStatus.data.PaidCopy !== 0}}",
   "itemBackgroundColor": "#FFFFFF",
   "itemSpacing": 8,
   "key": "r91xqco2rg",

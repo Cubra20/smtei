@@ -45,7 +45,7 @@
   "shouldTruncate": false,
   "text": "{{dashboard.getDashboardMetrics.data.assessment}}",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "#ffffff",
   "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

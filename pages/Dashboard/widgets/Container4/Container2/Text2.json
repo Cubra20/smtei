@@ -42,7 +42,7 @@
   "shouldTruncate": false,
   "text": "Qualification",
   "textAlign": "LEFT",
-  "textColor": "#71717a",
+  "textColor": "#ffffff",
   "topRow": 11,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

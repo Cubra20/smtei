@@ -1,26 +1,20 @@
 {
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 10,
   "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
   "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
   "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "boxShadow"
-    },
-    {
       "key": "buttonColor"
     },
     {
-      "key": "isVisible"
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [
@@ -28,20 +22,21 @@
       "key": "onClick"
     }
   ],
-  "iconName": "arrow-top-right",
+  "iconName": "new-person",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{appsmith.user.adminSettingsVisible}}",
+  "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 61,
-  "onClick": "{{navigateTo('ASSESSMENT_APPLICANTS', {}, 'SAME_WINDOW');}}",
+  "leftColumn": 59,
+  "onClick": "{{showModal('Insert_Modal')}}",
   "parentColumnSpace": 12.0703125,
-  "parentId": "4yxspzfvpt",
+  "parentId": "0",
   "parentRowSpace": 10,
-  "rightColumn": 64,
-  "topRow": 0,
+  "rightColumn": 62,
+  "tooltip": "Add Candidates",
+  "topRow": 5,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "dgbjm89itq",
-  "widgetName": "refresh_btnCopy"
+  "widgetId": "8stq9s6f9l",
+  "widgetName": "add_btnCopy1"
 }

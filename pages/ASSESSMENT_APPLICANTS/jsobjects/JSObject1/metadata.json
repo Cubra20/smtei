@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_8ed15377-f6b3-4685-b469-88e50f29400e",
+  "id": "ASSESSMENT_APPLICANTS_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "ASSESSMENT_APPLICANTS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

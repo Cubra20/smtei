@@ -28,7 +28,7 @@
       "key": "onClick"
     }
   ],
-  "iconName": "new-person",
+  "iconName": "people",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": "{{appsmith.user.adminSettingsVisible}}",
