@@ -3,7 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 10,
-  "boxShadow": "none",
+  "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
   "defaultOptionValue": "All",
   "dynamicBindingPathList": [
     {
@@ -20,6 +20,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -31,10 +34,11 @@
   "key": "7v8cc9hmb2",
   "labelAlignment": "left",
   "labelPosition": "Top",
+  "labelStyle": "BOLD,ITALIC",
   "labelText": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 24,
+  "leftColumn": 27,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -51,7 +55,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 37,
   "serverSideFiltering": false,
   "sourceData": "{{\n_.uniqBy(SelectQuery.data.map(d => ({label: d.QUALIFICATION,\n\t\t value: d.QUALIFICATION})),\n\t\t\t\t'value').concat({label:'All',value: 'All'})\n}}",
   "topRow": 6,
