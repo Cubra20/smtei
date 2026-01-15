@@ -277,7 +277,7 @@
           "fieldType": "Datepicker",
           "identifier": "APPLICATION_DATE",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
           "isRequired": false,
           "isVisible": true,
           "label": "APPLICATION DATE",

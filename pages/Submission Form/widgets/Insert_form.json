@@ -232,6 +232,9 @@
     },
     {
       "key": "schema.__root_schema__.children.COC.isVisible"
+    },
+    {
+      "key": "schema.__root_schema__.children.APPLICATION_DATE.defaultValue"
     }
   ],
   "dynamicTriggerPathList": [
@@ -288,11 +291,11 @@
           "convertToISO": false,
           "dataType": "string",
           "dateFormat": "LL",
-          "defaultValue": "2026-01-12T09:07:34.3434+08:00",
+          "defaultValue": "",
           "fieldType": "Datepicker",
           "identifier": "APPLICATION_DATE",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
           "isRequired": true,
           "isVisible": true,
           "label": "SUBMISSION DATE",
