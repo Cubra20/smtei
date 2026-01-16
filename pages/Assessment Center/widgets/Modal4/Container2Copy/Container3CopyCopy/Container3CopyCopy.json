@@ -4,12 +4,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "1.5rem",
   "borderWidth": "1",
-  "bottomRow": 50,
-  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "bottomRow": 27,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 120,
+      "bottomRow": 130,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -38,7 +38,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "nymlen0vs7",
+      "parentId": "thfhojffuc",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,29 +46,29 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "hlg9jvrucc",
-      "widgetName": "Canvas6Copy2Copy"
+      "widgetId": "7vjq4rpmlo",
+      "widgetName": "Canvas6CopyCopy"
     }
   ],
   "containerStyle": "card",
   "dynamicBindingPathList": [
     {
-      "key": "isVisible"
+      "key": "boxShadow"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
-      "key": "isVisible"
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": "{{appsmith.user.adminSettingsVisible}}",
+  "isVisible": true,
   "key": "ure1gq6coq",
-  "leftColumn": 2,
+  "leftColumn": 7,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -77,18 +77,18 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 50,
-  "originalTopRow": 38,
+  "originalBottomRow": 27,
+  "originalTopRow": 14,
   "parentColumnSpace": 13.254638671875,
-  "parentId": "4yxspzfvpt",
+  "parentId": "jf9y9djccw",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 17,
   "shouldScrollContents": true,
-  "topRow": 38,
+  "topRow": 14,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "nymlen0vs7",
-  "widgetName": "Container3Copy2Copy"
+  "widgetId": "thfhojffuc",
+  "widgetName": "Container3CopyCopy"
 }

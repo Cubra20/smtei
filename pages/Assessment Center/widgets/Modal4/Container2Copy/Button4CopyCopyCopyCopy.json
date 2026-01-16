@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 34,
   "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
   "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
   "buttonVariant": "PRIMARY",
@@ -9,20 +9,14 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "isVisible"
+      "key": "buttonColor"
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -31,34 +25,35 @@
     }
   ],
   "iconAlign": "left",
-  "iconName": "updated",
+  "iconName": "document-open",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{appsmith.user.adminSettingsVisible}}",
-  "key": "jpx49pg4u4",
-  "leftColumn": 49,
+  "isVisible": true,
+  "key": "wvfnfarwb6",
+  "leftColumn": 35,
   "minWidth": 120,
   "mobileBottomRow": 5,
-  "mobileLeftColumn": 35,
-  "mobileRightColumn": 51,
+  "mobileLeftColumn": 42,
+  "mobileRightColumn": 58,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Update_form.name);}}",
-  "parentColumnSpace": 22.85107421875,
-  "parentId": "59rw5mx0bq",
+  "onClick": "{{showModal(Modal1.name);}}",
+  "originalBottomRow": 34,
+  "originalTopRow": 29,
+  "parentColumnSpace": 22.11572265625,
+  "parentId": "jf9y9djccw",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": true,
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 59,
-  "text": "Update",
-  "tooltip": "Update",
-  "topRow": 1,
+  "rightColumn": 48,
+  "text": "Requirements",
+  "topRow": 29,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "v8dn0jlp95",
-  "widgetName": "Button3"
+  "widgetId": "m4ykhzaxbk",
+  "widgetName": "Button4CopyCopyCopyCopy"
 }

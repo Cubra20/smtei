@@ -190,7 +190,7 @@
   "leftColumn": 1,
   "onAddNewRowSave": "{{Insert_ASSESSMENT_CENTER1.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_ASSESSMENT_CENTER1.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_ASSESSMENT_CENTER1.run();\n            Total_record_ASSESSMENT_CENTER1.run()\n          }}",
-  "onRowSelected": "",
+  "onRowSelected": "{{showModal(Modal4.name);}}",
   "onSort": "{{\n            Find_ASSESSMENT_CENTER1.run();\n            Total_record_ASSESSMENT_CENTER1.run()\n          }}",
   "originalBottomRow": 110,
   "originalTopRow": 6,
