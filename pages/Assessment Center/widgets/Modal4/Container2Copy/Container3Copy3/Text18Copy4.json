@@ -14,12 +14,18 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "fontSize"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -46,11 +52,11 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 62,
   "shouldTruncate": false,
   "text": "{{ competent.countFromOtherTable(ac_table.selectedRow, getAllapplicants.data).waiting\n}}\n\n\n",
   "textAlign": "LEFT",
-  "textColor": "#231f20",
+  "textColor": "{{competent.countFromOtherTable(ac_table.selectedRow, getAllapplicants.data).Paid >0 ? (appsmith.theme.isDark ? \"#15803d\" : \"#15803d\")\n    : (appsmith.theme.isDark ? \"#E5E7EB\" : \"#6B7280\")}}",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

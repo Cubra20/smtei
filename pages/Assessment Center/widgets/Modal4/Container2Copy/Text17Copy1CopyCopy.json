@@ -41,7 +41,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 35,
+  "rightColumn": 52,
   "shouldTruncate": false,
   "text": "Fee: {{(ac_table.selectedRow.ASSESSMENT_FEE)}}",
   "textAlign": "LEFT",

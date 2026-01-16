@@ -30,7 +30,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 430,
+      "minHeight": 480,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -83,5 +83,5 @@
   "version": 2,
   "widgetId": "x4da4r8oi8",
   "widgetName": "Modal4",
-  "width": 898
+  "width": 970
 }
