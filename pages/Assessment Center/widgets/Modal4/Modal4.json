@@ -58,7 +58,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClose"
+    }
+  ],
   "height": 390,
   "isCanvas": true,
   "isLoading": false,
@@ -72,6 +76,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 128,
   "needsErrorInfo": false,
+  "onClose": "",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,

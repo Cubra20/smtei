@@ -57,7 +57,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClose"
+    }
+  ],
   "height": 540,
   "isCanvas": true,
   "isLoading": false,
@@ -71,6 +75,7 @@
   "mobileRightColumn": 0,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onClose": "{{showModal(Modal4.name);}}",
   "originalBottomRow": 240,
   "originalTopRow": 0,
   "parentColumnSpace": 1,
