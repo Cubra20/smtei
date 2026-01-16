@@ -13,9 +13,6 @@
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "onClick"
-    },
-    {
       "key": "buttonColor"
     },
     {
@@ -41,7 +38,7 @@
   "mobileRightColumn": 15,
   "mobileTopRow": 70,
   "needsErrorInfo": false,
-  "onClick": "{{ac_table.selectedRow.SAG}}",
+  "onClick": "{{navigateTo(ac_table.selectedRow.SAG, {}, 'NEW_WINDOW');}}",
   "parentColumnSpace": 13.71875,
   "parentId": "u3fgin2jhy",
   "parentRowSpace": 10,
