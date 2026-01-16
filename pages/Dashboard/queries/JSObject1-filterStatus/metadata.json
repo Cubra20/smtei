@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "695b4d7d5ddb3153cdfc5984_05721133-83e6-42d0-b101-b6517e6ea999",
-  "id": "Dashboard_JSObject1.filteStatus",
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_bfe9d2c4-0d9d-41a1-a1ba-cf0c1e8d823e",
+  "id": "Dashboard_JSObject1.filterStatus",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "JSObject1.filteStatus",
-    "name": "filteStatus",
+    "fullyQualifiedName": "JSObject1.filterStatus",
+    "name": "filterStatus",
     "pageId": "Dashboard",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": true

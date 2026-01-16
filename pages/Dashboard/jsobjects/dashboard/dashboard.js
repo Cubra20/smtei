@@ -15,7 +15,7 @@ getDashboardMetrics:async () => {
 		grade12:Perlevel.filter(c => c.GRADE_LEVEL === "G12" ).length,
 		training:Training.filter(a => a.TYPE === "TRAINING CENTER").length,
 		assessment:Assessment.filter(a => a.TYPE === "ASSESSMENT CENTER").length,
-		st_assessment:status.filter(g => g.STATUS === "APPLICATION").array
+		st_assessment:status.filter(g => g.STATUS === "Application").array
 	} 
 }
 

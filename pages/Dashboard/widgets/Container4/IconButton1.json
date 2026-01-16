@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 5,
+  "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
+  "buttonColor": "{{(JSObject2.countStatus.data.Applicant)  >0 ? (appsmith.theme.isDark ? \"#15803d\" : \"#15803d\")\n    : (appsmith.theme.isDark ? \"#3b82f6\" : \"#3b82f6\")}}",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "notifications",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xq0b2hi2f0",
+  "leftColumn": 61,
+  "minWidth": 50,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 59,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(notification_modal.name);}}",
+  "parentColumnSpace": 19.5,
+  "parentId": "z39rem0bv7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "k70wbjyf4i",
+  "widgetName": "IconButton1"
+}

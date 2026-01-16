@@ -12,6 +12,17 @@ filteStatus: (data= getStatus.data) => {
 	return Status;
 	
 	
+},
+	
+filterStatus: (data= getStatus.data) => {
+	let Status = data;
+	{
+		Status = Status.filter(g => g.STATUS === "Application");
+	}
+
+	return Status;
+	
+	
 }
  	} 
 

@@ -9,8 +9,8 @@ countStatus:async () => {
 		Paid:count.filter(c => c.STATUS === "Paid" ).length,
 		Schedule:count.filter(ROW => ROW.STATUS === "For Schedule" &&
 												 ROW.QUALIFICATION === List2.triggeredItem.Q_CODE).length,
-		Assessment:count.filter(c => c.STATUS === "For Assessment" &&
-												 ROW.QUALIFICATION === List2.triggeredItem.Q_CODE).length,
+		Assessment:count.filter(row => row.STATUS === "For Assessment" &&
+												 row.QUALIFICATION === List2.triggeredItem.Q_CODE).length,
 	
 	
 	} 
