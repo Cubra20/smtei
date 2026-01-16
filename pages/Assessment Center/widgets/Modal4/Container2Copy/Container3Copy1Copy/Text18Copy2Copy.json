@@ -56,7 +56,7 @@
   "shouldTruncate": false,
   "text": "{{ competent.countFromOtherTable(ac_table.selectedRow, getAllapplicants.data).schedule\n}}\n\n\n",
   "textAlign": "LEFT",
-  "textColor": "{{competent.countFromOtherTable(ac_table.selectedRow, getAllapplicants.data).Schedule >0 ? (appsmith.theme.isDark ? \"#15803d\" : \"#15803d\")\n    : (appsmith.theme.isDark ? \"#E5E7EB\" : \"#6B7280\")}}",
+  "textColor": "{{competent.countFromOtherTable(ac_table.selectedRow, getAllapplicants.data).schedule >0 ? (appsmith.theme.isDark ? \"#15803d\" : \"#15803d\")\n    : (appsmith.theme.isDark ? \"#E5E7EB\" : \"#6B7280\")}}",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
