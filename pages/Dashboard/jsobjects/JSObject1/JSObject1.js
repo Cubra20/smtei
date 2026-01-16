@@ -6,8 +6,8 @@ filteStatus: (data= getStatus.data) => {
 		Status = Status.filter(g => g.STATUS === "For Assessment");
 	}
 	
-	if(Select_quali.selectedOptionValue !== 'All')	{
-		Status = Status.filter(d => d.QUALIFICATION === Select_quali.selectedOptionValue);
+	{
+		Status = Status.filter(d => d.QUALIFICATION === List2.triggeredItem.Q_CODE);
 	}
 	return Status;
 	

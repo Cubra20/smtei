@@ -1,7 +1,7 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "FLUID"
+    "type": "TABLET_LARGE"
   },
   "applicationDetail": {
     "navigationSetting": {
@@ -53,7 +53,7 @@
     }
   ],
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "TABLET_LARGE"
   },
   "unpublishedApplicationDetail": {
     "navigationSetting": {
