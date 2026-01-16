@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 38,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "7gtoql8bnv",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 38,
+  "originalTopRow": 5,
+  "overflow": "NONE",
+  "parentColumnSpace": 13.71875,
+  "parentId": "iirx3n57hj",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "shouldTruncate": false,
+  "text": "📝 Duly Accomplished Application Form\n📋 Self-Assessment Guide\n\n📸 Two (2) Passport-Size Pictures\n    • Chemical print\n    • With collar, white background\n    • With name tag\n\n🏫 Certificate of Completion\n    • Practicing COVID-19 Preventive Measures\n\n💼 Certificate of Employment (COE)\n    • For Employed Applicants\n\n🎓 Training Certificate OR Transcript of Records (TOR)\n    • For Unemployed / Not Currently Employed Applicants\n\n🆔 PSA Birth Certificate\n    • Original or Certified True Copy",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 5,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "be65pbfei9",
+  "widgetName": "Text28"
+}
