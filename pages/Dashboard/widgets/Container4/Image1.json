@@ -9,7 +9,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -26,6 +30,7 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "objectFit": "cover",
+  "onClick": "",
   "parentColumnSpace": 19.5,
   "parentId": "z39rem0bv7",
   "parentRowSpace": 10,

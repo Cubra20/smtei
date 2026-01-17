@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "buttonColor": "#1d4ed8",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "arrow-right",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "54hx3jh5gm",
+  "leftColumn": 47,
+  "minWidth": 50,
+  "mobileBottomRow": 125,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 121,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('https://www.facebook.com/share/g/17oRuBinHa/', {}, 'NEW_WINDOW');}}",
+  "originalBottomRow": 125,
+  "originalTopRow": 121,
+  "parentColumnSpace": 16.6875,
+  "parentId": "qj2n3vlsf7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 56,
+  "topRow": 2,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "pb0fbrbwwb",
+  "widgetName": "IconButton3"
+}
