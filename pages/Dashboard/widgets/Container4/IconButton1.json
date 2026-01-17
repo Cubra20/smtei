@@ -8,6 +8,9 @@
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -16,6 +19,9 @@
     },
     {
       "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -26,7 +32,7 @@
   "iconName": "notifications",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{appsmith.user.adminSettingsVisible}}",
   "key": "xq0b2hi2f0",
   "leftColumn": 61,
   "minWidth": 50,
