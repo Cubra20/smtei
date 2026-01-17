@@ -8,11 +8,11 @@
       "colorStyle": "theme",
       "logoAssetId": "",
       "logoConfiguration": "logoAndApplicationTitle",
-      "navStyle": "sidebar",
-      "orientation": "side",
+      "navStyle": "stacked",
+      "orientation": "top",
       "position": "static",
-      "showNavbar": false,
-      "showSignIn": false
+      "showNavbar": true,
+      "showSignIn": true
     },
     "themeSetting": {
       "appMaxWidth": "LARGE",
@@ -60,11 +60,11 @@
       "colorStyle": "theme",
       "logoAssetId": "",
       "logoConfiguration": "logoAndApplicationTitle",
-      "navStyle": "sidebar",
-      "orientation": "side",
+      "navStyle": "stacked",
+      "orientation": "top",
       "position": "static",
-      "showNavbar": false,
-      "showSignIn": false
+      "showNavbar": true,
+      "showSignIn": true
     },
     "themeSetting": {
       "appMaxWidth": "LARGE",
