@@ -25,7 +25,7 @@
     "fullyQualifiedName": "Countperstatus.countStatus",
     "name": "countStatus",
     "pageId": "ASSESSMENT_APPLICANTS",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

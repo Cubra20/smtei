@@ -1,0 +1,56 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "defaultSwitchState": "false",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "label"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultSwitchState"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{(Select1.selectedOptionValue === \"All\"? Schedule.listData.length: Schedule.listData.filter(item =>item.QUALIFICATION === Select1.selectedOptionValue\n      ).length)>0}}",
+  "key": "g93yj0obqt",
+  "label": "{{ Switch3.isSwitchedOn ? \"Hide Applicants List\" : \"Show Applicants List\" }}\n",
+  "labelPosition": "Left",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
+  "parentColumnSpace": 3.337890625,
+  "parentId": "apjo1m46el",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 13,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "zfnaq40z0p",
+  "widgetName": "Switch3"
+}
