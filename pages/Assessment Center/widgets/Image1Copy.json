@@ -9,7 +9,12 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -26,6 +31,7 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "objectFit": "cover",
+  "onClick": "{{navigateTo('Dashboard', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 19.5,
   "parentId": "0",
   "parentRowSpace": 10,
