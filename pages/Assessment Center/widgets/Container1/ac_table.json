@@ -187,7 +187,7 @@
   "key": "zba5qel0au",
   "label": "Data",
   "labelTextSize": "0.875rem",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "onAddNewRowSave": "{{Insert_ASSESSMENT_CENTER1.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_ASSESSMENT_CENTER1.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_ASSESSMENT_CENTER1.run();\n            Total_record_ASSESSMENT_CENTER1.run()\n          }}",
   "onRowSelected": "{{showModal(Modal4.name);}}",
@@ -587,7 +587,7 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
