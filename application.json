@@ -11,8 +11,8 @@
       "navStyle": "stacked",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
-      "showSignIn": true
+      "showNavbar": false,
+      "showSignIn": false
     },
     "themeSetting": {
       "appMaxWidth": "LARGE",
@@ -63,8 +63,8 @@
       "navStyle": "stacked",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
-      "showSignIn": true
+      "showNavbar": false,
+      "showSignIn": false
     },
     "themeSetting": {
       "appMaxWidth": "LARGE",
