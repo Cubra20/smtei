@@ -1,0 +1,33 @@
+{
+  "animateLoading": true,
+  "bottomRow": 74,
+  "docUrl": "{{OR_PDF.generateOP_Landscape_3Vertical()}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9xzrhdovkr",
+  "leftColumn": 0,
+  "mobileBottomRow": 47,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 6.9375,
+  "parentId": "koar4hpzh9",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 8,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "th59ex6m23",
+  "widgetName": "DocumentViewer1"
+}

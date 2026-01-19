@@ -1,0 +1,35 @@
+{
+  "animateLoading": true,
+  "bottomRow": 75,
+  "docUrl": "{{RA_PDF.generatePDF()}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "s90vvmt375",
+  "leftColumn": 0,
+  "mobileBottomRow": 46,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "originalBottomRow": 77,
+  "originalTopRow": 4,
+  "parentColumnSpace": 6.9375,
+  "parentId": "jnvzgq6qff",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 5,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "cx50t4qw7q",
+  "widgetName": "DV_RAPDF"
+}

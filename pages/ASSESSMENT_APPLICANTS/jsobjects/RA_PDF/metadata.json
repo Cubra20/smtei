@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_d084ea4d-e673-45f5-94e3-a2820a96f4b9",
+  "id": "ASSESSMENT_APPLICANTS_RA_PDF",
+  "unpublishedCollection": {
+    "name": "RA_PDF",
+    "pageId": "ASSESSMENT_APPLICANTS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

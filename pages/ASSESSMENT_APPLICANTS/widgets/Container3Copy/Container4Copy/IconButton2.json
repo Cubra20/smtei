@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "print",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{( Select1.selectedOptionValue === \"All\"? PaidCopy.listData.length: PaidCopy.listData.filter(item =>item.QUALIFICATION === Select1.selectedOptionValue\n      ).length) > 0}}",
+  "key": "l9am2nf2g1",
+  "leftColumn": 25,
+  "minWidth": 50,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(REQUEST_APPROVAL.name);}}",
+  "originalBottomRow": 12,
+  "originalTopRow": 8,
+  "parentColumnSpace": 2.973236083984375,
+  "parentId": "gvhrs320ir",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 36,
+  "topRow": 8,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "x8a02geqq0",
+  "widgetName": "IconButton2"
+}

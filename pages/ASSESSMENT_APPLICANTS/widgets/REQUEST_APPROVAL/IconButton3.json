@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 4,
   "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
-  "buttonColor": "#1d4ed8",
+  "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
   "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
     {
@@ -13,6 +13,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -24,25 +27,24 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "mqd6cr60xd",
-  "leftColumn": 37,
+  "key": "l9am2nf2g1",
+  "leftColumn": 59,
   "minWidth": 50,
-  "mobileBottomRow": 8,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 34,
-  "mobileTopRow": 4,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 59,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(OR.name);}}",
-  "parentColumnSpace": 17.53125,
-  "parentId": "5mbr5pzrec",
+  "onClick": "{{showModal(ORDER_PAYMENT.name);}}",
+  "parentColumnSpace": 15.84375,
+  "parentId": "jnvzgq6qff",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 39,
-  "tooltip": "ORDER OF PAYMENT",
-  "topRow": 4,
+  "rightColumn": 63,
+  "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "jk3fj0ckt0",
-  "widgetName": "IconButton5"
+  "widgetId": "gzn72ybies",
+  "widgetName": "IconButton3"
 }
