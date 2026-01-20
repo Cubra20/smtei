@@ -1,0 +1,33 @@
+{
+  "animateLoading": true,
+  "bottomRow": 72,
+  "docUrl": "{{R_Form.generateRequestForm()}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zg8nzve9ik",
+  "leftColumn": 0,
+  "mobileBottomRow": 45,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 6.9375,
+  "parentId": "gejh70by2t",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 5,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "2sub840hgo",
+  "widgetName": "Request_Form_Assessment"
+}

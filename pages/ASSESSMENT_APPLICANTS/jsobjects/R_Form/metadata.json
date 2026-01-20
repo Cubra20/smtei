@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "695b4d7d5ddb3153cdfc5984_0f27efbc-2338-46dc-a92f-afa1fbfa2856",
+  "id": "ASSESSMENT_APPLICANTS_R_Form",
+  "unpublishedCollection": {
+    "name": "R_Form",
+    "pageId": "ASSESSMENT_APPLICANTS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

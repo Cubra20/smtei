@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 38,
+  "bottomRow": 41,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -275,8 +275,8 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 27,
   "needsErrorInfo": false,
-  "onSubmit": "{{UpdateQuery.run().then(() => {\n  showAlert('Updated Successfully', 'success');\n});\nstatusUtils.hasStatusChanged(ApplicantsTable.selectedRow.STATUS, JSONForm1.formData.STATUS);\ncloseModal(Modal1.name);\nSelectQuery.run();\nshowModal(REQUEST_APPROVAL.name);}}",
-  "originalBottomRow": 31,
+  "onSubmit": "{{UpdateQuery.run().then(() => {\n  showAlert('Updated Successfully', 'success');\n});\nstatusUtils.hasStatusChanged(ApplicantsTable.selectedRow.STATUS, JSONForm1.formData.STATUS);\ncloseModal(Modal1.name);\nSelectQuery.run();}}",
+  "originalBottomRow": 38,
   "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
   "parentId": "zjua3whcg0",
