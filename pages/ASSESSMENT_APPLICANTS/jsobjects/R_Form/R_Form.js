@@ -126,25 +126,25 @@ export default {
 
     doc.setFont("helvetica", "bold");
 		doc.setFontSize(12);
-    doc.text("Regular", MARGIN_X + 60, y);
-    doc.line(MARGIN_X + 43, y + 1.5, MARGIN_X + 120, y + 1.5);
+    doc.text("Regular", MARGIN_X + 55, y);
+    doc.line(MARGIN_X + 40, y + 1.5, MARGIN_X + 85, y + 1.5);
 		
 		doc.setFontSize(10);
     doc.setFont("helvetica", "normal");
     doc.text("Trainer", PAGE_WIDTH / 2, y);
-    doc.line(PAGE_WIDTH / 2 + 20, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
+    doc.line(PAGE_WIDTH / 2 + 17, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
     y += 10;
 
     // ================= ROW 5 =================
     doc.text("Date and Time:", MARGIN_X, y);
-    doc.line(MARGIN_X + 43, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
+    doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
     y += 10;
 
     // ================= ROW 6 =================
     doc.text("Remarks:", MARGIN_X, y);
-    doc.line(MARGIN_X + 43, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
+    doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
     y += 10;
 
@@ -154,7 +154,7 @@ export default {
 		doc.setFontSize(12);
     doc.setFont("helvetica", "bold");
     doc.text("SMTEI Cavite,Inc. - Boystown", MARGIN_X + 50, y);
-    doc.line(MARGIN_X + 43, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
+    doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
     y += 10;
 
@@ -162,23 +162,23 @@ export default {
 		doc.setFontSize(10);
     doc.setFont("helvetica", "normal");
     doc.text("Date of Assessment:", MARGIN_X, y);
-    doc.line(MARGIN_X + 43, y + 1.5, PAGE_WIDTH / 2 + 40, y + 1.5);
+    doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH / 2 + 15, y + 1.5);
 
-    doc.text("Received By:", PAGE_WIDTH / 2 + 50, y);
-		doc.text("Name/Signature/Date", PAGE_WIDTH / 2 + 80, y+7);
-    doc.line(PAGE_WIDTH / 2 + 75, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
+    doc.text("Received By:", PAGE_WIDTH / 2 + 20, y);
+		doc.text("Name/Signature/Date", PAGE_WIDTH / 2 + 50, y+7);
+    doc.line(PAGE_WIDTH / 2 + 40, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
     y += 12;
 
     // ================= ROW 9 =================
     doc.text("Assessor:", MARGIN_X, y);
-    doc.line(MARGIN_X + 43, y + 1.5, PAGE_WIDTH / 2 + 40, y + 1.5);
+    doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH / 2 + 15,y + 1.5);
 
     y += 10;
 
     // ================= ROW 10 =================
     doc.text("TESDA Representative:", MARGIN_X, y);
-    doc.line(MARGIN_X + 43, y + 1.5, PAGE_WIDTH / 2 + 40, y + 1.5);
+    doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH / 2 + 15, y + 1.5);
 
    return doc.output("datauristring");
   }
