@@ -2,10 +2,8 @@
   "gitSyncId": "695b4d7d5ddb3153cdfc5984_19d495b1-5ab6-4036-9785-636f3a828dc9",
   "id": "Dashboard__$getPerlevelP$_getPerlevelModule",
   "isPublic": true,
-  "moduleInstanceId": "Dashboard_getPerlevelP",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
-  "rootModuleInstanceId": "Dashboard_getPerlevelP",
   "unpublishedAction": {
     "confirmBeforeExecute": false,
     "contextType": "PAGE",
