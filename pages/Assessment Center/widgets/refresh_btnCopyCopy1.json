@@ -7,9 +7,6 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -18,9 +15,6 @@
     },
     {
       "key": "buttonColor"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -31,7 +25,7 @@
   "iconName": "people",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{appsmith.user.adminSettingsVisible}}",
+  "isVisible": true,
   "labelTextSize": "0.875rem",
   "leftColumn": 57,
   "onClick": "{{navigateTo('ASSESSMENT_APPLICANTS', {}, 'SAME_WINDOW');}}",

@@ -42,6 +42,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 63,
+  "tooltip": "Order of Paymeny",
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,

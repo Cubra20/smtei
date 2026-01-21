@@ -2,15 +2,20 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
-  "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
+  "buttonColor": "linear-gradient(\n    90deg,\n    rgba(8, 54, 208, 1) 0%,\n    rgba(12, 116, 254, 1)100%\n)",
   "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
     {
       "key": "buttonColor"
     },
     {
-      "key": "borderRadius"
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [
@@ -18,7 +23,7 @@
       "key": "onClick"
     }
   ],
-  "iconName": "plus",
+  "iconName": "document",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
@@ -37,6 +42,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 59,
+  "tooltip": "Request Form",
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
