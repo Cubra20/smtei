@@ -6,7 +6,7 @@ export default {
     const doc = new jsPDF("p", "mm", "A4");
 
     const PAGE_WIDTH = 210;
-		const PAGE_HEIGHT = 148;
+		const PAGE_HEIGHT = 10;
     const MARGIN_X = 12;
 		
 		/* ======================
@@ -40,29 +40,29 @@ export default {
     doc.setFont("helvetica", "normal");
     doc.setTextColor(0, 0, 0);
 
-    let y = 20;
+    let y = 15;
 		
-		doc.line(MARGIN_X, y-10, 210 - 14, y -10);
+
 		
     // ================= HEADER =================
     doc.setFontSize(10);
     doc.text("REPUBLIC OF THE PHILIPPINES", PAGE_WIDTH/2, y, { align: "center" });
 
-    y += 6;
+    y += 4;
     doc.text("TECHNICAL EDUCATION AND SKILLS DEVELOPMENT AUTHORITY", PAGE_WIDTH / 2, y, { 	     align: "center" });
 
-    y += 6;
+    y += 4;
     doc.text("PROVINCE OF CAVITE", PAGE_WIDTH / 2, y, { align: "center" });
 
-    y += 8;
+    y += 6;
     doc.setFontSize(10);
     doc.text("APPLICATION FORM SLIP", PAGE_WIDTH / 2, y, { align: "center" });
 
-    y += 6;
+    y += 4;
     doc.setFontSize(10);
     doc.text("(ASSESSMENT CENTER)", PAGE_WIDTH / 2, y, { align: "center" });
 
-    y += 18;
+    y += 14;
 
     // ================= ROW 1 =================
     doc.setFontSize(10);
@@ -76,12 +76,51 @@ export default {
     );
     doc.line(MARGIN_X + 70, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
-    y += 10;
+    y += 8;
 
     // ================= ROW 2 =================
-		
-		const qualificationText = Select_Quali.selectedOptionValue;
+		// FULL TEXT (for wrapping)
+			const qualificationText = Select_Quali.selectedOptionValue;
 		const part2 = cocSummaryText ? ` (${cocSummaryText}). ` : ". ";
+		
+const fullText = qualificationText + part2 ;
+
+// WRAP TEXT (LEFT ALIGNED)
+const wrappedLines = doc.splitTextToSize(fullText,MARGIN_X + 70);
+
+		
+// DRAW LINE BY LINE (ALLOW BOLD QUALIFICATION)
+wrappedLines.forEach((line, i) => {
+  let x = MARGIN_X;
+  const lineY = y ;
+
+  if (line.includes(qualificationText)) {
+    const before = line.split(qualificationText)[0];
+    const after = line.split(qualificationText)[1];
+		doc.setFont("helvetica","Bold")
+    // NORMAL BEFORE
+    doc.setFont("helvetica", "Bold");
+    doc.text(before,MARGIN_X + 115, y);
+    x += doc.getTextDimensions(before).w;
+
+    // BOLD QUALIFICATION
+    doc.setFont("helvetica", "Bold");
+    doc.text(qualificationText,MARGIN_X + 115, y);
+    x += doc.getTextDimensions(qualificationText).w;
+		
+    // NORMAL AFTER
+		doc.setFontSize(10);
+    doc.setFont("helvetica", "Normal");
+    doc.text(after,MARGIN_X + 135, y - 4);
+  } else {
+    doc.setFont("helvetica", "Normal");
+    doc.text(line, MARGIN_X + 138, lineY);
+  }
+});
+
+
+		
+	
 		doc.setFontSize(10);
     doc.setFont("helvetica", "normal");
     doc.text("Number of Candidates:", MARGIN_X, y);
@@ -93,11 +132,9 @@ export default {
 		doc.setFont("helvetica", "normal");
 		doc.setFontSize(10);
     doc.text("Qualification:", PAGE_WIDTH / 2, y);
-		doc.setFont("helvetica", "bold");
-		doc.text(qualificationText + part2 ,MARGIN_X + 115, y );
     doc.line(PAGE_WIDTH / 2 + 20, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
-    y += 10;
+    y += 8;
 
     // ================= ROW 3 =================
 		doc.setFontSize(10);
@@ -119,7 +156,7 @@ export default {
     doc.text("09171631774", PAGE_WIDTH - MARGIN_X, y, { align: "right" });
     doc.line(MARGIN_X + 155, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
-    y += 10;
+    y += 8;
 
     // ================= ROW 4 =================
     doc.text("Nature of Scholarship:", MARGIN_X, y);
@@ -134,19 +171,19 @@ export default {
     doc.text("Trainer", PAGE_WIDTH / 2, y);
     doc.line(PAGE_WIDTH / 2 + 17, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
-    y += 10;
+    y += 8;
 
     // ================= ROW 5 =================
     doc.text("Date and Time:", MARGIN_X, y);
     doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
-    y += 10;
+    y += 8;
 
     // ================= ROW 6 =================
     doc.text("Remarks:", MARGIN_X, y);
     doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
-    y += 10;
+    y += 8;
 
     // ================= ROW 7 =================
     doc.text("Assessment Center:", MARGIN_X, y);
@@ -168,13 +205,13 @@ export default {
 		doc.text("Name/Signature/Date", PAGE_WIDTH / 2 + 50, y+7);
     doc.line(PAGE_WIDTH / 2 + 40, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
-    y += 12;
+    y += 8;
 
     // ================= ROW 9 =================
     doc.text("Assessor:", MARGIN_X, y);
     doc.line(MARGIN_X + 40, y + 1.5, PAGE_WIDTH / 2 + 15,y + 1.5);
 
-    y += 10;
+    y += 8;
 
     // ================= ROW 10 =================
     doc.text("TESDA Representative:", MARGIN_X, y);
