@@ -50,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "{{\n_.uniqBy(getAllapplicants.data.filter(row => row.QUALIFICATION ===ac_table.selectedRow.Q_CODE && row.STATUS === \"Paid\").map(d => ({label: d[\"BATCH \"],\n\t\t value: d[\"BATCH \"]})),\n\t\t\t\t'value')\n}}",
+  "sourceData": "{{\n_.uniqBy(getAllapplicants.data.filter(row => row.QUALIFICATION ===ac_table.selectedRow.Q_CODE ).map(d => ({label: d[\"BATCH \"],\n\t\t value: d[\"BATCH \"]})),\n\t\t\t\t'value')\n}}",
   "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
