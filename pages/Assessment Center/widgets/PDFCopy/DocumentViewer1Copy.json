@@ -1,0 +1,35 @@
+{
+  "animateLoading": true,
+  "bottomRow": 93,
+  "docUrl": "{{JSObject2Copy.generatePDF()}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "uf7f2s9bp6",
+  "leftColumn": 0,
+  "mobileBottomRow": 52,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "originalBottomRow": 94,
+  "originalTopRow": 10,
+  "parentColumnSpace": 6.9375,
+  "parentId": "i6rmq4mwzq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "topRow": 9,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "89k9see157",
+  "widgetName": "DocumentViewer1Copy"
+}

@@ -34,7 +34,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(PDF.name);}}",
+  "onClick": "{{showModal(PDFCopy.name);}}",
   "originalBottomRow": 14,
   "originalTopRow": 10,
   "parentColumnSpace": 2.3798484802246094,
