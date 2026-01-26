@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745)",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Select1.selectedOptionValue))(Select_Quali.options, Select_Quali.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
