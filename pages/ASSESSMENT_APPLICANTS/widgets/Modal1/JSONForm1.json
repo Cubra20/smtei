@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 41,
+  "bottomRow": 36,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -276,7 +276,7 @@
   "mobileTopRow": 27,
   "needsErrorInfo": false,
   "onSubmit": "{{UpdateQuery.run().then(() => {\n  showAlert('Updated Successfully', 'success');\n});\nstatusUtils.hasStatusChanged(ApplicantsTable.selectedRow.STATUS, JSONForm1.formData.STATUS);\ncloseModal(Modal1.name);\nSelectQuery.run();}}",
-  "originalBottomRow": 38,
+  "originalBottomRow": 41,
   "originalTopRow": 7,
   "parentColumnSpace": 6.9375,
   "parentId": "zjua3whcg0",
@@ -660,7 +660,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "{{ApplicantsTable.selectedRow.QUALIFICATION}}",
-  "topRow": 7,
+  "topRow": 9,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
