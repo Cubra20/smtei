@@ -37,7 +37,7 @@
           "viewType": "component"
         },
         "range": {
-          "data": "A315:M"
+          "data": "B315:P"
         },
         "sheetName": {
           "componentData": "template_table",
