@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 80,
+  "bottomRow": 94,
   "boxShadow": "rgba(0, 0, 255) 0px 5px 15px;",
   "childStylesheet": {
     "ARRAY": {
@@ -232,6 +232,24 @@
     },
     {
       "key": "schema.__root_schema__.children.REQUIREMENTS_LINK.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.CERTIFICATE.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.CERTIFICATE.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CERTIFICATE.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Willing_to_Wait__10_Candicates__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Willing_to_Wait__10_Candicates__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Willing_to_Wait__10_Candicates__.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -360,6 +378,28 @@
           "originalIdentifier": "BATCH ",
           "position": 6,
           "sourceData": "BATCH 1 "
+        },
+        "CERTIFICATE": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "accessor": "CERTIFICATE",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CERTIFICATE))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "CERTIFICATE",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "CERTIFICATE",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "CERTIFICATE",
+          "position": 14,
+          "sourceData": ""
         },
         "CLIENT": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
@@ -533,13 +573,12 @@
           "identifier": "REQUIREMENTS_LINK",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": true,
+          "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "REQUIREMENTS LINK",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "REQUIREMENTS_LINK",
-          "placeholderText": "Google Drive Link",
           "position": 13,
           "sourceData": ""
         },
@@ -585,6 +624,28 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ULI",
           "position": 5,
+          "sourceData": ""
+        },
+        "Willing_to_Wait__10_Candicates__": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "accessor": "Willing to Wait (10 Candicates)?",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Willing to Wait (10 Candicates)?\"]))(Insert_form.sourceData, Insert_form.formData, Insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "Willing_to_Wait__10_Candicates__",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Willing To Wait 10 Candicates",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "Willing to Wait (10 Candicates)?",
+          "position": 15,
           "sourceData": ""
         },
         "rowIndex": {

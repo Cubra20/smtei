@@ -215,6 +215,15 @@
     },
     {
       "key": "schema.__root_schema__.children.Willing_to_Wait__10_Candicates__.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -607,18 +616,19 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "Yes",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "Willing_to_Wait__10_Candicates__",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Willing To Wait 10 Candicates",
           "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"Yes\"\n  },\n  {\n    \"label\": \"No, I can go special\",\n    \"value\": \"No, I can go special\"\n  }\n]",
           "originalIdentifier": "Willing to Wait (10 Candicates)?",
           "position": 15,
+          "serverSideFiltering": false,
           "sourceData": ""
         },
         "rowIndex": {
