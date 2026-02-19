@@ -68,11 +68,11 @@ export default {
     doc.setFontSize(10);
     doc.text("NAME OF SCHOOL/TRAINING CENTER:", MARGIN_X, y);
 		
-		doc.setFontSize(12);
+		doc.setFontSize(11);
     doc.setFont("helvetica", "bold");
     doc.text(
       School_input.text,
-      MARGIN_X + 100,y
+      MARGIN_X + 70,y
     );
     doc.line(MARGIN_X + 70, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
 
