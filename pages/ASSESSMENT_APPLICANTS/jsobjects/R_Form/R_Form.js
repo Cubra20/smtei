@@ -162,8 +162,8 @@ wrappedLines.forEach((line, i) => {
     doc.text("Nature of Scholarship:", MARGIN_X, y);
 
     doc.setFont("helvetica", "bold");
-		doc.setFontSize(12);
-    doc.text(Scholarship_input.text, MARGIN_X + 55, y);
+		doc.setFontSize(11);
+    doc.text(Scholarship_input.text, MARGIN_X + 40, y);
     doc.line(MARGIN_X + 40, y + 1.5, MARGIN_X + 85, y + 1.5);
 		
 		doc.setFontSize(10);
