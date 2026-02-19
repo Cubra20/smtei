@@ -71,7 +71,7 @@ export default {
 		doc.setFontSize(12);
     doc.setFont("helvetica", "bold");
     doc.text(
-      "Sisters of Mary School-Adlas, Inc.",
+      School_input.text,
       MARGIN_X + 100,y
     );
     doc.line(MARGIN_X + 70, y + 1.5, PAGE_WIDTH - MARGIN_X, y + 1.5);
@@ -163,7 +163,7 @@ wrappedLines.forEach((line, i) => {
 
     doc.setFont("helvetica", "bold");
 		doc.setFontSize(12);
-    doc.text("Regular", MARGIN_X + 55, y);
+    doc.text(Scholarship_input.text, MARGIN_X + 55, y);
     doc.line(MARGIN_X + 40, y + 1.5, MARGIN_X + 85, y + 1.5);
 		
 		doc.setFontSize(10);

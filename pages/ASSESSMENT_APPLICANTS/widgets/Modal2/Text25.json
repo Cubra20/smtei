@@ -11,9 +11,13 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
@@ -33,9 +37,9 @@
   "parentId": "gejh70by2t",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 41,
+  "rightColumn": 12,
   "shouldTruncate": false,
-  "text": "Modal Title",
+  "text": "{{Select_Quali.selectedOptionLabel}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,
