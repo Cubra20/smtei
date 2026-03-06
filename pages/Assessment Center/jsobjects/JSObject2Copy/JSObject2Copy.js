@@ -29,8 +29,7 @@ export default {
     const filteredData = GetApplicants.data.filter(row =>
      
       row.QUALIFICATION === ac_table.selectedRow.Q_CODE &&
-      row["BATCH "] === Select_BatchCopy.selectedOptionValue &&
-			row.STATUS === "For Schedule"
+      row["BATCH "] === Select_BatchCopy.selectedOptionValue	
     )
 		 .sort((a, b) => a.NAME.localeCompare(b.NAME));
 		
