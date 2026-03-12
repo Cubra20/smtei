@@ -211,12 +211,6 @@
       "key": "schema.__root_schema__.children.CERTIFICATE.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.Willing_to_Wait__10_Candicates__.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Willing_to_Wait__10_Candicates__.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.defaultValue"
     },
     {
@@ -224,6 +218,15 @@
     },
     {
       "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CONTACT_NUMBER.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.CONTACT_NUMBER.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CONTACT_NUMBER.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -348,7 +351,7 @@
           "iconAlign": "left",
           "identifier": "BATCH_",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
@@ -425,6 +428,28 @@
           "originalIdentifier": "COC",
           "position": 5,
           "serverSideFiltering": false,
+          "sourceData": ""
+        },
+        "CONTACT_NUMBER": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "CONTACT_NUMBER",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CONTACT_NUMBER))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "CONTACT_NUMBER",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "CONTACT NUMBER",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "CONTACT_NUMBER",
+          "position": 15,
           "sourceData": ""
         },
         "EMAIL": {
@@ -606,29 +631,6 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ULI",
           "position": 6,
-          "sourceData": ""
-        },
-        "Willing_to_Wait__10_Candicates__": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "Willing to Wait (10 Candicates)?",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "Yes",
-          "fieldType": "Select",
-          "identifier": "Willing_to_Wait__10_Candicates__",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isFilterable": false,
-          "isRequired": false,
-          "isVisible": true,
-          "label": "Willing To Wait 10 Candicates",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"Yes\"\n  },\n  {\n    \"label\": \"No, I can go special\",\n    \"value\": \"No, I can go special\"\n  }\n]",
-          "originalIdentifier": "Willing to Wait (10 Candicates)?",
-          "position": 15,
-          "serverSideFiltering": false,
           "sourceData": ""
         },
         "rowIndex": {
